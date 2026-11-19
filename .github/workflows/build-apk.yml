@@ -12,6 +12,8 @@ jobs:
       - uses: android-actions/setup-android@v3
         with:
           packages: 'platform-tools'
+      - name: Usar siempre la misma llave de firma
+        run: mkdir -p ~/.android && cp debug.keystore ~/.android/debug.keystore
       - uses: gradle/actions/setup-gradle@v4
         with: { gradle-version: '8.7' }
       - run: gradle assembleDebug --no-daemon
