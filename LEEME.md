@@ -54,3 +54,9 @@ Respaldo: Más → Exportar abre el menú Compartir para enviarte el respaldo (W
 ## v1.7
 - Minimizar el entrenamiento en curso (botón ⌄ arriba a la izquierda o el botón Atrás del teléfono).
   Queda una barra flotante con tiempo, progreso y cuenta regresiva del descanso; tócala para volver.
+
+## Ejercicios animados (GIF / MP4 / PNG)
+- Carpeta `ejercicios/`: 80 GIF, MP4 e imagen fija de cada ejercicio de la biblioteca, generados con el mismo motor de animación de la app.
+- `ejercicios/ejercicios.json`: catálogo con `exerciseId` (`mrg_<clave>`), `animKey`, músculos, equipo, instrucciones, consejos, variaciones, relacionados y valores por defecto.
+- `ejercicios/index.html`: galería con buscador. En la versión web queda en `<tu-página>/ejercicios/`.
+- No van dentro del APK (no está en `assets`), así que la app no aumenta de tamaño.

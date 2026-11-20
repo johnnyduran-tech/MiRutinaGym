@@ -18,8 +18,13 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: actions/configure-pages@v5
+      - name: Armar sitio (app + galería de ejercicios)
+        run: |
+          mkdir -p _site
+          cp -r app/src/main/assets/. _site/
+          cp -r ejercicios _site/ejercicios
       - uses: actions/upload-pages-artifact@v3
         with:
-          path: app/src/main/assets
+          path: _site
       - id: deployment
         uses: actions/deploy-pages@v4
