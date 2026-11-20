@@ -50,3 +50,7 @@ Respaldo: Más → Exportar abre el menú Compartir para enviarte el respaldo (W
 - Animaciones rediseñadas en estilo ilustración anatómica: figura con volumen, fondo claro, máquinas grises
   con acolchado negro y músculos trabajados resaltados (rojo = principal, naranja = secundarios).
 - Encuadre automático por ejercicio y animación optimizada (solo se animan las visibles).
+
+## v1.7
+- Minimizar el entrenamiento en curso (botón ⌄ arriba a la izquierda o el botón Atrás del teléfono).
+  Queda una barra flotante con tiempo, progreso y cuenta regresiva del descanso; tócala para volver.
