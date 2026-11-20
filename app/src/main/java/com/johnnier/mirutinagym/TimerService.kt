@@ -90,16 +90,15 @@ class TimerService : Service() {
                 loud = intent.getBooleanExtra("loud", true)
                 vib = intent.getBooleanExtra("vib", true)
                 handler.removeCallbacks(fire)
-                val delay = timerEnd - System.currentTimeMillis()
-                if (delay <= 0) onTimerEnd() else {
-                    acquireWake(delay + 15_000)
-                    handler.postDelayed(fire, delay)
-                }
+                AlarmReceiver.schedule(this, timerEnd, timerTitle, timerBody, timerKind, sound, loud, vib)
+                // refresca la notificación fija cuando termina la cuenta regresiva
+                handler.postDelayed(fire, maxOf(0L, timerEnd - System.currentTimeMillis()) + 500)
                 updateOngoing()
             }
             "CANCEL" -> { cancelTimer(); updateOngoing() }
+            "FIRED" -> { handler.removeCallbacks(fire); timerEnd = 0L; updateOngoing() }
             "STOP" -> {
-                cancelTimer()
+                handler.removeCallbacksAndMessages(null)
                 stopForeground(STOP_FOREGROUND_REMOVE)
                 stopSelf()
                 started = false
@@ -110,28 +109,14 @@ class TimerService : Service() {
 
     private fun cancelTimer() {
         handler.removeCallbacks(fire)
+        AlarmReceiver.cancel(this)
         timerEnd = 0L
         releaseWake()
     }
 
     private fun onTimerEnd() {
         timerEnd = 0L
-        if (sound) Sounds.play(this, timerKind, loud)
-        if (vib) Sounds.vibrate(this, timerKind)
-        val n = NotificationCompat.Builder(this, CH_ALERT)
-            .setSmallIcon(R.drawable.ic_stat)
-            .setContentTitle(timerTitle)
-            .setContentText(timerBody)
-            .setPriority(NotificationCompat.PRIORITY_MAX)
-            .setCategory(NotificationCompat.CATEGORY_ALARM)
-            .setAutoCancel(true)
-            .setTimeoutAfter(60_000)
-            .setContentIntent(openApp())
-            .build()
-        try { getSystemService(NotificationManager::class.java).notify(ID_ALERT, n) } catch (_: Exception) {}
         updateOngoing()
-        // mantener la CPU unos segundos para que termine el sonido
-        handler.postDelayed({ releaseWake() }, 8_000)
     }
 
     private fun openApp(): PendingIntent {

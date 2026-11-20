@@ -34,3 +34,19 @@ Respaldo: Más → Exportar abre el menú Compartir para enviarte el respaldo (W
 ## v1.3
 - Biblioteca de 80 ejercicios animados agrupados por músculo (Pecho, Espalda, Hombros, Bíceps, Tríceps, Piernas, Glúteos, Core, Cardio).
 - Tipos de registro: peso + reps, reps sin peso, duración (seg) y cardio (minutos + km + kcal opcionales).
+
+## v1.4
+- CORRECCIÓN: la alerta de fin de descanso ahora usa AlarmManager (alarma del sistema). Suena aunque estés en
+  WhatsApp, Instagram, X o con la pantalla apagada, incluso si el sistema congela la app.
+- Nuevo en Más → "Alertas en segundo plano": estado de permisos + botón "Probar alerta en 10 s".
+- Modo claro / oscuro / automático (Más → Apariencia, o el ícono ☀️/🌙 en Hoy).
+- Si publicas la versión web en GitHub Pages, reemplaza también ese index.html por app/src/main/assets/index.html.
+
+## v1.5
+- CORRECCIÓN: vibración al terminar el descanso. Ahora vibra con uso "alarma" (Android bloquea las vibraciones
+  normales de apps en segundo plano) y con intensidad máxima. Botón "📳 Vibración" en Más para probarla.
+
+## v1.6
+- Animaciones rediseñadas en estilo ilustración anatómica: figura con volumen, fondo claro, máquinas grises
+  con acolchado negro y músculos trabajados resaltados (rojo = principal, naranja = secundarios).
+- Encuadre automático por ejercicio y animación optimizada (solo se animan las visibles).

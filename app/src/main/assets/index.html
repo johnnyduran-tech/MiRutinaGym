@@ -3,17 +3,28 @@
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover,user-scalable=no">
 <meta name="theme-color" content="#0b0e14"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-capable" content="yes">
 <title>Mi Rutina Gym</title>
-<style>:root{--bg:#0b0e14;--card:#151a24;--card2:#1c2230;--line:#2a3242;--tx:#eef1f7;--mut:#8b94a8;--acc:#ff7a3d;--acc2:#ffb08a;--ok:#3ccf8e;--warn:#ffcc4d;--bad:#ff5a6a;--blue:#4c7dff;--r:16px;
---safe-b:env(safe-area-inset-bottom,0px)}
+<style>:root{color-scheme:dark;--bg:#0b0e14;--card:#151a24;--card2:#1c2230;--line:#2a3242;--tx:#eef1f7;--mut:#8b94a8;--acc:#ff7a3d;--acc2:#ffb08a;--ok:#3ccf8e;--warn:#ffcc4d;--bad:#ff5a6a;--blue:#4c7dff;--r:16px;
+--safe-b:env(safe-area-inset-bottom,0px);
+--hdr:rgba(11,14,20,.92);--navbg:rgba(15,19,27,.96);--hero:linear-gradient(135deg,#2a1608,#151a24 60%);--herob:#4a2a16;--ph:#566078;
+--tipbg:rgba(76,125,255,.1);--tipbd:rgba(76,125,255,.35);--tiptx:#c5d4ff;--wbg:rgba(255,204,77,.08);--wbd:rgba(255,204,77,.35);--wtx:#ffe7a6;
+--timerbg:#11161f;--toast:#273044;--scrim:rgba(0,0,0,.6);--chartgrid:#2a3242;--chartdot:#151a24;
+--ap-bg1:#1d2433;--ap-bg2:#121722;--ap-body:#e9edf5;--ap-eq:#2c3547;--ap-eqs:#4a5670;--ap-line:#46526a;--ap-floor:#3a4458;--ap-wall:#262e3e;--ap-cable:#c9d2e3;--ap-plate:#8d99b3;--ap-bar:#9aa6bf}
+:root[data-theme=light]{color-scheme:light;--bg:#f3f4f7;--card:#ffffff;--card2:#eef0f5;--line:#dde1e9;--tx:#151a24;--mut:#5d6677;--acc:#f26a2b;--acc2:#c4521c;--ok:#1e9e64;--warn:#b98a0c;--bad:#d63848;--blue:#3a66e0;
+--hdr:rgba(243,244,247,.92);--navbg:rgba(255,255,255,.96);--hero:linear-gradient(135deg,#ffe6d6,#ffffff 65%);--herob:#f7c9ad;--ph:#9aa2b2;
+--tipbg:rgba(58,102,224,.08);--tipbd:rgba(58,102,224,.3);--tiptx:#25428f;--wbg:rgba(230,170,20,.1);--wbd:rgba(200,150,10,.4);--wtx:#7a5a00;
+--timerbg:#ffffff;--toast:#ffffff;--scrim:rgba(20,25,35,.35);--chartgrid:#e3e6ec;--chartdot:#ffffff;
+--ap-bg1:#f1f4f9;--ap-bg2:#e2e7ef;--ap-body:#2a3142;--ap-eq:#cfd6e2;--ap-eqs:#a9b3c4;--ap-line:#aab3c3;--ap-floor:#b8c0ce;--ap-wall:#d7dde7;--ap-cable:#5b6577;--ap-plate:#6b778d;--ap-bar:#5b6577}
+:root[data-theme=light] .card,:root[data-theme=light] .timer .in,:root[data-theme=light] .toast{box-shadow:0 1px 3px rgba(20,30,50,.07)}
+:root[data-theme=light] .btn.pri,:root[data-theme=light] .seg button.on,:root[data-theme=light] .cycle span.cur{color:#fff}
 *{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
 html,body{margin:0;background:var(--bg);color:var(--tx);font:15px/1.4 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;overscroll-behavior:none}
 button,input,select,textarea{font:inherit;color:inherit}
 #app{max-width:640px;margin:0 auto;min-height:100vh;padding-bottom:calc(84px + var(--safe-b))}
-header.top{position:sticky;top:0;z-index:20;background:rgba(11,14,20,.92);backdrop-filter:blur(10px);padding:calc(14px + env(safe-area-inset-top,0px)) 16px 10px;border-bottom:1px solid var(--line)}
+header.top{position:sticky;top:0;z-index:20;background:var(--hdr);backdrop-filter:blur(10px);padding:calc(14px + env(safe-area-inset-top,0px)) 16px 10px;border-bottom:1px solid var(--line)}
 header.top h1{margin:0;font-size:20px;letter-spacing:-.3px}
 header.top .sub{color:var(--mut);font-size:13px;margin-top:2px}
 main{padding:14px 14px 20px}
-nav.tabs{position:fixed;bottom:0;left:0;right:0;z-index:30;display:flex;justify-content:center;background:rgba(15,19,27,.96);backdrop-filter:blur(10px);border-top:1px solid var(--line);padding-bottom:var(--safe-b)}
+nav.tabs{position:fixed;bottom:0;left:0;right:0;z-index:30;display:flex;justify-content:center;background:var(--navbg);backdrop-filter:blur(10px);border-top:1px solid var(--line);padding-bottom:var(--safe-b)}
 nav.tabs .in{display:flex;max-width:640px;width:100%}
 nav.tabs button{flex:1;background:none;border:0;padding:9px 0 10px;color:var(--mut);font-size:11px;display:flex;flex-direction:column;align-items:center;gap:3px}
 nav.tabs button svg{width:24px;height:24px;stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
@@ -36,7 +47,7 @@ nav.tabs button.on{color:var(--acc)}
 .pill{display:inline-block;padding:3px 9px;border-radius:99px;background:var(--card2);border:1px solid var(--line);font-size:12px;color:var(--mut);margin:2px 4px 2px 0}
 .pill.acc{color:var(--acc);border-color:rgba(255,122,61,.4);background:rgba(255,122,61,.08)}
 .pill.ok{color:var(--ok);border-color:rgba(60,207,142,.4)}
-.hero{background:linear-gradient(135deg,#2a1608,#151a24 60%);border-color:#4a2a16}
+.hero{background:var(--hero);border-color:var(--herob)}
 .hero .day{font-size:12px;color:var(--acc2);font-weight:700;letter-spacing:1px;text-transform:uppercase}
 .hero h2{font-size:24px;margin:4px 0}
 .cycle{display:flex;gap:5px;margin:12px 0 4px}
@@ -54,7 +65,7 @@ nav.tabs button.on{color:var(--acc)}
 .field input:focus,.field select:focus,.field textarea:focus{border-color:var(--acc)}
 .grid2{display:grid;grid-template-columns:1fr 1fr;gap:10px}
 .grid3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px}
-.modal-bg{position:fixed;inset:0;background:rgba(0,0,0,.6);z-index:50;display:flex;align-items:flex-end;justify-content:center;animation:fd .15s}
+.modal-bg{position:fixed;inset:0;background:var(--scrim);z-index:50;display:flex;align-items:flex-end;justify-content:center;animation:fd .15s}
 .modal{background:var(--card);border:1px solid var(--line);border-bottom:0;border-radius:20px 20px 0 0;width:100%;max-width:640px;max-height:92vh;overflow:auto;padding:16px 16px calc(18px + var(--safe-b));animation:su .2s ease-out}
 .modal h2{margin:0 0 12px;font-size:19px}
 @keyframes su{from{transform:translateY(40px);opacity:.4}}
@@ -75,15 +86,15 @@ nav.tabs button.on{color:var(--acc)}
 .sets td.n{width:30px;font-weight:700;color:var(--mut)}
 .sets input{width:100%;min-width:0;background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:10px 4px;text-align:center;font-weight:600;font-size:16px;outline:none}
 .sets input:focus{border-color:var(--acc)}
-.sets input::placeholder{color:#566078;font-weight:500}
+.sets input::placeholder{color:var(--ph);font-weight:500}
 .sets tr.done input{border-color:rgba(60,207,142,.45);background:rgba(60,207,142,.07)}
 .chk{width:44px;height:42px;border-radius:10px;border:1px solid var(--line);background:var(--card2);display:inline-flex;align-items:center;justify-content:center;cursor:pointer}
 .chk svg{width:20px;height:20px;stroke:var(--mut);fill:none;stroke-width:3;stroke-linecap:round;stroke-linejoin:round}
 tr.done .chk{background:var(--ok);border-color:var(--ok)} tr.done .chk svg{stroke:#04130c}
-.tip{background:rgba(76,125,255,.1);border:1px solid rgba(76,125,255,.35);color:#c5d4ff;border-radius:12px;padding:9px 11px;font-size:13px;margin:8px 0}
-.tip.warn{background:rgba(255,204,77,.08);border-color:rgba(255,204,77,.35);color:#ffe7a6}
+.tip{background:var(--tipbg);border:1px solid var(--tipbd);color:var(--tiptx);border-radius:12px;padding:9px 11px;font-size:13px;margin:8px 0}
+.tip.warn{background:var(--wbg);border-color:var(--wbd);color:var(--wtx)}
 .timer{position:fixed;left:0;right:0;bottom:0;z-index:40;display:flex;justify-content:center}
-.timer .in{width:100%;max-width:640px;background:#11161f;border:1px solid var(--line);border-bottom:0;border-radius:22px 22px 0 0;padding:14px 16px calc(16px + var(--safe-b));box-shadow:0 -10px 40px rgba(0,0,0,.5);animation:su .2s}
+.timer .in{width:100%;max-width:640px;background:var(--timerbg);border:1px solid var(--line);border-bottom:0;border-radius:22px 22px 0 0;padding:14px 16px calc(16px + var(--safe-b));box-shadow:0 -10px 40px rgba(0,0,0,.5);animation:su .2s}
 .timer .lbl{font-size:12px;color:var(--acc2);font-weight:700;letter-spacing:1px;text-transform:uppercase}
 .timer .big{font-size:56px;font-weight:800;font-variant-numeric:tabular-nums;letter-spacing:-1px;line-height:1.05}
 .timer .bar{height:6px;background:var(--card2);border-radius:9px;overflow:hidden;margin:8px 0 12px}
@@ -107,9 +118,9 @@ input[type=range]{width:100%;accent-color:var(--acc)}
 .sw::after{content:"";position:absolute;top:3px;left:3px;width:20px;height:20px;border-radius:50%;background:var(--mut);transition:.15s}
 .sw.on{background:var(--acc);border-color:var(--acc)} .sw.on::after{left:23px;background:#fff}
 .info p{margin:6px 0} .info ul{margin:6px 0;padding-left:18px} .info li{margin:3px 0}
-.toast{position:fixed;left:50%;bottom:100px;transform:translateX(-50%);background:#273044;border:1px solid var(--line);padding:10px 16px;border-radius:12px;z-index:60;font-size:14px;animation:fd .2s;max-width:90%}
+.toast{position:fixed;left:50%;bottom:100px;transform:translateX(-50%);background:var(--toast);color:var(--tx);border:1px solid var(--line);padding:10px 16px;border-radius:12px;z-index:60;font-size:14px;animation:fd .2s;max-width:90%}
 .animbox{position:relative}
-.animbox .tag{position:absolute;left:10px;bottom:8px;font-size:11px;color:var(--mut);background:rgba(0,0,0,.35);padding:2px 7px;border-radius:7px}
+.animbox .tag{position:absolute;left:10px;bottom:8px;font-size:11px;color:#4a5160;background:rgba(255,255,255,.9);border:1px solid #e1e4e9;padding:2px 8px;border-radius:7px}
 details.acc summary{cursor:pointer;font-weight:600;list-style:none;display:flex;align-items:center;justify-content:space-between}
 details.acc summary::after{content:"▾";color:var(--mut)}
 details.acc[open] summary::after{content:"▴"}
@@ -124,25 +135,36 @@ details.acc[open] summary::after{content:"▴"}
 .ro-h{font-size:20px;color:var(--mut);padding:8px 6px;cursor:grab;touch-action:none;user-select:none}
 .ibtn svg.dots circle{fill:currentColor;stroke:none}
 
-svg.anim{width:100%;height:auto;display:block;background:radial-gradient(ellipse at 50% 40%,#1d2433,#121722);border-radius:14px}
-.ap-floor{stroke:#3a4458;stroke-width:2}
-.ap-eq{fill:#2c3547;stroke:#4a5670;stroke-width:1.5}
-.ap-eqline{stroke:#46526a;stroke-linecap:round}
-.ap-wall{fill:#262e3e;stroke:#3d475c}
-.ap-pulley{fill:#121722;stroke:#7d8aa5;stroke-width:2}
-.ap-cable{stroke:#c9d2e3;stroke-dasharray:3 2}
-.ap-lever{stroke:#5d6a85;stroke-linecap:round}
-.ap-body{stroke:#e9edf5;stroke-linecap:round;fill:none}
-.ap-hl{stroke:#ff7a3d;stroke-linecap:round;fill:none}
-.ap-far{opacity:.45}
-.ap-head{fill:#e9edf5}
-.ap-bodyfill{fill:#e9edf5;stroke:#e9edf5;stroke-width:6}
-.ap-hlfill{fill:#ff7a3d;stroke:#ff7a3d;stroke-width:6}
-.ap-bar{stroke:#9aa6bf;stroke-linecap:round}
-.ap-plate{fill:#8d99b3;stroke:#121722;stroke-width:1}
-.ap-pad{fill:#3a6df0;opacity:.85}
-.ap-txt{fill:#ff7a3d;font:700 9px system-ui;letter-spacing:.5px}
-svg.anim.pulse .ap-hl{stroke:#ffb08a}
+/* Lienzo de animación: estilo ilustración anatómica sobre fondo claro (igual en tema claro y oscuro) */
+svg.anim{width:100%;height:auto;display:block;background:radial-gradient(ellipse at 50% 38%,#ffffff 0%,#f6f7f9 55%,#eceef2 100%);border-radius:14px}
+svg.anim .ap-shadow{fill:#d9dce2;opacity:.55}
+.ap-floor{stroke:#e1e4e9;stroke-width:1.5}
+.ap-eq{fill:#2f333b;stroke:#1d2026;stroke-width:1}
+.ap-eqline{stroke:#b9bec7;stroke-linecap:round}
+.ap-wall{fill:#e6e9ee;stroke:#cfd4dc}
+.ap-pulley{fill:#f2f3f5;stroke:#7d8592;stroke-width:2}
+.ap-cable{stroke:#4a505b;stroke-dasharray:none;stroke-width:1.2}
+.ap-lever{stroke:#a9afb9;stroke-linecap:round}
+.ap-far{opacity:.55}
+.ap-bar{stroke:#5b616c;stroke-linecap:round}
+.ap-plate{fill:#1f2228;stroke:#000;stroke-width:.6}
+.ap-pad{fill:#2f333b}
+.ap-txt{fill:#e0452b;font:700 9px system-ui;letter-spacing:.5px}
+/* cuerpo */
+.bd{fill:#e3e5e9;stroke:#868d99;stroke-width:1;stroke-linejoin:round}
+.bf{fill:#cfd2d8;stroke:#8f96a2;stroke-width:1;stroke-linejoin:round}
+.mdef{fill:#eceef1;stroke:#b3b8c1;stroke-width:.6}
+.mdef2{fill:#cfd2d8;stroke:#9aa1ad;stroke-width:.6}
+.mline{stroke:#aab0ba;stroke-width:.7;stroke-linecap:round}
+.shorts{fill:#2c3038;stroke:#1a1d22;stroke-width:.8}
+.shortsf{fill:#3a3f48;stroke:#1a1d22;stroke-width:.8}
+.hair{fill:#3b3f46}
+/* músculos trabajados: principal rojo, secundarios naranja */
+.m1{fill:#e2412a;stroke:#b8321f;stroke-width:.5;opacity:.93}
+.m2{fill:#f08a62;stroke:#d06a45;stroke-width:.5;opacity:.88}
+.m1.far,.m2.far{opacity:.6}
+svg.anim.pulse .m1{fill:#ff5e43}
+.eye{fill:#4a4f58}
 </style></head>
 <body><div id="app"></div>
 <script>/* ===== Motor de animación de ejercicios (figura articulada con cinemática directa) ===== */
@@ -313,7 +335,7 @@ const ANIM = (() => {
       cues: ['Rodilla alineada con el eje de la máquina.', 'Cojín superior firme sobre los muslos.', 'Flexiona llevando el talón hacia abajo y atrás.', 'Regresa lento sin bloquear la rodilla.']
     },
     lying_leg_curl: {
-      name: 'Curl femoral acostado', view: 'side', hl: ['th'],
+      name: 'Curl femoral acostado', view: 'side', hl: ['th'], flip: true,
       props: floor + rect(40, 147, 125, 8) + line(70, 155, 70, FLOOR, 5) + line(140, 155, 140, FLOOR, 5),
       anklePad: true, anklePadBehind: true,
       A: { hx: 118, hy: 140, torso: 180, ua: 215, fa: 175, th: -2, sh: -4, ftr: -90 },
@@ -457,14 +479,58 @@ const ANIM = (() => {
     return `<rect x="${W.x - 3}" y="${W.y - 5}" width="6" height="10" rx="2" class="ap-plate"/>`;
   }
 
+  /* ===== Render estilo anatómico: cuerpo con volumen + músculos trabajados en rojo ===== */
+  const F = n => (+n).toFixed(1);
+  const dv = a => ({ x: Math.cos(rad(a)), y: -Math.sin(rad(a)) });
+  const add = (P, v, k) => ({ x: P.x + v.x * k, y: P.y + v.y * k });
+  const angOf = (P, Q) => Math.atan2(P.y - Q.y, Q.x - P.x) * 180 / Math.PI;
+  const lerpP = (P, Q, t) => ({ x: P.x + (Q.x - P.x) * t, y: P.y + (Q.y - P.y) * t });
+  // segmento con volumen (cápsula cónica)
+  function limb(P, Q, r1, r2, cls) {
+    const n = dv(angOf(P, Q) + 90);
+    const a = add(P, n, r1), b = add(Q, n, r2), c = add(Q, n, -r2), d = add(P, n, -r1);
+    return `<path d="M${F(a.x)},${F(a.y)} L${F(b.x)},${F(b.y)} A${r2},${r2} 0 0 1 ${F(c.x)},${F(c.y)} L${F(d.x)},${F(d.y)} A${r1},${r1} 0 0 1 ${F(a.x)},${F(a.y)} Z" class="${cls}"/>`;
+  }
+  // vientre muscular (elipse sobre un segmento)
+  function belly(P, Q, t0, t1, side, off, w, cls) {
+    const g = angOf(P, Q), len = Math.hypot(Q.x - P.x, Q.y - P.y);
+    const C = add(lerpP(P, Q, (t0 + t1) / 2), dv(g + side), off);
+    return `<ellipse cx="${F(C.x)}" cy="${F(C.y)}" rx="${F(len * (t1 - t0) / 2)}" ry="${F(w)}" transform="rotate(${F(-g)} ${F(C.x)} ${F(C.y)})" class="${cls}"/>`;
+  }
+  // contorno suave cerrado (Catmull-Rom → Bézier)
+  function smooth(pts, cls) {
+    const n = pts.length; let d = `M${F(pts[0].x)},${F(pts[0].y)}`;
+    for (let i = 0; i < n; i++) {
+      const p0 = pts[(i - 1 + n) % n], p1 = pts[i], p2 = pts[(i + 1) % n], p3 = pts[(i + 2) % n];
+      d += ` C${F(p1.x + (p2.x - p0.x) / 6)},${F(p1.y + (p2.y - p0.y) / 6)} ${F(p2.x - (p3.x - p1.x) / 6)},${F(p2.y - (p3.y - p1.y) / 6)} ${F(p2.x)},${F(p2.y)}`;
+    }
+    return `<path d="${d} Z" class="${cls}"/>`;
+  }
+  // músculos a resaltar según la descripción del ejercicio (el primero = principal)
+  const MUS_RX = [[/pector/, 'chest'], [/deltoides posterior|manguito/, 'rdelt'], [/deltoides/, 'delt'], [/braquiorradial|antebrazo/, 'forearm'], [/b[ií]ceps|braquial/, 'biceps'], [/tr[ií]ceps/, 'triceps'],
+    [/dorsal|redondo/, 'lats'], [/romboides|trapecio medio/, 'upperback'], [/trapecio/, 'traps'], [/erector|lumbar/, 'lowback'], [/oblicuo/, 'obliques'], [/abdom|recto|core|transverso/, 'abs'],
+    [/gl[uú]teo medio|gl[uú]teo menor|medio y menor/, 'gmed'], [/gl[uú]teo/, 'glutes'], [/cu[aá]driceps/, 'quads'], [/isquio|femoral/, 'hams'], [/aductor/, 'adductors'], [/gastrocnemio|s[oó]leo|pantorrilla/, 'calves'], [/flexores de cadera/, 'quads']];
+  function musclesOf(a) {
+    if (a._mus) return a._mus;
+    const m = {}; let primDone = false;
+    (a.muscles || '').toLowerCase().split(/[,·(]/).forEach(part => {
+      const ks = MUS_RX.filter(([r]) => r.test(part)).map(([, k]) => k);
+      if (!ks.length) return;
+      ks.forEach(k => { if (!m[k]) m[k] = primDone ? 2 : 1; });
+      primDone = true;
+    });
+    return (a._mus = m);
+  }
+  const mc = lvl => lvl === 1 ? 'm1' : 'm2';
+
+  let REC = null;
   function frame(a, t, ph = 0) {
     const p = lerpPose(a.A, a.B, t);
     if (a.loop) Object.assign(p, a.loop(ph, p));
     const als = p.als ?? 1, tls = p.tls ?? 1;
     const H = { x: p.hx, y: p.hy };
-    const hl = new Set(a.hl || []);
-    const C = k => hl.has(k) ? 'ap-hl' : 'ap-body';
-    const Cf = k => hl.has(k) ? 'ap-hl ap-far' : 'ap-body ap-far';
+    const M = musclesOf(a);
+    const fs = a.flip ? -1 : 1;
     let back = '', front = '', extra = '';
     const S = pt(H, L.torso * (p.tl ?? 1), p.torso);
     const N = pt(S, L.neck * (p.nl ?? 1), p.torso);
@@ -479,31 +545,91 @@ const ANIM = (() => {
       else if (p.hax != null && p.ua2 == null) [p.ua2, p.fa2] = ik(o(S), { x: p.hax - 3, y: p.hay - 2 }, L.ua * als, L.fa * als, p.ab ?? 1);
       if (p.f2x != null) [p.th2, p.sh2] = ik(o(H), { x: p.f2x, y: p.f2y }, L.th * tls, L.sh, p.lb2 ?? p.lb ?? 1);
       else if (p.fax != null && p.th2 == null) [p.th2, p.sh2] = ik(o(H), { x: p.fax - 3, y: p.fay - 2 }, L.th * tls, L.sh, p.lb ?? 1);
-      // extremidades lejanas
       const ua2 = p.ua2 ?? p.ua, fa2 = p.fa2 ?? p.fa, th2 = p.th2 ?? p.th, sh2 = p.sh2 ?? p.sh;
-      const E2 = pt(o(S), L.ua * als, ua2), W2 = pt(E2, L.fa * als, fa2);
-      const K2 = pt(o(H), L.th * tls, th2), A2 = pt(K2, L.sh, sh2), T2 = pt(A2, L.ft, p.fta2 ?? p.fta ?? (sh2 + (p.ftr2 ?? p.ftr ?? 90)));
-      back += seg(o(H), K2, 8, Cf('th')) + seg(K2, A2, 7, Cf('sh')) + seg(A2, T2, 5, Cf('sh'));
-      back += seg(o(S), E2, 7, Cf('ua')) + seg(E2, W2, 6, Cf('fa'));
+      const S2 = o(S), H2 = o(H);
+      const E2 = pt(S2, L.ua * als, ua2), W2 = pt(E2, L.fa * als, fa2);
+      const K2 = pt(H2, L.th * tls, th2), A2 = pt(K2, L.sh, sh2), T2 = pt(A2, L.ft, p.fta2 ?? p.fta ?? (sh2 + (p.ftr2 ?? p.ftr ?? 90)));
       const E = pt(S, L.ua * als, p.ua), W = pt(E, L.fa * als, p.fa);
       const K = pt(H, L.th * tls, p.th), A = pt(K, L.sh, p.sh), T = pt(A, L.ft, p.fta ?? (p.sh + (p.ftr ?? 90)));
-      if (a.link && !a.single) back += seg({ x: a.link.from[0], y: a.link.from[1] }, W2, a.link.kind === 'cable' ? 1.5 : 4, a.link.kind === 'cable' ? 'ap-cable' : 'ap-lever ap-far');
-      if (a.link) extra += seg({ x: a.link.from[0], y: a.link.from[1] }, W, a.link.kind === 'cable' ? 1.5 : 4, a.link.kind === 'cable' ? 'ap-cable' : 'ap-lever');
-      front += seg(H, K, 9, C('th')) + seg(K, A, 8, C('sh')) + seg(A, T, 5, C('sh'));
-      front += seg(H, S, 13, C('torso')) + seg(S, N, 6, 'ap-body');
-      front += `<circle cx="${Hd.x.toFixed(1)}" cy="${Hd.y.toFixed(1)}" r="${L.head}" class="ap-head"/>`;
+
+      // dibujar una pierna / un brazo (cerca o lejos)
+      const leg = (Hh, Kk, Aa, Tt, thA, far) => {
+        const b = far ? 'bf' : 'bd';
+        let s = limb(Aa, Tt, 3, 2.2, b) + limb(Kk, Aa, 5.2, 3.3, b) + limb(Hh, Kk, 7.6, 5.2, b);
+        const fr = thA + 90 * fs, bk = thA - 90 * fs, shA = angOf(Kk, Aa), cb = shA - 90 * fs;
+        s += belly(Hh, Kk, .18, .88, fr - thA, 3.4, 4.2, 'mdef') + belly(Kk, Aa, .08, .55, cb - shA, 2.4, 3.2, 'mdef');
+        s += limb(Hh, lerpP(Hh, Kk, .3), 8.2, 7.2, far ? 'shortsf' : 'shorts');
+        const f2 = far ? ' far' : '';
+        if (M.quads) s += belly(Hh, Kk, .15, .9, fr - thA, 3.2, 4.6, mc(M.quads) + f2);
+        if (M.hams) s += belly(Hh, Kk, .2, .9, bk - thA, 3.2, 4.2, mc(M.hams) + f2);
+        if (M.adductors) s += belly(Hh, Kk, .12, .62, 0, 0, 3.8, mc(M.adductors) + f2);
+        if (M.calves) s += belly(Kk, Aa, .06, .6, cb - shA, 2.3, 3.6, mc(M.calves) + f2);
+        return s;
+      };
+      const arm = (Ss, Ee, Ww, uaA, far) => {
+        const b = far ? 'bf' : 'bd';
+        let s = limb(Ee, Ww, 3.6, 2.5, b) + limb(Ss, Ee, 5, 3.8, b) + `<circle cx="${F(Ww.x)}" cy="${F(Ww.y)}" r="3" class="${b}"/>`;
+        const fr = uaA + 90 * fs, faA = angOf(Ee, Ww);
+        s += belly(Ss, Ee, .2, .85, 90 * fs, 2.2, 3, 'mdef');
+        const f2 = far ? ' far' : '';
+        if (M.biceps) s += belly(Ss, Ee, .18, .88, 90 * fs, 2, 3.4, mc(M.biceps) + f2);
+        if (M.triceps) s += belly(Ss, Ee, .12, .85, -90 * fs, 2, 3.4, mc(M.triceps) + f2);
+        if (M.forearm) s += belly(Ee, Ww, .05, .6, 0, 0, 2.8, mc(M.forearm) + f2);
+        if (M.delt || M.rdelt) s += `<circle cx="${F(Ss.x)}" cy="${F(Ss.y)}" r="5.6" class="${mc(M.delt || M.rdelt)}${f2}"/>`;
+        return s;
+      };
+      // extremidades lejanas (detrás)
+      back += leg(H2, K2, A2, T2, th2, true) + arm(S2, E2, W2, ua2, true);
+      if (a.link && !a.single) back += seg({ x: a.link.from[0], y: a.link.from[1] }, W2, a.link.kind === 'cable' ? 1.4 : 4, a.link.kind === 'cable' ? 'ap-cable' : 'ap-lever ap-far');
+      if (a.link) extra += seg({ x: a.link.from[0], y: a.link.from[1] }, W, a.link.kind === 'cable' ? 1.4 : 4, a.link.kind === 'cable' ? 'ap-cable' : 'ap-lever');
+
+      // torso con perfil (pecho, abdomen, espalda, glúteo)
+      const nf = dv(p.torso - 90 * fs);
+      const TP = [[-.04, 7, 9], [.08, 8, 11.5], [.3, 8, 8], [.55, 9, 8], [.75, 12, 9.5], [.92, 10.5, 9], [1.04, 6, 8]];
+      const tor = (t0, t1) => { const s = TP.filter(r => r[0] >= t0 && r[0] <= t1); return [...s.map(([tt, f]) => add(lerpP(H, S, tt), nf, f)), ...s.slice().reverse().map(([tt, , b]) => add(lerpP(H, S, tt), nf, -b))]; };
+      let body = limb(S, N, 4.2, 4, 'bd') + smooth(tor(-1, 2), 'bd');
+      const TB = (t0, t1, side, off, w, cls) => belly(H, S, t0, t1, side * fs, off, w, cls);
+      body += TB(.6, .95, -90, 6.5, 5.5, 'mdef') + TB(.22, .58, -90, 5.5, 3.6, 'mdef');
+      body += smooth(tor(-1, .1), 'shorts');
+      if (M.chest) body += TB(.6, .96, -90, 7, 5.8, mc(M.chest));
+      if (M.abs) body += TB(.2, .6, -90, 5.5, 3.8, mc(M.abs));
+      if (M.obliques) body += TB(.22, .58, 0, 0, 4.5, mc(M.obliques));
+      if (M.lats) body += TB(.45, .86, 90, 3.5, 5.2, mc(M.lats));
+      if (M.upperback) body += TB(.7, .96, 90, 5.5, 4, mc(M.upperback));
+      if (M.traps) body += TB(.9, 1.12, 90, 3.5, 3.6, mc(M.traps));
+      if (M.lowback) body += TB(.14, .42, 90, 5.5, 3.2, mc(M.lowback));
+      if (M.glutes) body += TB(-.08, .22, 90, 7.5, 6.2, mc(M.glutes));
+      if (M.gmed) body += TB(.02, .2, 90, 3, 4.5, mc(M.gmed));
+      // pecho/abdomen: líneas de definición
+      const ab0 = add(lerpP(H, S, .25), nf, 6), ab1 = add(lerpP(H, S, .55), nf, 6.8);
+      body += `<line x1="${F(ab0.x)}" y1="${F(ab0.y)}" x2="${F(ab1.x)}" y2="${F(ab1.y)}" class="mline"/>`;
+      // cabeza de perfil
+      const face = dv(p.torso - 90 * fs), up = dv(p.torso);
+      const nose = add(add(Hd, face, 8.8), up, -1), ch = add(add(Hd, face, 5), up, -7);
+      body += `<circle cx="${F(Hd.x)}" cy="${F(Hd.y)}" r="8.5" class="bd"/>`;
+      body += `<path d="M${F(add(Hd, face, 7.5).x)},${F(add(Hd, face, 7.5).y)} L${F(nose.x)},${F(nose.y)} L${F(add(add(Hd, face, 7.6), up, -3).x)},${F(add(add(Hd, face, 7.6), up, -3).y)} Z" class="bd"/>`;
+      const HP = (f, u) => add(add(Hd, face, f), up, u);
+      const hair = [HP(4.5, 6.5), HP(0, 9.4), HP(-6, 7), HP(-9, 1), HP(-7, -4), HP(-2.5, -1), HP(1, 3.5)];
+      body += smooth(hair, 'hair');
+      const ear = HP(-1.5, -0.5), eye = HP(5.2, 1.6);
+      body += `<ellipse cx="${F(ear.x)}" cy="${F(ear.y)}" rx="1.9" ry="2.4" class="mdef2"/><circle cx="${F(eye.x)}" cy="${F(eye.y)}" r=".9" class="eye"/>`;
+      void ch;
+      // pierna y brazo cercanos
+      front += body;
+      front += leg(H, K, A, T, p.th, false);
       if (a.platform) { const P = a.plateAtToe ? T : pt(A, 5, p.sh + (p.ftr ?? 90)); const pa = pt(P, 22, 130), pb = pt(P, 22, -50); front += seg(pa, pb, 6, 'ap-eqline'); }
-      if (a.anklePad) { const P = pt(A, a.anklePadBehind ? 6 : 6, p.sh + (a.anklePadBehind ? -90 : 90)); front += `<circle cx="${P.x}" cy="${P.y}" r="6" class="ap-pad"/>`; }
-      if (a.hipPad) front += `<rect x="${H.x - 12}" y="${H.y - 16}" width="24" height="8" rx="4" class="ap-pad"/>`;
-      if (a.kneePlat) front += `<rect x="${K.x - 16}" y="${K.y + 3}" width="30" height="7" rx="3" class="ap-pad"/>`;
-      if (a.anklePlate) front += seg(pt(A, 12, (p.sh) + 90), pt(A, 12, p.sh - 90), 5, 'ap-eqline');
-      if (a.kneePadTop) front += `<rect x="${K.x - 12}" y="${K.y - 13}" width="22" height="7" rx="3" class="ap-pad"/>`;
-      front += seg(S, E, 8, C('ua')) + seg(E, W, 7, C('fa'));
+      if (a.anklePad) { const P = pt(A, 6, p.sh + (a.anklePadBehind ? -90 : 90)); front += `<circle cx="${F(P.x)}" cy="${F(P.y)}" r="6" class="ap-pad"/>`; }
+      if (a.hipPad) front += `<rect x="${F(H.x - 13)}" y="${F(H.y - 18)}" width="26" height="8" rx="4" class="ap-pad"/>`;
+      if (a.kneePlat) front += `<rect x="${F(K.x - 16)}" y="${F(K.y + 4)}" width="30" height="7" rx="3" class="ap-pad"/>`;
+      if (a.anklePlate) front += seg(pt(A, 12, p.sh + 90), pt(A, 12, p.sh - 90), 5, 'ap-eqline');
+      if (a.kneePadTop) front += `<rect x="${F(K.x - 12)}" y="${F(K.y - 14)}" width="22" height="7" rx="3" class="ap-pad"/>`;
+      front += arm(S, E, W, p.ua, false);
       front += grip(a.grip, W, p.fa);
       if (a.draw) front += a.draw({ H, S, E, W, K, A, T, W2, A2, K2 }, ph, p);
+      if (REC) REC.push(S, H, E, W, K, A, T, E2, W2, K2, A2, T2, Hd);
       back += extra; extra = '';
     } else {
-      // vista frontal
+      // ===== vista frontal =====
       const sw = 14, hw = 8;
       const SR = { x: S.x + sw, y: S.y }, SL = { x: S.x - sw, y: S.y };
       const HR = { x: H.x + hw, y: H.y }, HL = { x: H.x - hw, y: H.y };
@@ -515,37 +641,103 @@ const ANIM = (() => {
       const EL = pt(SL, L.ua * (a.single ? 1 : als), uaL), WL = pt(EL, L.fa * (a.single ? 1 : als), faL);
       const KR = pt(HR, L.th * tls, p.th), AR = pt(KR, L.sh, p.sh);
       const KL = pt(HL, L.th * tls, mir(p.th)), AL = pt(KL, L.sh, mir(p.sh));
-      front += seg(HR, KR, 9, C('th')) + seg(KR, AR, 8, C('sh')) + seg(AR, { x: AR.x + 6, y: AR.y + 1 }, 5, C('sh'));
-      front += seg(HL, KL, 9, C('th')) + seg(KL, AL, 8, C('sh')) + seg(AL, { x: AL.x - 6, y: AL.y + 1 }, 5, C('sh'));
-      if (a.kneePad) { front += `<circle cx="${KR.x + (a === LIB.abductor ? 6 : -6)}" cy="${KR.y}" r="5.5" class="ap-pad"/><circle cx="${KL.x + (a === LIB.abductor ? -6 : 6)}" cy="${KL.y}" r="5.5" class="ap-pad"/>`; }
-      // torso como trapecio
-      front += `<path d="M${SL.x},${SL.y} L${SR.x},${SR.y} L${HR.x},${HR.y} L${HL.x},${HL.y} Z" class="${hl.has('torso') ? 'ap-hlfill' : 'ap-bodyfill'}" stroke-linejoin="round"/>`;
-      front += seg(S, N, 6, 'ap-body') + `<circle cx="${Hd.x}" cy="${Hd.y}" r="${L.head}" class="ap-head"/>`;
-      const armClsL = a.single ? 'ap-body' : C('ua'), faClsL = a.single ? 'ap-body' : C('fa');
-      front += seg(SL, EL, 8, armClsL) + seg(EL, WL, 7, faClsL);
-      front += seg(SR, ER, 8, C('ua')) + seg(ER, WR, 7, C('fa'));
-      if (a.grip === 'pad') front += `<circle cx="${ER.x}" cy="${ER.y}" r="5" class="ap-pad"/><circle cx="${EL.x}" cy="${EL.y}" r="5" class="ap-pad"/>`;
+      const legF = (Hh, Kk, Aa, sgn) => {
+        const toe = { x: Aa.x + 6 * sgn, y: Aa.y + 2 };
+        let s = limb(Aa, toe, 2.8, 2.4, 'bd') + limb(Kk, Aa, 5.2, 3.4, 'bd') + limb(Hh, Kk, 7.8, 5.4, 'bd');
+        s += belly(Hh, Kk, .15, .85, 0, 0, 4.5, 'mdef') + belly(Kk, Aa, .08, .5, 0, 0, 3.4, 'mdef');
+        s += limb(Hh, lerpP(Hh, Kk, .3), 8.6, 7.6, 'shorts');
+        if (M.quads) s += belly(Hh, Kk, .14, .88, 0, 0, 5, mc(M.quads));
+        if (M.adductors) s += belly(Hh, Kk, .1, .62, -90 * sgn, 2.6, 3.4, mc(M.adductors));
+        if (M.calves) s += belly(Kk, Aa, .06, .55, 0, 0, 3.6, mc(M.calves));
+        if (M.hams) s += belly(Hh, Kk, .2, .85, 0, 0, 3.6, mc(M.hams) + ' far');
+        return s;
+      };
+      const armF = (Ss, Ee, Ww, act) => {
+        let s = limb(Ee, Ww, 3.6, 2.6, 'bd') + limb(Ss, Ee, 5.2, 3.9, 'bd') + `<circle cx="${F(Ww.x)}" cy="${F(Ww.y)}" r="3.1" class="bd"/>`;
+        s += belly(Ss, Ee, .2, .85, 0, 0, 3, 'mdef');
+        if (act) {
+          if (M.biceps) s += belly(Ss, Ee, .16, .88, 0, 0, 3.5, mc(M.biceps));
+          if (M.triceps) s += belly(Ss, Ee, .12, .85, 0, 0, 3.5, mc(M.triceps));
+          if (M.forearm) s += belly(Ee, Ww, .05, .6, 0, 0, 2.8, mc(M.forearm));
+        }
+        if (M.delt || M.rdelt) s += `<circle cx="${F(Ss.x)}" cy="${F(Ss.y + 1)}" r="6" class="${mc(M.delt || M.rdelt)}"/>`;
+        else s += `<circle cx="${F(Ss.x)}" cy="${F(Ss.y + 1)}" r="5.6" class="bd"/>`;
+        return s;
+      };
+      front += legF(HR, KR, AR, 1) + legF(HL, KL, AL, -1);
+      if (a.kneePad) { front += `<circle cx="${F(KR.x + (a === LIB.abductor ? 7 : -7))}" cy="${F(KR.y)}" r="5.5" class="ap-pad"/><circle cx="${F(KL.x + (a === LIB.abductor ? -7 : 7))}" cy="${F(KL.y)}" r="5.5" class="ap-pad"/>`; }
+      // torso en V
+      const up = dv(p.torso), rt = dv(p.torso - 90);
+      const TW = [[-.04, 11], [.15, 11.5], [.35, 10], [.62, 12.5], [.85, 16.5], [1, 15]];
+      const tpts = [...TW.map(([tt, w]) => add(lerpP(H, S, tt), rt, w)), ...TW.slice().reverse().map(([tt, w]) => add(lerpP(H, S, tt), rt, -w))];
+      let body = limb(S, N, 4.4, 4.2, 'bd') + smooth(tpts, 'bd');
+      const at = (tt, x) => add(lerpP(H, S, tt), rt, x);
+      const ell = (C, rx, ry, cls) => `<ellipse cx="${F(C.x)}" cy="${F(C.y)}" rx="${rx}" ry="${ry}" transform="rotate(${F(90 - p.torso)} ${F(C.x)} ${F(C.y)})" class="${cls}"/>`;
+      body += ell(at(.8, 6.4), 6.2, 4.6, 'mdef') + ell(at(.8, -6.4), 6.2, 4.6, 'mdef');
+      body += smooth([...TW.slice(0, 2).map(([tt, w]) => add(lerpP(H, S, tt), rt, w + .3)), ...TW.slice(0, 2).reverse().map(([tt, w]) => add(lerpP(H, S, tt), rt, -w - .3))], 'shorts');
+
+      if (M.chest) body += ell(at(.8, 6.4), 6.6, 4.8, mc(M.chest)) + ell(at(.8, -6.4), 6.6, 4.8, mc(M.chest));
+      if (M.lats) body += ell(at(.68, 10.5), 3.5, 7, mc(M.lats)) + ell(at(.68, -10.5), 3.5, 7, mc(M.lats));
+      if (M.obliques) body += ell(at(.42, 8.5), 2.8, 6, mc(M.obliques)) + ell(at(.42, -8.5), 2.8, 6, mc(M.obliques));
+      if (M.abs) body += ell(at(.43, 0), 5, 9, mc(M.abs));
+      if (M.traps || M.upperback) body += ell(at(1.02, 7), 5, 2.6, mc(M.traps || M.upperback)) + ell(at(1.02, -7), 5, 2.6, mc(M.traps || M.upperback));
+      if (M.gmed || M.glutes) body += ell(at(.07, 10.5), 3, 5, mc(M.gmed || M.glutes)) + ell(at(.07, -10.5), 3, 5, mc(M.gmed || M.glutes));
+      // six pack
+      [.3, .4, .5].forEach(tt => { const a1 = at(tt, -4.2), a2 = at(tt, 4.2); body += `<line x1="${F(a1.x)}" y1="${F(a1.y)}" x2="${F(a2.x)}" y2="${F(a2.y)}" class="mline"/>`; });
+      const c0 = at(.25, 0), c1 = at(.66, 0); body += `<line x1="${F(c0.x)}" y1="${F(c0.y)}" x2="${F(c1.x)}" y2="${F(c1.y)}" class="mline"/>`;
+      // cabeza de frente
+      body += `<circle cx="${F(Hd.x - 8.4)}" cy="${F(Hd.y + 1)}" r="2.2" class="bd"/><circle cx="${F(Hd.x + 8.4)}" cy="${F(Hd.y + 1)}" r="2.2" class="bd"/>`;
+      body += `<ellipse cx="${F(Hd.x)}" cy="${F(Hd.y)}" rx="8.2" ry="9.4" class="bd"/>`;
+      body += `<path d="M${F(Hd.x - 8.2)},${F(Hd.y - 1)} Q${F(Hd.x - 8.5)},${F(Hd.y - 11)} ${F(Hd.x)},${F(Hd.y - 10)} Q${F(Hd.x + 8.5)},${F(Hd.y - 11)} ${F(Hd.x + 8.2)},${F(Hd.y - 1)} Q${F(Hd.x)},${F(Hd.y - 7)} ${F(Hd.x - 8.2)},${F(Hd.y - 1)} Z" class="hair"/>`;
+      front += body;
+      const activeL = !a.single;
+      front += armF(SL, EL, WL, activeL) + armF(SR, ER, WR, true);
+      if (a.grip === 'pad') front += `<circle cx="${F(ER.x)}" cy="${F(ER.y)}" r="5" class="ap-pad"/><circle cx="${F(EL.x)}" cy="${F(EL.y)}" r="5" class="ap-pad"/>`;
       else { front += grip(a.grip, WR, p.fa); if (!a.single) front += grip(a.grip, WL, faL); }
-      if (a.link) extra += seg({ x: a.link.from[0], y: a.link.from[1] }, WR, 1.5, 'ap-cable');
-      if (a.link2) extra += seg({ x: a.link2[0], y: a.link2[1] }, WL, 1.5, 'ap-cable');
+      if (a.link) extra += seg({ x: a.link.from[0], y: a.link.from[1] }, WR, 1.4, 'ap-cable');
+      if (a.link2) extra += seg({ x: a.link2[0], y: a.link2[1] }, WL, 1.4, 'ap-cable');
       if (a.draw) front += a.draw({ H, S, SR, SL, ER, EL, WR, WL, KR, KL, AR, AL }, ph, p);
+      if (REC) REC.push(SR, SL, ER, EL, WR, WL, KR, KL, AR, AL, Hd, H);
     }
     let holdTxt = '';
-    if (a.hold) holdTxt = `<text x="230" y="22" text-anchor="end" class="ap-txt">ISOMÉTRICO · MANTENER</text>`;
+    void holdTxt;
     let body = back + extra + front;
     if (a.rot) body = `<g transform="rotate(${a.rot.join(' ')})">${body}</g>`;
-    return a.props + body + holdTxt;
+    return `<ellipse cx="${F(H.x)}" cy="${FLOOR + 3}" rx="70" ry="5" class="ap-shadow"/>` + a.props + body + holdTxt;
   }
 
-  function svg(key, cls = '') {
-    return `<svg class="anim ${cls}" data-anim="${key}" viewBox="0 0 240 200" xmlns="http://www.w3.org/2000/svg"><g></g></svg>`;
+  // viewBox ajustado a la figura (como un encuadre de cámara)
+  function fit(a) {
+    if (a._fit) return a._fit;
+    REC = [];
+    const samples = a.loop ? [0, .25, .5, .75] : [0, .5, 1];
+    samples.forEach(v => a.loop ? frame(a, 0, v) : frame(a, v, 0));
+    let pts = REC; REC = null;
+    if (a.rot) { const [d, cx, cy] = a.rot, r = d * Math.PI / 180; pts = pts.map(q => ({ x: cx + (q.x - cx) * Math.cos(r) - (q.y - cy) * Math.sin(r), y: cy + (q.x - cx) * Math.sin(r) + (q.y - cy) * Math.cos(r) })); }
+    let x0 = Math.min(...pts.map(q => q.x)) - 22, x1 = Math.max(...pts.map(q => q.x)) + 22;
+    let y0 = Math.min(...pts.map(q => q.y)) - 20, y1 = Math.max(FLOOR + 8, Math.max(...pts.map(q => q.y)) + 12);
+    let w = x1 - x0, h = y1 - y0;
+    const R = 240 / 200;
+    if (w / h < R) { const nw = h * R; x0 -= (nw - w) / 2; w = nw; } else { const nh = w / R; y0 -= (nh - h); h = nh; }
+    if (w < 150) { const k = 150 / w; const cx = x0 + w / 2; w = 150; h *= k; x0 = cx - 75; y0 = y1 - h; }
+    if (w > 240) { x0 = 0; y0 = 0; w = 240; h = 200; }
+    return (a._fit = `${F(x0)} ${F(y0)} ${F(w)} ${F(h)}`);
   }
-  function still(key, t = 1) { const a = LIB[key] || LIB.generic; return `<svg class="anim" viewBox="0 0 240 200" xmlns="http://www.w3.org/2000/svg"><g>${frame(a, a.hold ? 0 : t, 0.15)}</g></svg>`; }
+  function svg(key, cls = '') {
+    return `<svg class="anim ${cls}" data-anim="${key}" viewBox="${fit(LIB[key] || LIB.generic)}" xmlns="http://www.w3.org/2000/svg"><g></g></svg>`;
+  }
+  function still(key, t = 1) { const a = LIB[key] || LIB.generic; return `<svg class="anim" viewBox="${fit(a)}" xmlns="http://www.w3.org/2000/svg"><g>${frame(a, a.hold ? 0 : t, 0.15)}</g></svg>`; }
   let running = false, t0 = performance.now();
+  let lastT = 0;
   function tick(now) {
     const els = document.querySelectorAll('svg.anim[data-anim]');
     if (!els.length) { running = false; return; }
+    if (now - lastT < 33) { requestAnimationFrame(tick); return; }
+    lastT = now;
+    const vh = window.innerHeight || 800;
     els.forEach(el => {
+      const r = el.getBoundingClientRect();
+      if (r.bottom < -20 || r.top > vh + 20 || r.width === 0) return;
       const a = LIB[el.dataset.anim] || LIB.generic;
       const g = el.firstChild;
       const t = el.dataset.t !== undefined ? +el.dataset.t : (a.loop ? 0 : phase(now - t0, a.hold));
@@ -556,7 +748,7 @@ const ANIM = (() => {
     requestAnimationFrame(tick);
   }
   function start() { if (!running) { running = true; requestAnimationFrame(tick); } }
-  return { LIB, svg, start, frame, still, H: { floor, rect, line, pulley, seat, FLOOR, pt, seg } };
+  return { LIB, svg, start, frame, still, fit, H: { floor, rect, line, pulley, seat, FLOOR, pt, seg } };
 })();
 </script>
 <script>/* ===== Biblioteca ampliada de ejercicios ===== */
@@ -631,7 +823,7 @@ const ANIM = (() => {
       props: floor,
       A: { hx: 120, hy: 108, torso: 90, ua: -70, fa: -25, th: -88, sh: -92 }, B: { hx: 120, hy: 108, torso: 90, ua: -70, fa: -25, th: -88, sh: -92 },
       loop: ph => ({ hy: 104 - 8 * Math.max(0, Math.sin(ph * TAU)) }),
-      draw: (P, ph) => { const cy = 110 + 100 * Math.cos(ph * TAU); return `<path d="M${P.WL.x},${P.WL.y} Q120,${cy} ${P.WR.x},${P.WR.y}" fill="none" stroke="#c9d2e3" stroke-width="2"/>`; },
+      draw: (P, ph) => { const cy = 110 + 100 * Math.cos(ph * TAU); return `<path d="M${P.WL.x},${P.WL.y} Q120,${cy} ${P.WR.x},${P.WR.y}" fill="none" style="stroke:var(--ap-cable)" stroke-width="2"/>`; },
       track: 'cardio', fields: ['kcal'], def: { sets: 3, repMin: 1, repMax: 3, rir: '—', restSet: 60 },
       muscles: 'Cardio · pantorrillas, hombros, coordinación',
       cues: ['Saltos bajos, sobre la punta de los pies.', 'Gira la cuerda con las muñecas, codos pegados.', 'Rodillas suaves al aterrizar.', 'Impacto alto: evítalo si molesta la rodilla.']
@@ -1109,6 +1301,8 @@ const IC = {
   x: '<svg viewBox="0 0 24 24"><path d="M18 6L6 18M6 6l12 12"/></svg>',
   info: '<svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 8h.01M11 12h1v5h1"/></svg>',
   plus: '<svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg>',
+  sun: '<svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>',
+  moon: '<svg viewBox="0 0 24 24"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>',
   dots: '<svg class="dots" viewBox="0 0 24 24"><circle cx="5" cy="12" r="1.3"/><circle cx="12" cy="12" r="1.3"/><circle cx="19" cy="12" r="1.3"/></svg>',
   swap: '<svg viewBox="0 0 24 24"><path d="M7 4L3 8l4 4M3 8h14M17 20l4-4-4-4M21 16H7"/></svg>'
 };
@@ -1208,6 +1402,22 @@ async function initCloud() {
   } catch (e) { CL = null; }
 }
 
+/* ---------- Tema claro / oscuro ---------- */
+const mqDark = window.matchMedia ? window.matchMedia('(prefers-color-scheme: dark)') : null;
+function isDark() {
+  const t = S.settings.theme || 'dark';
+  if (t === 'auto') { try { if (window.AndroidBridge && AndroidBridge.systemDark) return !!AndroidBridge.systemDark(); } catch (e) { } return mqDark ? mqDark.matches : true; }
+  return t === 'dark';
+}
+function applyTheme() {
+  const d = isDark();
+  document.documentElement.dataset.theme = d ? 'dark' : 'light';
+  const m = document.querySelector('meta[name=theme-color]'); if (m) m.content = d ? '#0b0e14' : '#f3f4f7';
+  try { if (window.AndroidBridge && AndroidBridge.setTheme) AndroidBridge.setTheme(d); } catch (e) { }
+}
+applyTheme();
+if (mqDark && mqDark.addEventListener) mqDark.addEventListener('change', () => { if (S.settings.theme === 'auto') applyTheme(); });
+
 /* ---------- Estado UI ---------- */
 let UI = { tab: 'hoy', progSeg: 'hist', progEx: null, progMetric: 'peso', editDay: null };
 let timer = null; // {end, total, label, kind}
@@ -1222,7 +1432,7 @@ const NATIVE = window.AndroidBridge || null;
 const loud = () => S.settings.loud !== false;
 // kind: 'set' (serie completada) | 'rest' (fin de descanso) | 'hold' (fin isométrico)
 function beep(kind = 'rest') {
-  if (S.settings.vib && navigator.vibrate) navigator.vibrate(kind === 'set' ? [120, 80, 120] : [400, 150, 400, 150, 700]);
+  if (S.settings.vib) { if (NATIVE && NATIVE.vibrate) { try { NATIVE.vibrate(kind); } catch (e) { } } else if (navigator.vibrate) navigator.vibrate(kind === 'set' ? [180, 100, 180] : [600, 250, 600, 250, 900]); }
   if (!S.settings.sound) return;
   if (NATIVE) { try { NATIVE.playSound(kind, loud()); } catch (e) { } return; }
   try {
@@ -1347,7 +1557,7 @@ function renderHoy() {
       ${d.warm ? `<div class="card"><h3>🔥 Calentamiento</h3><div class="small">${WARM[d.warm]}</div></div>` : ''}`;
   }
   const last = S.logs[S.logs.length - 1];
-  return head('Mi Rutina', 'Hipertrofia · Ciclo de 8 días') + `<main>
+  return `<header class="top"><div class="row"><div class="sp"><h1>Mi Rutina</h1><div class="sub">Hipertrofia · Ciclo de 8 días</div></div><button class="ibtn" data-act="themetoggle" title="Cambiar tema">${isDark() ? IC.sun : IC.moon}</button></div></header><main>
     <div class="card"><div class="row"><div class="sp"><b>Fase actual · Semana ${ph.w}</b><div class="small mut">${ph.t}</div></div></div>
     <div class="cycle">${cyc}</div><div class="small mut">Toca un número para cambiar de día. No comprimas sesiones para "recuperar".</div></div>
     ${body}
@@ -1517,7 +1727,7 @@ function guessAnim(n) {
 function techModal(key, name) {
   const a = ANIM.LIB[key] || ANIM.LIB.generic;
   modal(`<h2>${esc(name || a.name)}</h2><div class="animbox">${ANIM.svg(key)}<span class="tag">${a.hold ? 'Isométrico' : 'Sube 1 s · baja 2 s'}</span></div>
-   <p class="small"><b style="color:var(--acc)">●</b> Músculos: ${esc(a.muscles)}</p>
+   <p class="small" style="margin-bottom:2px"><b>Músculos:</b> ${esc(a.muscles)}</p><p class="small mut" style="margin-top:0"><b style="color:#e2412a">●</b> Principal &nbsp; <b style="color:#f08a62">●</b> Secundarios</p>
    <h3 style="margin:10px 0 4px">Ejecución</h3><ol class="small" style="padding-left:18px;margin:0">${a.cues.map(c => `<li style="margin:4px 0">${esc(c)}</li>`).join('')}</ol>
    <div class="tip warn">Detén el ejercicio si aparece dolor articular. Observa la respuesta en las 24 h siguientes.</div>
    <button class="btn blk" data-act="mclose">Cerrar</button>`);
@@ -1754,7 +1964,7 @@ function renderProg() {
     const vol = S.logs.filter(l => Date.now() - new Date(l.date) < 7 * 864e5).reduce((a, l) => a + l.exercises.reduce((b, e) => b + e.sets.filter(s => s.done && (!e.unit || e.unit === 'reps')).reduce((c2, s) => c2 + (s.w || 0) * (s.r || 0), 0), 0), 0);
     c = `<div class="grid3" style="margin-bottom:12px"><div class="card" style="margin:0;text-align:center"><b style="font-size:22px">${S.logs.length}</b><div class="small mut">Sesiones</div></div><div class="card" style="margin:0;text-align:center"><b style="font-size:22px">${wk}</b><div class="small mut">Últimos 7 días</div></div><div class="card" style="margin:0;text-align:center"><b style="font-size:22px">${Math.round(vol / 100) / 10}t</b><div class="small mut">Volumen 7 d</div></div></div>
      <div class="card">${L.map(l => { const d = new Date(l.date); const ns = l.exercises.reduce((a, e) => a + e.sets.filter(s => s.done).length, 0); const pmax = Math.max(l.pain?.rodilla || 0, l.pain?.codo || 0, l.pain?.lumbar || 0);
-       return `<div class="hist" data-act="openlog" data-id="${l.id}" style="cursor:pointer"><div class="dt"><b>${d.getDate()}</b><span>${MESES[d.getMonth()]}</span></div><div class="sp"><b>${esc(l.dayName)}</b><div class="small mut">${ns} series · ${fmtDur(l.dur)}${pmax ? ` · <span style="color:${pmax > 4 ? 'var(--bad)' : 'var(--warn)'}">molestia ${pmax}/10</span>` : ''}</div></div>${IC.right.replace('<svg', '<svg width="18" height="18" stroke="#8b94a8" fill="none" stroke-width="2"')}</div>`; }).join('') || '<div class="empty">Aún no hay entrenamientos registrados.<br>Completa tu primera sesión desde "Hoy".</div>'}</div>`;
+       return `<div class="hist" data-act="openlog" data-id="${l.id}" style="cursor:pointer"><div class="dt"><b>${d.getDate()}</b><span>${MESES[d.getMonth()]}</span></div><div class="sp"><b>${esc(l.dayName)}</b><div class="small mut">${ns} series · ${fmtDur(l.dur)}${pmax ? ` · <span style="color:${pmax > 4 ? 'var(--bad)' : 'var(--warn)'}">molestia ${pmax}/10</span>` : ''}</div></div>${IC.right.replace('<svg', '<svg width="18" height="18" stroke="var(--mut)" fill="none" stroke-width="2"')}</div>`; }).join('') || '<div class="empty">Aún no hay entrenamientos registrados.<br>Completa tu primera sesión desde "Hoy".</div>'}</div>`;
   } else if (UI.progSeg === 'ex') {
     const names = [...new Set(S.logs.flatMap(l => l.exercises.filter(e => e.sets.some(s => s.done)).map(e => e.name)))];
     if (!names.length) c = '<div class="card empty">Registra entrenamientos para ver tu progresión por ejercicio.</div>';
@@ -1798,10 +2008,10 @@ function chart(pts) {
   const Y = v => p.t + (1 - (v - mn) / (mx - mn)) * (H - p.t - p.b);
   const path = pts.map((q, i) => `${i ? 'L' : 'M'}${X(i).toFixed(1)},${Y(q.y).toFixed(1)}`).join(' ');
   const area = path + ` L${X(pts.length - 1)},${H - p.b} L${X(0)},${H - p.b} Z`;
-  const grid = [0, 0.5, 1].map(f => { const v = mn + (mx - mn) * f; return `<line x1="${p.l}" x2="${W - p.r}" y1="${Y(v)}" y2="${Y(v)}" stroke="#2a3242"/><text x="${p.l - 5}" y="${Y(v) + 3}" text-anchor="end" font-size="9" fill="#8b94a8">${Math.round(v * 10) / 10}</text>`; }).join('');
+  const grid = [0, 0.5, 1].map(f => { const v = mn + (mx - mn) * f; return `<line x1="${p.l}" x2="${W - p.r}" y1="${Y(v)}" y2="${Y(v)}" stroke="var(--chartgrid)"/><text x="${p.l - 5}" y="${Y(v) + 3}" text-anchor="end" font-size="9" fill="var(--mut)">${Math.round(v * 10) / 10}</text>`; }).join('');
   const lbl = i => { const d = new Date(pts[i].x); return `${d.getDate()} ${MESES[d.getMonth()]}`; };
-  const xl = pts.length > 1 ? `<text x="${X(0)}" y="${H - 6}" font-size="9" fill="#8b94a8">${lbl(0)}</text><text x="${X(pts.length - 1)}" y="${H - 6}" font-size="9" fill="#8b94a8" text-anchor="end">${lbl(pts.length - 1)}</text>` : `<text x="${X(0)}" y="${H - 6}" font-size="9" fill="#8b94a8" text-anchor="middle">${lbl(0)}</text>`;
-  return `<svg class="chart" viewBox="0 0 ${W} ${H}"><defs><linearGradient id="cg" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="#ff7a3d" stop-opacity=".35"/><stop offset="1" stop-color="#ff7a3d" stop-opacity="0"/></linearGradient></defs>${grid}<path d="${area}" fill="url(#cg)"/><path d="${path}" fill="none" stroke="#ff7a3d" stroke-width="2.5" stroke-linejoin="round"/>${pts.map((q, i) => `<circle cx="${X(i)}" cy="${Y(q.y)}" r="3.5" fill="#ff7a3d" stroke="#151a24" stroke-width="1.5"/>`).join('')}${xl}</svg>`;
+  const xl = pts.length > 1 ? `<text x="${X(0)}" y="${H - 6}" font-size="9" fill="var(--mut)">${lbl(0)}</text><text x="${X(pts.length - 1)}" y="${H - 6}" font-size="9" fill="var(--mut)" text-anchor="end">${lbl(pts.length - 1)}</text>` : `<text x="${X(0)}" y="${H - 6}" font-size="9" fill="var(--mut)" text-anchor="middle">${lbl(0)}</text>`;
+  return `<svg class="chart" viewBox="0 0 ${W} ${H}"><defs><linearGradient id="cg" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="var(--acc)" stop-opacity=".35"/><stop offset="1" stop-color="var(--acc)" stop-opacity="0"/></linearGradient></defs>${grid}<path d="${area}" fill="url(#cg)"/><path d="${path}" fill="none" stroke="var(--acc)" stroke-width="2.5" stroke-linejoin="round"/>${pts.map((q, i) => `<circle cx="${X(i)}" cy="${Y(q.y)}" r="3.5" fill="var(--acc)" stroke="var(--chartdot)" stroke-width="1.5"/>`).join('')}${xl}</svg>`;
 }
 function logModal(id) {
   const l = S.logs.find(x => x.id === id); if (!l) return;
@@ -1816,6 +2026,9 @@ function logModal(id) {
 function renderMas() {
   const st = S.settings;
   return head('Más', 'Ajustes, guía y respaldo') + `<main>
+   <div class="card"><h3>Apariencia</h3><div class="seg" style="margin:0">${[['dark', '🌙 Oscuro'], ['light', '☀️ Claro'], ['auto', '📱 Automático']].map(([k, l]) => `<button data-act="settheme" data-k="${k}" class="${(st.theme || 'dark') === k ? 'on' : ''}">${l}</button>`).join('')}</div>
+    <div class="small mut" style="margin-top:6px">Automático sigue el modo claro/oscuro de tu teléfono.</div></div>
+   ${NATIVE ? alertCard() : ''}
    <div class="card"><h3>Ajustes</h3>
     <div class="field"><label>Descanso general entre ejercicios (s)</label><input type="number" inputmode="numeric" id="s_rest" value="${st.restEx}"></div>
     <div class="field"><label>Vista del entrenamiento en curso</label><div class="seg" style="margin:0"><button data-act="setview" data-k="tabs" class="${(st.wkView || 'tabs') === 'tabs' ? 'on' : ''}">▭ Por ejercicio</button><button data-act="setview" data-k="list" class="${st.wkView === 'list' ? 'on' : ''}">☰ Una sola página</button></div></div>
@@ -1823,8 +2036,8 @@ function renderMas() {
     <div class="toggle"><span>Sonido al terminar descanso</span><div class="sw ${st.sound ? 'on' : ''}" data-act="sw" data-k="sound"></div></div>
     <div class="toggle"><span>Vibración</span><div class="sw ${st.vib ? 'on' : ''}" data-act="sw" data-k="vib"></div></div>
     ${NATIVE ? `<div class="toggle"><span>Volumen fuerte<br><span class="small mut">Suena por el canal de alarma al máximo, incluso en modo silencio</span></span><div class="sw ${loud() ? 'on' : ''}" data-act="loud"></div></div>` : ''}
-    <div class="row" style="margin-top:8px;flex-wrap:wrap;gap:6px"><button class="btn sm" data-act="testbeep" data-k="set">🔔 Serie completada</button><button class="btn sm" data-act="testbeep" data-k="rest">⏰ Fin de descanso</button></div>
-    ${NATIVE ? `<div class="tip" style="margin-top:10px">Para que el temporizador siga activo mientras usas otras apps, permite que la app funcione sin restricciones de batería.</div><button class="btn sm blk" data-act="battery">🔋 Permitir funcionar en segundo plano</button>` : `<div class="tip warn" style="margin-top:10px">En la versión web el navegador puede pausar el temporizador si sales de la app. Para que suene siempre en segundo plano, usa la app Android (APK).</div>`}</div>
+    <div class="row" style="margin-top:8px;flex-wrap:wrap;gap:6px"><button class="btn sm" data-act="testbeep" data-k="set">🔔 Serie completada</button><button class="btn sm" data-act="testbeep" data-k="rest">⏰ Fin de descanso</button><button class="btn sm" data-act="testvib">📳 Vibración</button></div>
+    ${NATIVE ? '' : `<div class="tip warn" style="margin-top:10px">En la versión web el navegador puede pausar el temporizador si sales de la app. Para que suene siempre en segundo plano, usa la app Android (APK).</div>`}</div>
    <div class="card info"><details class="acc"><summary>📈 Cómo progresar</summary>
     <ul><li><b>Sem 1–2:</b> adaptación, RIR ~3, técnica y tolerancia.</li><li><b>Sem 3–4:</b> consolida reps y técnica; RIR 2–3.</li><li><b>Sem 5–8:</b> progresa en reps o carga; RIR ~2.</li><li><b>Sem 9–11:</b> RIR 1–2 solo en ejercicios seguros y sin dolor.</li><li><b>Sem 12:</b> evalúa; si hay fatiga reduce series 30–50 % y RIR 3–4.</li></ul>
     <p><b>Doble progresión:</b> llega al extremo superior del rango en todas las series con buena técnica y el RIR indicado; solo entonces sube un poco la carga. Si hay dolor articular, no subas peso.</p>
@@ -1839,7 +2052,18 @@ function renderMas() {
    <div class="card"><h3>Respaldo de datos</h3><div class="small mut" style="margin-bottom:10px">${CL ? 'Sincronizado con tu cuenta de Claude ☁️ y guardado en este dispositivo.' : 'Tus datos se guardan en este dispositivo.'} Exporta una copia de vez en cuando.</div>
     <div class="grid2"><button class="btn" data-act="export">⬇ Exportar</button><button class="btn" data-act="import">⬆ Importar</button></div>
     <button class="btn bad blk" data-act="reset" style="margin-top:10px">Restaurar rutina original del PDF</button></div>
-   <p class="small mut" style="text-align:center">Mi Rutina Gym · v1.3</p></main>`;
+   <p class="small mut" style="text-align:center">Mi Rutina Gym · v1.6</p></main>`;
+}
+function alertCard() {
+  let st = {}; try { st = JSON.parse(NATIVE.permissionsStatus()); } catch (e) { }
+  const row = (ok, label, act, desc) => `<div class="toggle"><span>${ok === true ? '✅' : ok === false ? '⚠️' : '•'} ${label}<br><span class="small mut">${desc}</span></span>${ok === true ? '' : `<button class="btn sm" data-act="${act}">Activar</button>`}</div>`;
+  return `<div class="card"><h3>🔔 Alertas en segundo plano</h3>
+    ${row(st.notif, 'Notificaciones', 'perm_notif', 'Para mostrar el aviso de fin de descanso')}
+    ${row(st.exact, 'Alarmas y recordatorios', 'perm_exact', 'Para que suene a tiempo aunque uses otra app')}
+    ${row(st.battery, 'Batería sin restricciones', 'battery', 'Evita que el teléfono congele la app')}
+    <div class="tip">En Xiaomi/Redmi/POCO: Ajustes → Apps → Mi Rutina Gym → activa <b>Inicio automático</b> y en Ahorro de batería elige <b>Sin restricciones</b>. En Samsung: Batería → <b>Sin restricciones</b>.</div>
+    <button class="btn pri blk" data-act="testalert">▶ Probar alerta en 10 s (sal de la app)</button>
+    <button class="btn sm ghost blk" data-act="perm_app" style="margin-top:6px">Abrir ajustes de la app</button></div>`;
 }
 function exportData() {
   const txt = JSON.stringify(S);
@@ -1923,8 +2147,15 @@ document.addEventListener('click', ev => {
     case 'addbody': { const p = num($('#b_w').value), br = num($('#b_a').value); if (p == null && br == null) return toast('Escribe peso o brazo'); S.body.push({ id: uid(), date: $('#b_d').value || todayISO(), peso: p, brazo: br }); save(); render(); toast('Registro guardado'); break; }
     case 'delbody': S.body = S.body.filter(b => b.id !== el.dataset.id); save(); render(); break;
     // ajustes
+    case 'settheme': S.settings.theme = el.dataset.k; save(); applyTheme(); render(); break;
+    case 'themetoggle': S.settings.theme = isDark() ? 'light' : 'dark'; save(); applyTheme(); render(); break;
+    case 'perm_notif': try { NATIVE.openNotificationSettings(); } catch (e) { } break;
+    case 'perm_exact': try { NATIVE.openExactAlarmSettings(); } catch (e) { } break;
+    case 'perm_app': try { NATIVE.openAppDetails(); } catch (e) { } break;
+    case 'testalert': try { NATIVE.testAlert(10, loud()); toast('Ahora sal de la app (abre WhatsApp, por ejemplo). Sonará en 10 s.'); } catch (e) { } break;
     case 'setview': S.settings.wkView = el.dataset.k; save(); render(); break;
     case 'sw': S.settings[el.dataset.k] = !S.settings[el.dataset.k]; save(); render(); break;
+    case 'testvib': if (NATIVE && NATIVE.vibrate) NATIVE.vibrate('rest'); else if (navigator.vibrate) navigator.vibrate([600, 250, 600]); else toast('Este dispositivo no permite vibrar desde la web'); break;
     case 'testbeep': unlockAudio(); beep(el.dataset.k || 'rest'); break;
     case 'battery': try { NATIVE.openBatterySettings(); } catch (e) { } break;
     case 'loud': S.settings.loud = !loud(); save(); render(); break;
@@ -1948,7 +2179,7 @@ window.handleBack = () => {
   if (!S.active && UI.tab !== 'hoy') { UI.tab = 'hoy'; render(); return true; }
   return false;
 };
-document.addEventListener('visibilitychange', () => { if (!document.hidden) tickTimer(); });
+document.addEventListener('visibilitychange', () => { if (!document.hidden) { tickTimer(); if (UI.tab === 'mas' && !S.active && !document.querySelector('.modal-bg')) render(); } });
 render();
 initCloud();
 </script>

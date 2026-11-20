@@ -2,7 +2,9 @@ package com.johnnier.mirutinagym
 
 import android.Manifest
 import android.annotation.SuppressLint
+import android.app.AlarmManager
 import android.app.NotificationManager
+import android.content.res.Configuration
 import android.content.Intent
 import android.content.pm.PackageManager
 import android.net.Uri
@@ -19,6 +21,7 @@ import androidx.activity.OnBackPressedCallback
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
+import androidx.core.view.WindowCompat
 import androidx.webkit.WebViewAssetLoader
 
 class MainActivity : AppCompatActivity() {
@@ -77,6 +80,22 @@ class MainActivity : AppCompatActivity() {
         if (::web.isInitialized) web.evaluateJavascript("window.tickTimer && tickTimer()", null)
     }
 
+    private fun openAppSettings() {
+        try { startActivity(Intent(Settings.ACTION_APPLICATION_DETAILS_SETTINGS, Uri.parse("package:$packageName"))) } catch (_: Exception) {}
+    }
+
+    /** Colores de barras del sistema según el tema elegido en la app */
+    private fun applyBars(dark: Boolean) {
+        val bg = if (dark) 0xFF0B0E14.toInt() else 0xFFF3F4F7.toInt()
+        val nav = if (dark) 0xFF0F131B.toInt() else 0xFFFFFFFF.toInt()
+        window.statusBarColor = bg
+        window.navigationBarColor = nav
+        if (::web.isInitialized) web.setBackgroundColor(bg)
+        val c = WindowCompat.getInsetsController(window, window.decorView)
+        c.isAppearanceLightStatusBars = !dark
+        c.isAppearanceLightNavigationBars = !dark
+    }
+
     override fun onSaveInstanceState(outState: Bundle) {
         super.onSaveInstanceState(outState)
         web.saveState(outState)
@@ -97,8 +116,13 @@ class MainActivity : AppCompatActivity() {
         fun playSound(kind: String, loud: Boolean) = runOnUiThread { Sounds.play(this@MainActivity, kind, loud) }
 
         @JavascriptInterface
+        fun vibrate(kind: String) = runOnUiThread { Sounds.vibrate(this@MainActivity, kind) }
+
+        @JavascriptInterface
         fun startTimer(endMs: String, title: String, body: String, kind: String, sound: Boolean, loud: Boolean, vib: Boolean) =
             runOnUiThread {
+                // La alarma del sistema se agenda directamente (no depende de que el servicio arranque)
+                AlarmReceiver.schedule(this@MainActivity, endMs.toLongOrNull() ?: 0L, title, body, kind, sound, loud, vib)
                 TimerService.send(this@MainActivity, "TIMER") {
                     putExtra("end", endMs.toLongOrNull() ?: 0L)
                     putExtra("title", title); putExtra("body", body); putExtra("kind", kind)
@@ -106,8 +130,18 @@ class MainActivity : AppCompatActivity() {
                 }
             }
 
+        /** Prueba: agenda solo la alarma del sistema (sin servicio) para verificar el sonido en segundo plano */
         @JavascriptInterface
-        fun cancelTimer() = runOnUiThread { if (TimerService.running) TimerService.send(this@MainActivity, "CANCEL") }
+        fun testAlert(seconds: Int, loud: Boolean) = runOnUiThread {
+            AlarmReceiver.schedule(this@MainActivity, System.currentTimeMillis() + seconds * 1000L,
+                "🔔 Prueba de alerta", "Si escuchaste esto, las alertas funcionan en segundo plano", "rest", true, loud, true)
+        }
+
+        @JavascriptInterface
+        fun cancelTimer() = runOnUiThread {
+            AlarmReceiver.cancel(this@MainActivity)
+            if (TimerService.running) TimerService.send(this@MainActivity, "CANCEL")
+        }
 
         @JavascriptInterface
         fun workout(title: String, text: String, startMs: String) = runOnUiThread {
@@ -118,9 +152,41 @@ class MainActivity : AppCompatActivity() {
 
         @JavascriptInterface
         fun stopWorkout() = runOnUiThread {
-            // Solo detener si el servicio está corriendo (evita arrancarlo para nada)
-            stopService(Intent(this@MainActivity, TimerService::class.java))
+            if (TimerService.running) stopService(Intent(this@MainActivity, TimerService::class.java))
         }
+
+        @JavascriptInterface
+        fun setTheme(dark: Boolean) = runOnUiThread { applyBars(dark) }
+
+        @JavascriptInterface
+        fun systemDark(): Boolean =
+            (resources.configuration.uiMode and Configuration.UI_MODE_NIGHT_MASK) == Configuration.UI_MODE_NIGHT_YES
+
+        @JavascriptInterface
+        fun permissionsStatus(): String {
+            val am = getSystemService(ALARM_SERVICE) as AlarmManager
+            val exact = Build.VERSION.SDK_INT < 31 || am.canScheduleExactAlarms()
+            val notif = Build.VERSION.SDK_INT < 33 || ContextCompat.checkSelfPermission(this@MainActivity, Manifest.permission.POST_NOTIFICATIONS) == PackageManager.PERMISSION_GRANTED
+            val pm = getSystemService(POWER_SERVICE) as PowerManager
+            return "{\"exact\":$exact,\"notif\":$notif,\"battery\":${pm.isIgnoringBatteryOptimizations(packageName)}}"
+        }
+
+        @JavascriptInterface
+        fun openExactAlarmSettings() = runOnUiThread {
+            try {
+                if (Build.VERSION.SDK_INT >= 31) startActivity(Intent(Settings.ACTION_REQUEST_SCHEDULE_EXACT_ALARM, Uri.parse("package:$packageName")))
+            } catch (_: Exception) { openAppSettings() }
+        }
+
+        @JavascriptInterface
+        fun openNotificationSettings() = runOnUiThread {
+            try {
+                startActivity(Intent(Settings.ACTION_APP_NOTIFICATION_SETTINGS).putExtra(Settings.EXTRA_APP_PACKAGE, packageName))
+            } catch (_: Exception) { openAppSettings() }
+        }
+
+        @JavascriptInterface
+        fun openAppDetails() = runOnUiThread { openAppSettings() }
 
         @SuppressLint("BatteryLife")
         @JavascriptInterface

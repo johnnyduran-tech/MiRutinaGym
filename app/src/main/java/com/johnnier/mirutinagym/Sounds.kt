@@ -6,6 +6,7 @@ import android.media.AudioManager
 import android.media.MediaPlayer
 import android.net.Uri
 import android.os.Build
+import android.os.VibrationAttributes
 import android.os.VibrationEffect
 import android.os.Vibrator
 import android.os.VibratorManager
@@ -63,14 +64,35 @@ object Sounds {
         }
     }
 
+    /**
+     * Vibración con uso "ALARMA": Android ignora las vibraciones de apps en segundo plano
+     * si no declaran este uso (por eso antes no vibraba al terminar el descanso).
+     */
     @Suppress("DEPRECATION")
     fun vibrate(ctx: Context, kind: String) {
-        val pattern = if (kind == "set") longArrayOf(0, 120, 80, 120) else longArrayOf(0, 500, 200, 500, 200, 800)
+        val timings = if (kind == "set") longArrayOf(0, 180, 100, 180)
+                      else longArrayOf(0, 600, 250, 600, 250, 900)
+        val amps = IntArray(timings.size) { i -> if (i % 2 == 1) 255 else 0 }
         val v: Vibrator = if (Build.VERSION.SDK_INT >= 31) {
             (ctx.getSystemService(Context.VIBRATOR_MANAGER_SERVICE) as VibratorManager).defaultVibrator
         } else {
             ctx.getSystemService(Context.VIBRATOR_SERVICE) as Vibrator
         }
-        try { v.vibrate(VibrationEffect.createWaveform(pattern, -1)) } catch (_: Exception) {}
+        if (!v.hasVibrator()) return
+        val effect = if (v.hasAmplitudeControl()) VibrationEffect.createWaveform(timings, amps, -1)
+                     else VibrationEffect.createWaveform(timings, -1)
+        try {
+            if (Build.VERSION.SDK_INT >= 33) {
+                v.vibrate(effect, VibrationAttributes.createForUsage(VibrationAttributes.USAGE_ALARM))
+            } else {
+                v.vibrate(effect, AudioAttributes.Builder()
+                    .setUsage(AudioAttributes.USAGE_ALARM)
+                    .setContentType(AudioAttributes.CONTENT_TYPE_SONIFICATION)
+                    .build())
+            }
+        } catch (_: Exception) {
+            try { v.vibrate(effect) } catch (_: Exception) {}
+        }
     }
+
 }
