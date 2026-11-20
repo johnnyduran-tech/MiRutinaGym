@@ -720,7 +720,7 @@
       "Respiración: exhala al hacer el esfuerzo e inhala al volver a la posición inicial."
     ],
     "variations": [
-      "Extensión isométrica de rodilla 90°: trabaja cuádriceps (isométrico) con máquina.",
+      "Extensión isométrica de rodilla: trabaja cuádriceps (isométrico) con máquina.",
       "Sentadilla isométrica en pared: trabaja cuádriceps con peso corporal.",
       "Sentadilla (goblet / libre): trabaja cuádriceps con mancuernas.",
       "Sentadilla búlgara: trabaja cuádriceps con mancuernas y banco."
@@ -790,7 +790,7 @@
     ],
     "variations": [
       "Pantorrilla de pie: trabaja gastrocnemio con máquina.",
-      "Extensión isométrica de rodilla 90°: trabaja cuádriceps (isométrico) con máquina.",
+      "Extensión isométrica de rodilla: trabaja cuádriceps (isométrico) con máquina.",
       "Sentadilla isométrica en pared: trabaja cuádriceps con peso corporal.",
       "Aductores en máquina: trabaja aductores (cara interna del muslo) con máquina."
     ],
@@ -818,10 +818,10 @@
   {
     "exerciseId": "mrg_iso_knee_ext",
     "animKey": "iso_knee_ext",
-    "name": "Extensión isométrica de rodilla 90°",
-    "imageUrl": "png/Extension-Isometrica-De-Rodilla-90-Piernas.png",
-    "gifUrl": "gif/Extension-Isometrica-De-Rodilla-90-Piernas.gif",
-    "videoUrl": "mp4/Extension-Isometrica-De-Rodilla-90-Piernas.mp4",
+    "name": "Extensión isométrica de rodilla",
+    "imageUrl": "png/Extension-Isometrica-De-Rodilla-Piernas.png",
+    "gifUrl": "gif/Extension-Isometrica-De-Rodilla-Piernas.gif",
+    "videoUrl": "mp4/Extension-Isometrica-De-Rodilla-Piernas.mp4",
     "equipments": [
       "MÁQUINA"
     ],
@@ -835,17 +835,17 @@
     ],
     "secondaryMuscles": [],
     "keywords": [
-      "Extensión isométrica de rodilla 90°",
-      "Extensión isométrica de rodilla 90° técnica",
+      "Extensión isométrica de rodilla",
+      "Extensión isométrica de rodilla técnica",
       "Ejercicio de piernas con máquina",
       "Cuádriceps (isométrico) ejercicio",
       "Rutina de piernas",
-      "Cómo hacer extensión isométrica de rodilla 90°",
-      "Extensión isométrica de rodilla 90° gif"
+      "Cómo hacer extensión isométrica de rodilla",
+      "Extensión isométrica de rodilla gif"
     ],
-    "overview": "Extensión isométrica de rodilla 90° es un ejercicio isométrico (máquina) en el que se sostiene una posición sin movimiento. Trabaja principalmente cuádriceps (isométrico). Desarrolla resistencia muscular y estabilidad con poca carga articular; se registra en segundos.",
+    "overview": "Extensión isométrica de rodilla es un ejercicio isométrico (máquina) en el que se sostiene una posición sin movimiento. Trabaja principalmente cuádriceps (isométrico). Desarrolla resistencia muscular y estabilidad con poca carga articular; se registra en segundos.",
     "instructions": [
-      "Rodilla a 90°; la máquina debe quedar bloqueada o con peso que no puedas mover.",
+      "Pierna extendida (sin bloquear de golpe la rodilla); la máquina debe quedar bloqueada o con peso que no puedas mover.",
       "Empuja contra el rodillo de forma progresiva, sin dolor.",
       "Mantén la contracción el tiempo indicado respirando normal.",
       "Solo si fue indicada por tu especialista y es tolerada."
@@ -926,7 +926,7 @@
     ],
     "variations": [
       "Prensa de piernas: trabaja cuádriceps con prensa.",
-      "Extensión isométrica de rodilla 90°: trabaja cuádriceps (isométrico) con máquina.",
+      "Extensión isométrica de rodilla: trabaja cuádriceps (isométrico) con máquina.",
       "Sentadilla (goblet / libre): trabaja cuádriceps con mancuernas.",
       "Sentadilla búlgara: trabaja cuádriceps con mancuernas y banco."
     ],
@@ -4272,7 +4272,7 @@
     ],
     "variations": [
       "Prensa de piernas: trabaja cuádriceps con prensa.",
-      "Extensión isométrica de rodilla 90°: trabaja cuádriceps (isométrico) con máquina.",
+      "Extensión isométrica de rodilla: trabaja cuádriceps (isométrico) con máquina.",
       "Sentadilla isométrica en pared: trabaja cuádriceps con peso corporal.",
       "Sentadilla búlgara: trabaja cuádriceps con mancuernas y banco."
     ],
@@ -4342,7 +4342,7 @@
     ],
     "variations": [
       "Prensa de piernas: trabaja cuádriceps con prensa.",
-      "Extensión isométrica de rodilla 90°: trabaja cuádriceps (isométrico) con máquina.",
+      "Extensión isométrica de rodilla: trabaja cuádriceps (isométrico) con máquina.",
       "Sentadilla isométrica en pared: trabaja cuádriceps con peso corporal.",
       "Sentadilla (goblet / libre): trabaja cuádriceps con mancuernas."
     ],
@@ -4411,7 +4411,7 @@
     ],
     "variations": [
       "Prensa de piernas: trabaja cuádriceps con prensa.",
-      "Extensión isométrica de rodilla 90°: trabaja cuádriceps (isométrico) con máquina.",
+      "Extensión isométrica de rodilla: trabaja cuádriceps (isométrico) con máquina.",
       "Sentadilla isométrica en pared: trabaja cuádriceps con peso corporal.",
       "Sentadilla búlgara: trabaja cuádriceps con mancuernas y banco."
     ],
@@ -4548,7 +4548,7 @@
     ],
     "variations": [
       "Prensa de piernas: trabaja cuádriceps con prensa.",
-      "Extensión isométrica de rodilla 90°: trabaja cuádriceps (isométrico) con máquina.",
+      "Extensión isométrica de rodilla: trabaja cuádriceps (isométrico) con máquina.",
       "Sentadilla isométrica en pared: trabaja cuádriceps con peso corporal.",
       "Sentadilla (goblet / libre): trabaja cuádriceps con mancuernas."
     ],
