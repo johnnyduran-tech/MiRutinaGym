@@ -1,0 +1,5355 @@
+[
+  {
+    "exerciseId": "mrg_chest_press",
+    "animKey": "chest_press",
+    "name": "Press de pecho (máquina)",
+    "imageUrl": "png/Press-De-Pecho-Maquina-Pecho.png",
+    "gifUrl": "gif/Press-De-Pecho-Maquina-Pecho.gif",
+    "videoUrl": "mp4/Press-De-Pecho-Maquina-Pecho.mp4",
+    "equipments": [
+      "MÁQUINA"
+    ],
+    "bodyParts": [
+      "PECHO"
+    ],
+    "gender": "male",
+    "exerciseType": "FUERZA",
+    "targetMuscles": [
+      "Pectoral mayor"
+    ],
+    "secondaryMuscles": [
+      "Deltoides anterior",
+      "Tríceps"
+    ],
+    "keywords": [
+      "Press de pecho (máquina)",
+      "Press de pecho (máquina) técnica",
+      "Ejercicio de pecho con máquina",
+      "Pectoral mayor ejercicio",
+      "Rutina de pecho",
+      "Cómo hacer press de pecho (máquina)",
+      "Press de pecho (máquina) gif"
+    ],
+    "overview": "Press de pecho (máquina) es un ejercicio de fuerza para pecho que se realiza con máquina. Trabaja principalmente pectoral mayor, con apoyo de deltoides anterior, tríceps. Es adecuado para principiantes e intermedios que buscan ganar masa muscular y fuerza con una técnica controlada.",
+    "instructions": [
+      "Ajusta el asiento: agarres a la altura media del pecho.",
+      "Escápulas atrás y abajo, pecho alto.",
+      "Empuja sin bloquear los codos al final.",
+      "Regresa lento (2–3 s) hasta sentir estiramiento en el pecho."
+    ],
+    "exerciseTips": [
+      "Movimientos controlados: sube en 1–2 s y baja en 2–3 s, sin impulso ni rebotes.",
+      "Rango completo y cómodo: busca el estiramiento y la contracción sin forzar la articulación.",
+      "Respiración: exhala al hacer el esfuerzo e inhala al volver a la posición inicial."
+    ],
+    "variations": [
+      "Press inclinado con mancuernas: trabaja pectoral superior con mancuernas y banco.",
+      "Press de banca con barra: trabaja pectoral mayor con barra y banco.",
+      "Press plano con mancuernas: trabaja pectoral mayor con mancuernas y banco.",
+      "Flexiones de pecho: trabaja pectoral con peso corporal."
+    ],
+    "relatedExerciseIds": [
+      "mrg_incline_db_press",
+      "mrg_bench_press",
+      "mrg_db_bench_press",
+      "mrg_push_up",
+      "mrg_cable_crossover",
+      "mrg_incline_machine_press",
+      "mrg_pec_fly",
+      "mrg_pec_deck_classic"
+    ],
+    "defaults": {
+      "sets": 3,
+      "repMin": 10,
+      "repMax": 12,
+      "rir": "2",
+      "restSec": 90,
+      "unit": "reps"
+    }
+  },
+  {
+    "exerciseId": "mrg_incline_machine_press",
+    "animKey": "incline_machine_press",
+    "name": "Press inclinado (máquina)",
+    "imageUrl": "png/Press-Inclinado-Maquina-Pecho.png",
+    "gifUrl": "gif/Press-Inclinado-Maquina-Pecho.gif",
+    "videoUrl": "mp4/Press-Inclinado-Maquina-Pecho.mp4",
+    "equipments": [
+      "MÁQUINA"
+    ],
+    "bodyParts": [
+      "PECHO"
+    ],
+    "gender": "male",
+    "exerciseType": "FUERZA",
+    "targetMuscles": [
+      "Pectoral superior (clavicular)"
+    ],
+    "secondaryMuscles": [
+      "Deltoides anterior",
+      "Tríceps"
+    ],
+    "keywords": [
+      "Press inclinado (máquina)",
+      "Press inclinado (máquina) técnica",
+      "Ejercicio de pecho con máquina",
+      "Pectoral superior (clavicular) ejercicio",
+      "Rutina de pecho",
+      "Cómo hacer press inclinado (máquina)",
+      "Press inclinado (máquina) gif"
+    ],
+    "overview": "Press inclinado (máquina) es un ejercicio de fuerza para pecho que se realiza con máquina. Trabaja principalmente pectoral superior (clavicular), con apoyo de deltoides anterior, tríceps. Es adecuado para principiantes e intermedios que buscan ganar masa muscular y fuerza con una técnica controlada.",
+    "instructions": [
+      "Agarres a la altura de la parte alta del pecho.",
+      "Empuja hacia arriba y adelante siguiendo la máquina.",
+      "Codos a ~45° del torso, no abiertos a 90°.",
+      "Baja controlado sin perder el contacto de la espalda."
+    ],
+    "exerciseTips": [
+      "Movimientos controlados: sube en 1–2 s y baja en 2–3 s, sin impulso ni rebotes.",
+      "Rango completo y cómodo: busca el estiramiento y la contracción sin forzar la articulación.",
+      "Respiración: exhala al hacer el esfuerzo e inhala al volver a la posición inicial."
+    ],
+    "variations": [
+      "Press inclinado con mancuernas: trabaja pectoral superior con mancuernas y banco.",
+      "Press de banca con barra: trabaja pectoral mayor con barra y banco.",
+      "Press plano con mancuernas: trabaja pectoral mayor con mancuernas y banco.",
+      "Flexiones de pecho: trabaja pectoral con peso corporal."
+    ],
+    "relatedExerciseIds": [
+      "mrg_incline_db_press",
+      "mrg_bench_press",
+      "mrg_db_bench_press",
+      "mrg_push_up",
+      "mrg_cable_crossover",
+      "mrg_chest_press",
+      "mrg_pec_fly",
+      "mrg_pec_deck_classic"
+    ],
+    "defaults": {
+      "sets": 3,
+      "repMin": 10,
+      "repMax": 12,
+      "rir": "2",
+      "restSec": 90,
+      "unit": "reps"
+    }
+  },
+  {
+    "exerciseId": "mrg_incline_db_press",
+    "animKey": "incline_db_press",
+    "name": "Press inclinado con mancuernas",
+    "imageUrl": "png/Press-Inclinado-Con-Mancuernas-Pecho.png",
+    "gifUrl": "gif/Press-Inclinado-Con-Mancuernas-Pecho.gif",
+    "videoUrl": "mp4/Press-Inclinado-Con-Mancuernas-Pecho.mp4",
+    "equipments": [
+      "MANCUERNAS",
+      "BANCO"
+    ],
+    "bodyParts": [
+      "PECHO"
+    ],
+    "gender": "male",
+    "exerciseType": "FUERZA",
+    "targetMuscles": [
+      "Pectoral superior"
+    ],
+    "secondaryMuscles": [
+      "Deltoides anterior",
+      "Tríceps"
+    ],
+    "keywords": [
+      "Press inclinado con mancuernas",
+      "Press inclinado con mancuernas técnica",
+      "Ejercicio de pecho con mancuernas",
+      "Pectoral superior ejercicio",
+      "Rutina de pecho",
+      "Cómo hacer press inclinado con mancuernas",
+      "Press inclinado con mancuernas gif"
+    ],
+    "overview": "Press inclinado con mancuernas es un ejercicio de fuerza para pecho que se realiza con mancuernas y banco. Trabaja principalmente pectoral superior, con apoyo de deltoides anterior, tríceps. Es adecuado para niveles intermedios que buscan ganar masa muscular y fuerza con una técnica controlada.",
+    "instructions": [
+      "Banco a 30–45°.",
+      "Mancuernas bajan a los lados del pecho alto, codos a ~45°.",
+      "Sube juntando ligeramente las mancuernas, sin chocarlas.",
+      "Pies firmes en el suelo, sin arquear en exceso la zona lumbar."
+    ],
+    "exerciseTips": [
+      "Movimientos controlados: sube en 1–2 s y baja en 2–3 s, sin impulso ni rebotes.",
+      "Rango completo y cómodo: busca el estiramiento y la contracción sin forzar la articulación.",
+      "Respiración: exhala al hacer el esfuerzo e inhala al volver a la posición inicial."
+    ],
+    "variations": [
+      "Press de pecho (máquina): trabaja pectoral mayor con máquina.",
+      "Press inclinado (máquina): trabaja pectoral superior (clavicular) con máquina.",
+      "Aperturas de pecho (máquina): trabaja pectoral mayor con máquina.",
+      "Press de banca con barra: trabaja pectoral mayor con barra y banco."
+    ],
+    "relatedExerciseIds": [
+      "mrg_chest_press",
+      "mrg_incline_machine_press",
+      "mrg_pec_fly",
+      "mrg_bench_press",
+      "mrg_push_up",
+      "mrg_cable_crossover",
+      "mrg_pec_deck_classic",
+      "mrg_db_bench_press"
+    ],
+    "defaults": {
+      "sets": 3,
+      "repMin": 10,
+      "repMax": 12,
+      "rir": "2",
+      "restSec": 90,
+      "unit": "reps"
+    }
+  },
+  {
+    "exerciseId": "mrg_seated_row",
+    "animKey": "seated_row",
+    "name": "Remo sentado (máquina)",
+    "imageUrl": "png/Remo-Sentado-Maquina-Espalda.png",
+    "gifUrl": "gif/Remo-Sentado-Maquina-Espalda.gif",
+    "videoUrl": "mp4/Remo-Sentado-Maquina-Espalda.mp4",
+    "equipments": [
+      "MÁQUINA DE POLEA"
+    ],
+    "bodyParts": [
+      "ESPALDA"
+    ],
+    "gender": "male",
+    "exerciseType": "FUERZA",
+    "targetMuscles": [
+      "Dorsal ancho"
+    ],
+    "secondaryMuscles": [
+      "Romboides",
+      "Trapecio medio",
+      "Bíceps"
+    ],
+    "keywords": [
+      "Remo sentado (máquina)",
+      "Remo sentado (máquina) técnica",
+      "Ejercicio de espalda con máquina de polea",
+      "Dorsal ancho ejercicio",
+      "Rutina de espalda",
+      "Cómo hacer remo sentado (máquina)",
+      "Remo sentado (máquina) gif"
+    ],
+    "overview": "Remo sentado (máquina) es un ejercicio de fuerza para espalda que se realiza con máquina de polea. Trabaja principalmente dorsal ancho, con apoyo de romboides, trapecio medio, bíceps. Es adecuado para principiantes e intermedios que buscan ganar masa muscular y fuerza con una técnica controlada.",
+    "instructions": [
+      "Pecho apoyado o torso erguido, sin balancearte.",
+      "Inicia el movimiento llevando las escápulas atrás.",
+      "Tira con los codos pegados hasta el abdomen.",
+      "Estira los brazos de forma controlada sin redondear la espalda."
+    ],
+    "exerciseTips": [
+      "Movimientos controlados: sube en 1–2 s y baja en 2–3 s, sin impulso ni rebotes.",
+      "Rango completo y cómodo: busca el estiramiento y la contracción sin forzar la articulación.",
+      "Respiración: exhala al hacer el esfuerzo e inhala al volver a la posición inicial."
+    ],
+    "variations": [
+      "Remo con pecho apoyado: trabaja dorsal con máquina.",
+      "Dominadas libres: trabaja dorsal ancho con barra de dominadas y peso corporal.",
+      "Dominadas asistidas: trabaja dorsal ancho con máquina asistida.",
+      "Remo con barra: trabaja dorsal con barra."
+    ],
+    "relatedExerciseIds": [
+      "mrg_chest_supported_row",
+      "mrg_pullup",
+      "mrg_pullup_assisted",
+      "mrg_barbell_row",
+      "mrg_one_arm_db_row",
+      "mrg_straight_arm_pulldown",
+      "mrg_lat_pulldown",
+      "mrg_back_extension",
+      "mrg_rdl"
+    ],
+    "defaults": {
+      "sets": 3,
+      "repMin": 10,
+      "repMax": 12,
+      "rir": "2",
+      "restSec": 90,
+      "unit": "reps"
+    }
+  },
+  {
+    "exerciseId": "mrg_chest_supported_row",
+    "animKey": "chest_supported_row",
+    "name": "Remo con pecho apoyado",
+    "imageUrl": "png/Remo-Con-Pecho-Apoyado-Espalda.png",
+    "gifUrl": "gif/Remo-Con-Pecho-Apoyado-Espalda.gif",
+    "videoUrl": "mp4/Remo-Con-Pecho-Apoyado-Espalda.mp4",
+    "equipments": [
+      "MÁQUINA"
+    ],
+    "bodyParts": [
+      "ESPALDA"
+    ],
+    "gender": "male",
+    "exerciseType": "FUERZA",
+    "targetMuscles": [
+      "Dorsal"
+    ],
+    "secondaryMuscles": [
+      "Romboides",
+      "Trapecio medio",
+      "Deltoides posterior"
+    ],
+    "keywords": [
+      "Remo con pecho apoyado",
+      "Remo con pecho apoyado técnica",
+      "Ejercicio de espalda con máquina",
+      "Dorsal ejercicio",
+      "Rutina de espalda",
+      "Cómo hacer remo con pecho apoyado",
+      "Remo con pecho apoyado gif"
+    ],
+    "overview": "Remo con pecho apoyado es un ejercicio de fuerza para espalda que se realiza con máquina. Trabaja principalmente dorsal, con apoyo de romboides, trapecio medio, deltoides posterior. Es adecuado para principiantes e intermedios que buscan ganar masa muscular y fuerza con una técnica controlada.",
+    "instructions": [
+      "Apoya el pecho en el cojín: descarga la zona lumbar.",
+      "Retrae escápulas antes de flexionar codos.",
+      "Lleva los codos hacia atrás y aprieta 1 s arriba.",
+      "No despegues el pecho del soporte."
+    ],
+    "exerciseTips": [
+      "Movimientos controlados: sube en 1–2 s y baja en 2–3 s, sin impulso ni rebotes.",
+      "Rango completo y cómodo: busca el estiramiento y la contracción sin forzar la articulación.",
+      "Respiración: exhala al hacer el esfuerzo e inhala al volver a la posición inicial."
+    ],
+    "variations": [
+      "Remo sentado (máquina): trabaja dorsal ancho con máquina de polea.",
+      "Jalón al pecho: trabaja dorsal ancho con máquina de polea.",
+      "Dominadas libres: trabaja dorsal ancho con barra de dominadas y peso corporal.",
+      "Dominadas asistidas: trabaja dorsal ancho con máquina asistida."
+    ],
+    "relatedExerciseIds": [
+      "mrg_seated_row",
+      "mrg_lat_pulldown",
+      "mrg_pullup",
+      "mrg_pullup_assisted",
+      "mrg_barbell_row",
+      "mrg_one_arm_db_row",
+      "mrg_straight_arm_pulldown",
+      "mrg_back_extension",
+      "mrg_rdl"
+    ],
+    "defaults": {
+      "sets": 3,
+      "repMin": 10,
+      "repMax": 12,
+      "rir": "2",
+      "restSec": 90,
+      "unit": "reps"
+    }
+  },
+  {
+    "exerciseId": "mrg_lat_pulldown",
+    "animKey": "lat_pulldown",
+    "name": "Jalón al pecho",
+    "imageUrl": "png/Jalon-Al-Pecho-Espalda.png",
+    "gifUrl": "gif/Jalon-Al-Pecho-Espalda.gif",
+    "videoUrl": "mp4/Jalon-Al-Pecho-Espalda.mp4",
+    "equipments": [
+      "MÁQUINA DE POLEA"
+    ],
+    "bodyParts": [
+      "ESPALDA"
+    ],
+    "gender": "male",
+    "exerciseType": "FUERZA",
+    "targetMuscles": [
+      "Dorsal ancho"
+    ],
+    "secondaryMuscles": [
+      "Redondo mayor",
+      "Bíceps",
+      "Braquial"
+    ],
+    "keywords": [
+      "Jalón al pecho",
+      "Jalón al pecho técnica",
+      "Ejercicio de espalda con máquina de polea",
+      "Dorsal ancho ejercicio",
+      "Rutina de espalda",
+      "Cómo hacer jalón al pecho",
+      "Jalón al pecho gif"
+    ],
+    "overview": "Jalón al pecho es un ejercicio de fuerza para espalda que se realiza con máquina de polea. Trabaja principalmente dorsal ancho, con apoyo de redondo mayor, bíceps, braquial. Es adecuado para principiantes e intermedios que buscan ganar masa muscular y fuerza con una técnica controlada.",
+    "instructions": [
+      "Ajusta el cojín sobre los muslos.",
+      "Inclínate ligeramente atrás (10–15°), pecho alto.",
+      "Baja la barra a la parte alta del pecho llevando codos abajo y atrás.",
+      "Sube controlado hasta estirar los dorsales sin encoger hombros."
+    ],
+    "exerciseTips": [
+      "Movimientos controlados: sube en 1–2 s y baja en 2–3 s, sin impulso ni rebotes.",
+      "Rango completo y cómodo: busca el estiramiento y la contracción sin forzar la articulación.",
+      "Respiración: exhala al hacer el esfuerzo e inhala al volver a la posición inicial."
+    ],
+    "variations": [
+      "Remo con pecho apoyado: trabaja dorsal con máquina.",
+      "Dominadas libres: trabaja dorsal ancho con barra de dominadas y peso corporal.",
+      "Dominadas asistidas: trabaja dorsal ancho con máquina asistida.",
+      "Remo con barra: trabaja dorsal con barra."
+    ],
+    "relatedExerciseIds": [
+      "mrg_chest_supported_row",
+      "mrg_pullup",
+      "mrg_pullup_assisted",
+      "mrg_barbell_row",
+      "mrg_one_arm_db_row",
+      "mrg_straight_arm_pulldown",
+      "mrg_seated_row",
+      "mrg_back_extension",
+      "mrg_rdl"
+    ],
+    "defaults": {
+      "sets": 3,
+      "repMin": 10,
+      "repMax": 12,
+      "rir": "2",
+      "restSec": 90,
+      "unit": "reps"
+    }
+  },
+  {
+    "exerciseId": "mrg_cable_lateral",
+    "animKey": "cable_lateral",
+    "name": "Elevación lateral en polea",
+    "imageUrl": "png/Elevacion-Lateral-En-Polea-Hombros.png",
+    "gifUrl": "gif/Elevacion-Lateral-En-Polea-Hombros.gif",
+    "videoUrl": "mp4/Elevacion-Lateral-En-Polea-Hombros.mp4",
+    "equipments": [
+      "POLEA"
+    ],
+    "bodyParts": [
+      "HOMBROS"
+    ],
+    "gender": "male",
+    "exerciseType": "FUERZA",
+    "targetMuscles": [
+      "Deltoides lateral"
+    ],
+    "secondaryMuscles": [],
+    "keywords": [
+      "Elevación lateral en polea",
+      "Elevación lateral en polea técnica",
+      "Ejercicio de hombros con polea",
+      "Deltoides lateral ejercicio",
+      "Rutina de hombros",
+      "Cómo hacer elevación lateral en polea",
+      "Elevación lateral en polea gif"
+    ],
+    "overview": "Elevación lateral en polea es un ejercicio de fuerza para hombros que se realiza con polea. Trabaja principalmente deltoides lateral. Es adecuado para niveles intermedios que buscan ganar masa muscular y fuerza con una técnica controlada.",
+    "instructions": [
+      "Polea baja, al lado contrario del brazo que trabaja.",
+      "Codo ligeramente flexionado y fijo.",
+      "Eleva hacia afuera hasta la altura del hombro, sin encoger el trapecio.",
+      "Baja en 2–3 s manteniendo tensión."
+    ],
+    "exerciseTips": [
+      "Movimientos controlados: sube en 1–2 s y baja en 2–3 s, sin impulso ni rebotes.",
+      "Rango completo y cómodo: busca el estiramiento y la contracción sin forzar la articulación.",
+      "Respiración: exhala al hacer el esfuerzo e inhala al volver a la posición inicial."
+    ],
+    "variations": [
+      "Elevación lateral (máquina): trabaja deltoides lateral con máquina.",
+      "Reverse pec deck (vista posterior): trabaja deltoides posterior con máquina.",
+      "Press de hombro con mancuernas: trabaja deltoides anterior y lateral con mancuernas y banco.",
+      "Elevación frontal: trabaja deltoides anterior con mancuernas."
+    ],
+    "relatedExerciseIds": [
+      "mrg_machine_lateral",
+      "mrg_reverse_fly",
+      "mrg_db_shoulder_press",
+      "mrg_front_raise",
+      "mrg_face_pull",
+      "mrg_upright_row",
+      "mrg_shrugs"
+    ],
+    "defaults": {
+      "sets": 3,
+      "repMin": 10,
+      "repMax": 12,
+      "rir": "2",
+      "restSec": 90,
+      "unit": "reps"
+    }
+  },
+  {
+    "exerciseId": "mrg_machine_lateral",
+    "animKey": "machine_lateral",
+    "name": "Elevación lateral (máquina)",
+    "imageUrl": "png/Elevacion-Lateral-Maquina-Hombros.png",
+    "gifUrl": "gif/Elevacion-Lateral-Maquina-Hombros.gif",
+    "videoUrl": "mp4/Elevacion-Lateral-Maquina-Hombros.mp4",
+    "equipments": [
+      "MÁQUINA"
+    ],
+    "bodyParts": [
+      "HOMBROS"
+    ],
+    "gender": "male",
+    "exerciseType": "FUERZA",
+    "targetMuscles": [
+      "Deltoides lateral"
+    ],
+    "secondaryMuscles": [],
+    "keywords": [
+      "Elevación lateral (máquina)",
+      "Elevación lateral (máquina) técnica",
+      "Ejercicio de hombros con máquina",
+      "Deltoides lateral ejercicio",
+      "Rutina de hombros",
+      "Cómo hacer elevación lateral (máquina)",
+      "Elevación lateral (máquina) gif"
+    ],
+    "overview": "Elevación lateral (máquina) es un ejercicio de fuerza para hombros que se realiza con máquina. Trabaja principalmente deltoides lateral. Es adecuado para principiantes e intermedios que buscan ganar masa muscular y fuerza con una técnica controlada.",
+    "instructions": [
+      "Alinea el eje de la máquina con tu hombro.",
+      "Empuja con los codos/antebrazos contra los cojines.",
+      "Sube hasta la horizontal, sin encoger los hombros.",
+      "Bajada lenta y controlada."
+    ],
+    "exerciseTips": [
+      "Movimientos controlados: sube en 1–2 s y baja en 2–3 s, sin impulso ni rebotes.",
+      "Rango completo y cómodo: busca el estiramiento y la contracción sin forzar la articulación.",
+      "Respiración: exhala al hacer el esfuerzo e inhala al volver a la posición inicial."
+    ],
+    "variations": [
+      "Elevación lateral en polea: trabaja deltoides lateral con polea.",
+      "Press de hombro con mancuernas: trabaja deltoides anterior y lateral con mancuernas y banco.",
+      "Elevación frontal: trabaja deltoides anterior con mancuernas.",
+      "Face pull en polea: trabaja deltoides posterior con polea y cuerda."
+    ],
+    "relatedExerciseIds": [
+      "mrg_cable_lateral",
+      "mrg_db_shoulder_press",
+      "mrg_front_raise",
+      "mrg_face_pull",
+      "mrg_upright_row",
+      "mrg_reverse_fly",
+      "mrg_shrugs"
+    ],
+    "defaults": {
+      "sets": 3,
+      "repMin": 10,
+      "repMax": 12,
+      "rir": "2",
+      "restSec": 90,
+      "unit": "reps"
+    }
+  },
+  {
+    "exerciseId": "mrg_reverse_fly",
+    "animKey": "reverse_fly",
+    "name": "Reverse pec deck (vista posterior)",
+    "imageUrl": "png/Reverse-Pec-Deck-Vista-Posterior-Hombros.png",
+    "gifUrl": "gif/Reverse-Pec-Deck-Vista-Posterior-Hombros.gif",
+    "videoUrl": "mp4/Reverse-Pec-Deck-Vista-Posterior-Hombros.mp4",
+    "equipments": [
+      "MÁQUINA"
+    ],
+    "bodyParts": [
+      "HOMBROS"
+    ],
+    "gender": "male",
+    "exerciseType": "FUERZA",
+    "targetMuscles": [
+      "Deltoides posterior"
+    ],
+    "secondaryMuscles": [
+      "Romboides",
+      "Trapecio medio"
+    ],
+    "keywords": [
+      "Reverse pec deck (vista posterior)",
+      "Reverse pec deck (vista posterior) técnica",
+      "Ejercicio de hombros con máquina",
+      "Deltoides posterior ejercicio",
+      "Rutina de hombros",
+      "Cómo hacer reverse pec deck (vista posterior)",
+      "Reverse pec deck (vista posterior) gif"
+    ],
+    "overview": "Reverse pec deck (vista posterior) es un ejercicio de fuerza para hombros que se realiza con máquina. Trabaja principalmente deltoides posterior, con apoyo de romboides, trapecio medio. Es adecuado para principiantes e intermedios que buscan ganar masa muscular y fuerza con una técnica controlada.",
+    "instructions": [
+      "Sentado de frente a la máquina, pecho en el respaldo.",
+      "Brazos a la altura de los hombros, codos casi rectos.",
+      "Abre los brazos hacia atrás en arco amplio.",
+      "Vuelve lento sin dejar que el peso se apoye."
+    ],
+    "exerciseTips": [
+      "Movimientos controlados: sube en 1–2 s y baja en 2–3 s, sin impulso ni rebotes.",
+      "Rango completo y cómodo: busca el estiramiento y la contracción sin forzar la articulación.",
+      "Respiración: exhala al hacer el esfuerzo e inhala al volver a la posición inicial."
+    ],
+    "variations": [
+      "Elevación lateral en polea: trabaja deltoides lateral con polea.",
+      "Press de hombro con mancuernas: trabaja deltoides anterior y lateral con mancuernas y banco.",
+      "Elevación frontal: trabaja deltoides anterior con mancuernas.",
+      "Face pull en polea: trabaja deltoides posterior con polea y cuerda."
+    ],
+    "relatedExerciseIds": [
+      "mrg_cable_lateral",
+      "mrg_db_shoulder_press",
+      "mrg_front_raise",
+      "mrg_face_pull",
+      "mrg_upright_row",
+      "mrg_machine_lateral",
+      "mrg_shrugs"
+    ],
+    "defaults": {
+      "sets": 3,
+      "repMin": 10,
+      "repMax": 12,
+      "rir": "2",
+      "restSec": 90,
+      "unit": "reps"
+    }
+  },
+  {
+    "exerciseId": "mrg_pec_fly",
+    "animKey": "pec_fly",
+    "name": "Aperturas de pecho (máquina)",
+    "imageUrl": "png/Aperturas-De-Pecho-Maquina-Pecho.png",
+    "gifUrl": "gif/Aperturas-De-Pecho-Maquina-Pecho.gif",
+    "videoUrl": "mp4/Aperturas-De-Pecho-Maquina-Pecho.mp4",
+    "equipments": [
+      "MÁQUINA"
+    ],
+    "bodyParts": [
+      "PECHO"
+    ],
+    "gender": "male",
+    "exerciseType": "FUERZA",
+    "targetMuscles": [
+      "Pectoral mayor"
+    ],
+    "secondaryMuscles": [
+      "Deltoides anterior"
+    ],
+    "keywords": [
+      "Aperturas de pecho (máquina)",
+      "Aperturas de pecho (máquina) técnica",
+      "Ejercicio de pecho con máquina",
+      "Pectoral mayor ejercicio",
+      "Rutina de pecho",
+      "Cómo hacer aperturas de pecho (máquina)",
+      "Aperturas de pecho (máquina) gif"
+    ],
+    "overview": "Aperturas de pecho (máquina) es un ejercicio de fuerza para pecho que se realiza con máquina. Trabaja principalmente pectoral mayor, con apoyo de deltoides anterior. Es adecuado para principiantes e intermedios que buscan ganar masa muscular y fuerza con una técnica controlada.",
+    "instructions": [
+      "Agarres a la altura del pecho, codos ligeramente flexionados.",
+      "Junta los brazos en arco como abrazando un árbol.",
+      "Aprieta el pecho 1 s al centro.",
+      "Abre controlado hasta un estiramiento cómodo para el hombro."
+    ],
+    "exerciseTips": [
+      "Movimientos controlados: sube en 1–2 s y baja en 2–3 s, sin impulso ni rebotes.",
+      "Rango completo y cómodo: busca el estiramiento y la contracción sin forzar la articulación.",
+      "Respiración: exhala al hacer el esfuerzo e inhala al volver a la posición inicial."
+    ],
+    "variations": [
+      "Press inclinado con mancuernas: trabaja pectoral superior con mancuernas y banco.",
+      "Press de banca con barra: trabaja pectoral mayor con barra y banco.",
+      "Press plano con mancuernas: trabaja pectoral mayor con mancuernas y banco.",
+      "Flexiones de pecho: trabaja pectoral con peso corporal."
+    ],
+    "relatedExerciseIds": [
+      "mrg_incline_db_press",
+      "mrg_bench_press",
+      "mrg_db_bench_press",
+      "mrg_push_up",
+      "mrg_cable_crossover",
+      "mrg_chest_press",
+      "mrg_incline_machine_press",
+      "mrg_pec_deck_classic"
+    ],
+    "defaults": {
+      "sets": 3,
+      "repMin": 10,
+      "repMax": 12,
+      "rir": "2",
+      "restSec": 90,
+      "unit": "reps"
+    }
+  },
+  {
+    "exerciseId": "mrg_leg_press",
+    "animKey": "leg_press",
+    "name": "Prensa de piernas",
+    "imageUrl": "png/Prensa-De-Piernas-Piernas.png",
+    "gifUrl": "gif/Prensa-De-Piernas-Piernas.gif",
+    "videoUrl": "mp4/Prensa-De-Piernas-Piernas.mp4",
+    "equipments": [
+      "PRENSA"
+    ],
+    "bodyParts": [
+      "PIERNAS"
+    ],
+    "gender": "male",
+    "exerciseType": "FUERZA",
+    "targetMuscles": [
+      "Cuádriceps"
+    ],
+    "secondaryMuscles": [
+      "Glúteo mayor",
+      "Aductores"
+    ],
+    "keywords": [
+      "Prensa de piernas",
+      "Prensa de piernas técnica",
+      "Ejercicio de piernas con prensa",
+      "Cuádriceps ejercicio",
+      "Rutina de piernas",
+      "Cómo hacer prensa de piernas",
+      "Prensa de piernas gif"
+    ],
+    "overview": "Prensa de piernas es un ejercicio de fuerza para piernas que se realiza con prensa. Trabaja principalmente cuádriceps, con apoyo de glúteo mayor, aductores. Es adecuado para niveles intermedios que buscan ganar masa muscular y fuerza con una técnica controlada.",
+    "instructions": [
+      "Pies a la anchura de cadera en el centro de la plataforma.",
+      "Recorrido cómodo y sin dolor: no bajes más de lo tolerable.",
+      "Empuja con todo el pie, rodillas alineadas con la punta.",
+      "NO bloquees las rodillas arriba. Detente si molesta la rodilla."
+    ],
+    "exerciseTips": [
+      "Movimientos controlados: sube en 1–2 s y baja en 2–3 s, sin impulso ni rebotes.",
+      "Rango completo y cómodo: busca el estiramiento y la contracción sin forzar la articulación.",
+      "Respiración: exhala al hacer el esfuerzo e inhala al volver a la posición inicial."
+    ],
+    "variations": [
+      "Extensión isométrica de rodilla 90°: trabaja cuádriceps (isométrico) con máquina.",
+      "Sentadilla isométrica en pared: trabaja cuádriceps con peso corporal.",
+      "Sentadilla (goblet / libre): trabaja cuádriceps con mancuernas.",
+      "Sentadilla búlgara: trabaja cuádriceps con mancuernas y banco."
+    ],
+    "relatedExerciseIds": [
+      "mrg_iso_knee_ext",
+      "mrg_wall_sit",
+      "mrg_squat",
+      "mrg_bulgarian_split",
+      "mrg_lunge",
+      "mrg_leg_extension",
+      "mrg_step_up",
+      "mrg_adductor",
+      "mrg_seated_leg_curl",
+      "mrg_lying_leg_curl"
+    ],
+    "defaults": {
+      "sets": 3,
+      "repMin": 10,
+      "repMax": 12,
+      "rir": "2",
+      "restSec": 90,
+      "unit": "reps"
+    }
+  },
+  {
+    "exerciseId": "mrg_leg_press_calf",
+    "animKey": "leg_press_calf",
+    "name": "Pantorrillas en prensa",
+    "imageUrl": "png/Pantorrillas-En-Prensa-Piernas.png",
+    "gifUrl": "gif/Pantorrillas-En-Prensa-Piernas.gif",
+    "videoUrl": "mp4/Pantorrillas-En-Prensa-Piernas.mp4",
+    "equipments": [
+      "PRENSA"
+    ],
+    "bodyParts": [
+      "PIERNAS"
+    ],
+    "gender": "male",
+    "exerciseType": "FUERZA",
+    "targetMuscles": [
+      "Gastrocnemio"
+    ],
+    "secondaryMuscles": [
+      "Sóleo"
+    ],
+    "keywords": [
+      "Pantorrillas en prensa",
+      "Pantorrillas en prensa técnica",
+      "Ejercicio de piernas con prensa",
+      "Gastrocnemio ejercicio",
+      "Rutina de piernas",
+      "Cómo hacer pantorrillas en prensa",
+      "Pantorrillas en prensa gif"
+    ],
+    "overview": "Pantorrillas en prensa es un ejercicio de fuerza para piernas que se realiza con prensa. Trabaja principalmente gastrocnemio, con apoyo de sóleo. Es adecuado para niveles intermedios que buscan ganar masa muscular y fuerza con una técnica controlada.",
+    "instructions": [
+      "Piernas casi extendidas, sin bloquear rodillas.",
+      "Solo la punta del pie sobre la plataforma.",
+      "Empuja con la punta hasta extender el tobillo, pausa 1 s.",
+      "Baja lento hasta un estiramiento profundo."
+    ],
+    "exerciseTips": [
+      "Movimientos controlados: sube en 1–2 s y baja en 2–3 s, sin impulso ni rebotes.",
+      "Rango completo y cómodo: busca el estiramiento y la contracción sin forzar la articulación.",
+      "Respiración: exhala al hacer el esfuerzo e inhala al volver a la posición inicial."
+    ],
+    "variations": [
+      "Pantorrilla de pie: trabaja gastrocnemio con máquina.",
+      "Extensión isométrica de rodilla 90°: trabaja cuádriceps (isométrico) con máquina.",
+      "Sentadilla isométrica en pared: trabaja cuádriceps con peso corporal.",
+      "Aductores en máquina: trabaja aductores (cara interna del muslo) con máquina."
+    ],
+    "relatedExerciseIds": [
+      "mrg_standing_calf",
+      "mrg_iso_knee_ext",
+      "mrg_wall_sit",
+      "mrg_adductor",
+      "mrg_seated_leg_curl",
+      "mrg_lying_leg_curl",
+      "mrg_seated_calf",
+      "mrg_squat",
+      "mrg_bulgarian_split",
+      "mrg_lunge"
+    ],
+    "defaults": {
+      "sets": 3,
+      "repMin": 10,
+      "repMax": 12,
+      "rir": "2",
+      "restSec": 90,
+      "unit": "reps"
+    }
+  },
+  {
+    "exerciseId": "mrg_iso_knee_ext",
+    "animKey": "iso_knee_ext",
+    "name": "Extensión isométrica de rodilla 90°",
+    "imageUrl": "png/Extension-Isometrica-De-Rodilla-90-Piernas.png",
+    "gifUrl": "gif/Extension-Isometrica-De-Rodilla-90-Piernas.gif",
+    "videoUrl": "mp4/Extension-Isometrica-De-Rodilla-90-Piernas.mp4",
+    "equipments": [
+      "MÁQUINA"
+    ],
+    "bodyParts": [
+      "PIERNAS"
+    ],
+    "gender": "male",
+    "exerciseType": "ISOMÉTRICO",
+    "targetMuscles": [
+      "Cuádriceps (isométrico)"
+    ],
+    "secondaryMuscles": [],
+    "keywords": [
+      "Extensión isométrica de rodilla 90°",
+      "Extensión isométrica de rodilla 90° técnica",
+      "Ejercicio de piernas con máquina",
+      "Cuádriceps (isométrico) ejercicio",
+      "Rutina de piernas",
+      "Cómo hacer extensión isométrica de rodilla 90°",
+      "Extensión isométrica de rodilla 90° gif"
+    ],
+    "overview": "Extensión isométrica de rodilla 90° es un ejercicio isométrico (máquina) en el que se sostiene una posición sin movimiento. Trabaja principalmente cuádriceps (isométrico). Desarrolla resistencia muscular y estabilidad con poca carga articular; se registra en segundos.",
+    "instructions": [
+      "Rodilla a 90°; la máquina debe quedar bloqueada o con peso que no puedas mover.",
+      "Empuja contra el rodillo de forma progresiva, sin dolor.",
+      "Mantén la contracción el tiempo indicado respirando normal.",
+      "Solo si fue indicada por tu especialista y es tolerada."
+    ],
+    "exerciseTips": [
+      "Respiración continua: no aguantes el aire durante el isométrico.",
+      "Calidad antes que tiempo: termina la serie cuando se pierda la postura correcta.",
+      "Sin dolor articular: detente si aparece molestia en rodilla, hombro o zona lumbar."
+    ],
+    "variations": [
+      "Prensa de piernas: trabaja cuádriceps con prensa.",
+      "Sentadilla isométrica en pared: trabaja cuádriceps con peso corporal.",
+      "Sentadilla (goblet / libre): trabaja cuádriceps con mancuernas.",
+      "Sentadilla búlgara: trabaja cuádriceps con mancuernas y banco."
+    ],
+    "relatedExerciseIds": [
+      "mrg_leg_press",
+      "mrg_wall_sit",
+      "mrg_squat",
+      "mrg_bulgarian_split",
+      "mrg_lunge",
+      "mrg_step_up",
+      "mrg_leg_extension",
+      "mrg_leg_press_calf",
+      "mrg_adductor",
+      "mrg_seated_leg_curl"
+    ],
+    "defaults": {
+      "sets": 3,
+      "repMin": 20,
+      "repMax": 30,
+      "rir": "—",
+      "restSec": 60,
+      "unit": "seg"
+    }
+  },
+  {
+    "exerciseId": "mrg_wall_sit",
+    "animKey": "wall_sit",
+    "name": "Sentadilla isométrica en pared",
+    "imageUrl": "png/Sentadilla-Isometrica-En-Pared-Piernas.png",
+    "gifUrl": "gif/Sentadilla-Isometrica-En-Pared-Piernas.gif",
+    "videoUrl": "mp4/Sentadilla-Isometrica-En-Pared-Piernas.mp4",
+    "equipments": [
+      "PESO CORPORAL"
+    ],
+    "bodyParts": [
+      "PIERNAS"
+    ],
+    "gender": "male",
+    "exerciseType": "ISOMÉTRICO",
+    "targetMuscles": [
+      "Cuádriceps"
+    ],
+    "secondaryMuscles": [
+      "Glúteos (isométrico)"
+    ],
+    "keywords": [
+      "Sentadilla isométrica en pared",
+      "Sentadilla isométrica en pared técnica",
+      "Ejercicio de piernas con peso corporal",
+      "Cuádriceps ejercicio",
+      "Rutina de piernas",
+      "Cómo hacer sentadilla isométrica en pared",
+      "Sentadilla isométrica en pared gif"
+    ],
+    "overview": "Sentadilla isométrica en pared es un ejercicio isométrico (peso corporal) en el que se sostiene una posición sin movimiento. Trabaja principalmente cuádriceps, con apoyo de glúteos (isométrico). Desarrolla resistencia muscular y estabilidad con poca carga articular; se registra en segundos.",
+    "instructions": [
+      "Espalda completamente apoyada en la pared.",
+      "Baja solo hasta un ángulo sin dolor (no tiene que ser 90°).",
+      "Rodillas sobre los tobillos, sin pasar la punta de los pies.",
+      "Omítela si molesta la rodilla."
+    ],
+    "exerciseTips": [
+      "Respiración continua: no aguantes el aire durante el isométrico.",
+      "Calidad antes que tiempo: termina la serie cuando se pierda la postura correcta.",
+      "Sin dolor articular: detente si aparece molestia en rodilla, hombro o zona lumbar."
+    ],
+    "variations": [
+      "Prensa de piernas: trabaja cuádriceps con prensa.",
+      "Extensión isométrica de rodilla 90°: trabaja cuádriceps (isométrico) con máquina.",
+      "Sentadilla (goblet / libre): trabaja cuádriceps con mancuernas.",
+      "Sentadilla búlgara: trabaja cuádriceps con mancuernas y banco."
+    ],
+    "relatedExerciseIds": [
+      "mrg_leg_press",
+      "mrg_iso_knee_ext",
+      "mrg_squat",
+      "mrg_bulgarian_split",
+      "mrg_lunge",
+      "mrg_leg_extension",
+      "mrg_step_up",
+      "mrg_leg_press_calf",
+      "mrg_adductor",
+      "mrg_seated_leg_curl"
+    ],
+    "defaults": {
+      "sets": 3,
+      "repMin": 20,
+      "repMax": 30,
+      "rir": "—",
+      "restSec": 60,
+      "unit": "seg"
+    }
+  },
+  {
+    "exerciseId": "mrg_adductor",
+    "animKey": "adductor",
+    "name": "Aductores en máquina",
+    "imageUrl": "png/Aductores-En-Maquina-Piernas.png",
+    "gifUrl": "gif/Aductores-En-Maquina-Piernas.gif",
+    "videoUrl": "mp4/Aductores-En-Maquina-Piernas.mp4",
+    "equipments": [
+      "MÁQUINA"
+    ],
+    "bodyParts": [
+      "PIERNAS"
+    ],
+    "gender": "male",
+    "exerciseType": "FUERZA",
+    "targetMuscles": [
+      "Aductores (cara interna del muslo)"
+    ],
+    "secondaryMuscles": [],
+    "keywords": [
+      "Aductores en máquina",
+      "Aductores en máquina técnica",
+      "Ejercicio de piernas con máquina",
+      "Aductores (cara interna del muslo) ejercicio",
+      "Rutina de piernas",
+      "Cómo hacer aductores en máquina",
+      "Aductores en máquina gif"
+    ],
+    "overview": "Aductores en máquina es un ejercicio de fuerza para piernas que se realiza con máquina. Trabaja principalmente aductores (cara interna del muslo). Es adecuado para principiantes e intermedios que buscan ganar masa muscular y fuerza con una técnica controlada.",
+    "instructions": [
+      "Apertura inicial cómoda, sin forzar la ingle.",
+      "Cierra las piernas apretando la cara interna del muslo.",
+      "Pausa 1 s y abre lento.",
+      "Espalda apoyada todo el tiempo."
+    ],
+    "exerciseTips": [
+      "Movimientos controlados: sube en 1–2 s y baja en 2–3 s, sin impulso ni rebotes.",
+      "Rango completo y cómodo: busca el estiramiento y la contracción sin forzar la articulación.",
+      "Respiración: exhala al hacer el esfuerzo e inhala al volver a la posición inicial."
+    ],
+    "variations": [
+      "Prensa de piernas: trabaja cuádriceps con prensa.",
+      "Pantorrillas en prensa: trabaja gastrocnemio con prensa.",
+      "Sentadilla isométrica en pared: trabaja cuádriceps con peso corporal.",
+      "Sentadilla (goblet / libre): trabaja cuádriceps con mancuernas."
+    ],
+    "relatedExerciseIds": [
+      "mrg_leg_press",
+      "mrg_leg_press_calf",
+      "mrg_wall_sit",
+      "mrg_squat",
+      "mrg_bulgarian_split",
+      "mrg_lunge",
+      "mrg_step_up",
+      "mrg_iso_knee_ext",
+      "mrg_seated_leg_curl",
+      "mrg_lying_leg_curl"
+    ],
+    "defaults": {
+      "sets": 3,
+      "repMin": 10,
+      "repMax": 12,
+      "rir": "2",
+      "restSec": 90,
+      "unit": "reps"
+    }
+  },
+  {
+    "exerciseId": "mrg_abductor",
+    "animKey": "abductor",
+    "name": "Abductores en máquina",
+    "imageUrl": "png/Abductores-En-Maquina-Gluteos.png",
+    "gifUrl": "gif/Abductores-En-Maquina-Gluteos.gif",
+    "videoUrl": "mp4/Abductores-En-Maquina-Gluteos.mp4",
+    "equipments": [
+      "MÁQUINA"
+    ],
+    "bodyParts": [
+      "GLÚTEOS"
+    ],
+    "gender": "male",
+    "exerciseType": "FUERZA",
+    "targetMuscles": [
+      "Glúteo medio y menor"
+    ],
+    "secondaryMuscles": [],
+    "keywords": [
+      "Abductores en máquina",
+      "Abductores en máquina técnica",
+      "Ejercicio de glúteos con máquina",
+      "Glúteo medio y menor ejercicio",
+      "Rutina de glúteos",
+      "Cómo hacer abductores en máquina",
+      "Abductores en máquina gif"
+    ],
+    "overview": "Abductores en máquina es un ejercicio de fuerza para glúteos que se realiza con máquina. Trabaja principalmente glúteo medio y menor. Es adecuado para principiantes e intermedios que buscan ganar masa muscular y fuerza con una técnica controlada.",
+    "instructions": [
+      "Rodillas juntas al inicio, cojines por fuera.",
+      "Abre empujando con la parte externa de la cadera.",
+      "Pausa 1 s abierto.",
+      "Cierra lento sin dejar caer el peso."
+    ],
+    "exerciseTips": [
+      "Movimientos controlados: sube en 1–2 s y baja en 2–3 s, sin impulso ni rebotes.",
+      "Rango completo y cómodo: busca el estiramiento y la contracción sin forzar la articulación.",
+      "Respiración: exhala al hacer el esfuerzo e inhala al volver a la posición inicial."
+    ],
+    "variations": [
+      "Puente de glúteos: trabaja glúteo mayor con peso corporal.",
+      "Puente de glúteos unilateral: trabaja glúteo mayor y medio con peso corporal.",
+      "Patada de glúteo en polea: trabaja glúteo mayor con polea y tobillera.",
+      "Patada de glúteo en cuadrupedia: trabaja glúteo mayor con peso corporal."
+    ],
+    "relatedExerciseIds": [
+      "mrg_glute_bridge",
+      "mrg_single_leg_bridge",
+      "mrg_cable_kickback",
+      "mrg_donkey_kick",
+      "mrg_hip_abduction_band",
+      "mrg_hip_thrust"
+    ],
+    "defaults": {
+      "sets": 3,
+      "repMin": 10,
+      "repMax": 12,
+      "rir": "2",
+      "restSec": 90,
+      "unit": "reps"
+    }
+  },
+  {
+    "exerciseId": "mrg_seated_leg_curl",
+    "animKey": "seated_leg_curl",
+    "name": "Curl femoral sentado",
+    "imageUrl": "png/Curl-Femoral-Sentado-Piernas.png",
+    "gifUrl": "gif/Curl-Femoral-Sentado-Piernas.gif",
+    "videoUrl": "mp4/Curl-Femoral-Sentado-Piernas.mp4",
+    "equipments": [
+      "MÁQUINA"
+    ],
+    "bodyParts": [
+      "PIERNAS"
+    ],
+    "gender": "male",
+    "exerciseType": "FUERZA",
+    "targetMuscles": [
+      "Isquiotibiales"
+    ],
+    "secondaryMuscles": [],
+    "keywords": [
+      "Curl femoral sentado",
+      "Curl femoral sentado técnica",
+      "Ejercicio de piernas con máquina",
+      "Isquiotibiales ejercicio",
+      "Rutina de piernas",
+      "Cómo hacer curl femoral sentado",
+      "Curl femoral sentado gif"
+    ],
+    "overview": "Curl femoral sentado es un ejercicio de fuerza para piernas que se realiza con máquina. Trabaja principalmente isquiotibiales. Es adecuado para principiantes e intermedios que buscan ganar masa muscular y fuerza con una técnica controlada.",
+    "instructions": [
+      "Rodilla alineada con el eje de la máquina.",
+      "Cojín superior firme sobre los muslos.",
+      "Flexiona llevando el talón hacia abajo y atrás.",
+      "Regresa lento sin bloquear la rodilla."
+    ],
+    "exerciseTips": [
+      "Movimientos controlados: sube en 1–2 s y baja en 2–3 s, sin impulso ni rebotes.",
+      "Rango completo y cómodo: busca el estiramiento y la contracción sin forzar la articulación.",
+      "Respiración: exhala al hacer el esfuerzo e inhala al volver a la posición inicial."
+    ],
+    "variations": [
+      "Curl femoral acostado: trabaja isquiotibiales con máquina.",
+      "Prensa de piernas: trabaja cuádriceps con prensa.",
+      "Pantorrillas en prensa: trabaja gastrocnemio con prensa.",
+      "Sentadilla isométrica en pared: trabaja cuádriceps con peso corporal."
+    ],
+    "relatedExerciseIds": [
+      "mrg_lying_leg_curl",
+      "mrg_leg_press",
+      "mrg_leg_press_calf",
+      "mrg_wall_sit",
+      "mrg_squat",
+      "mrg_bulgarian_split",
+      "mrg_lunge",
+      "mrg_step_up",
+      "mrg_iso_knee_ext",
+      "mrg_adductor"
+    ],
+    "defaults": {
+      "sets": 3,
+      "repMin": 10,
+      "repMax": 12,
+      "rir": "2",
+      "restSec": 90,
+      "unit": "reps"
+    }
+  },
+  {
+    "exerciseId": "mrg_lying_leg_curl",
+    "animKey": "lying_leg_curl",
+    "name": "Curl femoral acostado",
+    "imageUrl": "png/Curl-Femoral-Acostado-Piernas.png",
+    "gifUrl": "gif/Curl-Femoral-Acostado-Piernas.gif",
+    "videoUrl": "mp4/Curl-Femoral-Acostado-Piernas.mp4",
+    "equipments": [
+      "MÁQUINA"
+    ],
+    "bodyParts": [
+      "PIERNAS"
+    ],
+    "gender": "male",
+    "exerciseType": "FUERZA",
+    "targetMuscles": [
+      "Isquiotibiales"
+    ],
+    "secondaryMuscles": [],
+    "keywords": [
+      "Curl femoral acostado",
+      "Curl femoral acostado técnica",
+      "Ejercicio de piernas con máquina",
+      "Isquiotibiales ejercicio",
+      "Rutina de piernas",
+      "Cómo hacer curl femoral acostado",
+      "Curl femoral acostado gif"
+    ],
+    "overview": "Curl femoral acostado es un ejercicio de fuerza para piernas que se realiza con máquina. Trabaja principalmente isquiotibiales. Es adecuado para principiantes e intermedios que buscan ganar masa muscular y fuerza con una técnica controlada.",
+    "instructions": [
+      "Cadera pegada al banco: no la levantes.",
+      "Rodillas justo fuera del borde del banco.",
+      "Lleva los talones hacia los glúteos.",
+      "Baja controlado en 2–3 s."
+    ],
+    "exerciseTips": [
+      "Movimientos controlados: sube en 1–2 s y baja en 2–3 s, sin impulso ni rebotes.",
+      "Rango completo y cómodo: busca el estiramiento y la contracción sin forzar la articulación.",
+      "Respiración: exhala al hacer el esfuerzo e inhala al volver a la posición inicial."
+    ],
+    "variations": [
+      "Curl femoral sentado: trabaja isquiotibiales con máquina.",
+      "Prensa de piernas: trabaja cuádriceps con prensa.",
+      "Pantorrillas en prensa: trabaja gastrocnemio con prensa.",
+      "Sentadilla isométrica en pared: trabaja cuádriceps con peso corporal."
+    ],
+    "relatedExerciseIds": [
+      "mrg_seated_leg_curl",
+      "mrg_leg_press",
+      "mrg_leg_press_calf",
+      "mrg_wall_sit",
+      "mrg_squat",
+      "mrg_bulgarian_split",
+      "mrg_lunge",
+      "mrg_step_up",
+      "mrg_iso_knee_ext",
+      "mrg_adductor"
+    ],
+    "defaults": {
+      "sets": 3,
+      "repMin": 10,
+      "repMax": 12,
+      "rir": "2",
+      "restSec": 90,
+      "unit": "reps"
+    }
+  },
+  {
+    "exerciseId": "mrg_hip_thrust",
+    "animKey": "hip_thrust",
+    "name": "Hip thrust en máquina",
+    "imageUrl": "png/Hip-Thrust-En-Maquina-Gluteos.png",
+    "gifUrl": "gif/Hip-Thrust-En-Maquina-Gluteos.gif",
+    "videoUrl": "mp4/Hip-Thrust-En-Maquina-Gluteos.mp4",
+    "equipments": [
+      "MÁQUINA"
+    ],
+    "bodyParts": [
+      "GLÚTEOS"
+    ],
+    "gender": "male",
+    "exerciseType": "FUERZA",
+    "targetMuscles": [
+      "Glúteo mayor"
+    ],
+    "secondaryMuscles": [
+      "Isquiotibiales"
+    ],
+    "keywords": [
+      "Hip thrust en máquina",
+      "Hip thrust en máquina técnica",
+      "Ejercicio de glúteos con máquina",
+      "Glúteo mayor ejercicio",
+      "Rutina de glúteos",
+      "Cómo hacer hip thrust en máquina",
+      "Hip thrust en máquina gif"
+    ],
+    "overview": "Hip thrust en máquina es un ejercicio de fuerza para glúteos que se realiza con máquina. Trabaja principalmente glúteo mayor, con apoyo de isquiotibiales. Es adecuado para principiantes e intermedios que buscan ganar masa muscular y fuerza con una técnica controlada.",
+    "instructions": [
+      "Parte alta de la espalda apoyada en el respaldo.",
+      "Mentón ligeramente recogido, costillas abajo.",
+      "Sube empujando con los talones hasta alinear rodilla-cadera-hombro.",
+      "NO arquees la zona lumbar arriba. Suspende si hay dolor lumbar."
+    ],
+    "exerciseTips": [
+      "Movimientos controlados: sube en 1–2 s y baja en 2–3 s, sin impulso ni rebotes.",
+      "Rango completo y cómodo: busca el estiramiento y la contracción sin forzar la articulación.",
+      "Respiración: exhala al hacer el esfuerzo e inhala al volver a la posición inicial."
+    ],
+    "variations": [
+      "Puente de glúteos: trabaja glúteo mayor con peso corporal.",
+      "Puente de glúteos unilateral: trabaja glúteo mayor y medio con peso corporal.",
+      "Patada de glúteo en polea: trabaja glúteo mayor con polea y tobillera.",
+      "Patada de glúteo en cuadrupedia: trabaja glúteo mayor con peso corporal."
+    ],
+    "relatedExerciseIds": [
+      "mrg_glute_bridge",
+      "mrg_single_leg_bridge",
+      "mrg_cable_kickback",
+      "mrg_donkey_kick",
+      "mrg_hip_abduction_band",
+      "mrg_abductor"
+    ],
+    "defaults": {
+      "sets": 3,
+      "repMin": 10,
+      "repMax": 12,
+      "rir": "2",
+      "restSec": 90,
+      "unit": "reps"
+    }
+  },
+  {
+    "exerciseId": "mrg_seated_calf",
+    "animKey": "seated_calf",
+    "name": "Pantorrilla sentado",
+    "imageUrl": "png/Pantorrilla-Sentado-Piernas.png",
+    "gifUrl": "gif/Pantorrilla-Sentado-Piernas.gif",
+    "videoUrl": "mp4/Pantorrilla-Sentado-Piernas.mp4",
+    "equipments": [
+      "MÁQUINA"
+    ],
+    "bodyParts": [
+      "PIERNAS"
+    ],
+    "gender": "male",
+    "exerciseType": "FUERZA",
+    "targetMuscles": [
+      "Sóleo"
+    ],
+    "secondaryMuscles": [
+      "Gastrocnemio"
+    ],
+    "keywords": [
+      "Pantorrilla sentado",
+      "Pantorrilla sentado técnica",
+      "Ejercicio de piernas con máquina",
+      "Sóleo ejercicio",
+      "Rutina de piernas",
+      "Cómo hacer pantorrilla sentado",
+      "Pantorrilla sentado gif"
+    ],
+    "overview": "Pantorrilla sentado es un ejercicio de fuerza para piernas que se realiza con máquina. Trabaja principalmente sóleo, con apoyo de gastrocnemio. Es adecuado para principiantes e intermedios que buscan ganar masa muscular y fuerza con una técnica controlada.",
+    "instructions": [
+      "Puntas de los pies en el borde de la plataforma.",
+      "Baja el talón hasta un buen estiramiento.",
+      "Sube lo más alto posible y aprieta 1 s.",
+      "Ritmo controlado, sin rebotes."
+    ],
+    "exerciseTips": [
+      "Movimientos controlados: sube en 1–2 s y baja en 2–3 s, sin impulso ni rebotes.",
+      "Rango completo y cómodo: busca el estiramiento y la contracción sin forzar la articulación.",
+      "Respiración: exhala al hacer el esfuerzo e inhala al volver a la posición inicial."
+    ],
+    "variations": [
+      "Prensa de piernas: trabaja cuádriceps con prensa.",
+      "Pantorrillas en prensa: trabaja gastrocnemio con prensa.",
+      "Sentadilla isométrica en pared: trabaja cuádriceps con peso corporal.",
+      "Sentadilla (goblet / libre): trabaja cuádriceps con mancuernas."
+    ],
+    "relatedExerciseIds": [
+      "mrg_leg_press",
+      "mrg_leg_press_calf",
+      "mrg_wall_sit",
+      "mrg_squat",
+      "mrg_bulgarian_split",
+      "mrg_lunge",
+      "mrg_step_up",
+      "mrg_iso_knee_ext",
+      "mrg_adductor",
+      "mrg_seated_leg_curl"
+    ],
+    "defaults": {
+      "sets": 3,
+      "repMin": 10,
+      "repMax": 12,
+      "rir": "2",
+      "restSec": 90,
+      "unit": "reps"
+    }
+  },
+  {
+    "exerciseId": "mrg_incline_curl",
+    "animKey": "incline_curl",
+    "name": "Curl en banco inclinado",
+    "imageUrl": "png/Curl-En-Banco-Inclinado-Biceps.png",
+    "gifUrl": "gif/Curl-En-Banco-Inclinado-Biceps.gif",
+    "videoUrl": "mp4/Curl-En-Banco-Inclinado-Biceps.mp4",
+    "equipments": [
+      "MANCUERNAS",
+      "BANCO"
+    ],
+    "bodyParts": [
+      "BÍCEPS"
+    ],
+    "gender": "male",
+    "exerciseType": "FUERZA",
+    "targetMuscles": [
+      "Bíceps (cabeza larga)"
+    ],
+    "secondaryMuscles": [
+      "Braquial"
+    ],
+    "keywords": [
+      "Curl en banco inclinado",
+      "Curl en banco inclinado técnica",
+      "Ejercicio de bíceps con mancuernas",
+      "Bíceps (cabeza larga) ejercicio",
+      "Rutina de bíceps",
+      "Cómo hacer curl en banco inclinado",
+      "Curl en banco inclinado gif"
+    ],
+    "overview": "Curl en banco inclinado es un ejercicio de fuerza para bíceps que se realiza con mancuernas y banco. Trabaja principalmente bíceps (cabeza larga), con apoyo de braquial. Es adecuado para niveles intermedios que buscan ganar masa muscular y fuerza con una técnica controlada.",
+    "instructions": [
+      "Banco a 45–60°, brazos colgando detrás de la línea del torso.",
+      "Codos fijos, no los adelantes.",
+      "Sube supinando (palmas arriba) y aprieta.",
+      "Baja lento, sin forzar la extensión completa si molesta el codo."
+    ],
+    "exerciseTips": [
+      "Movimientos controlados: sube en 1–2 s y baja en 2–3 s, sin impulso ni rebotes.",
+      "Rango completo y cómodo: busca el estiramiento y la contracción sin forzar la articulación.",
+      "Respiración: exhala al hacer el esfuerzo e inhala al volver a la posición inicial."
+    ],
+    "variations": [
+      "Curl predicador en máquina: trabaja bíceps (cabeza corta) con máquina.",
+      "Curl en polea baja: trabaja bíceps con polea y barra.",
+      "Curl Bayesian en polea: trabaja bíceps (énfasis en estiramiento) con polea.",
+      "Curl con barra: trabaja bíceps con barra."
+    ],
+    "relatedExerciseIds": [
+      "mrg_preacher_curl",
+      "mrg_low_cable_curl",
+      "mrg_bayesian_curl",
+      "mrg_barbell_curl",
+      "mrg_db_curl",
+      "mrg_cable_curl_rope_high",
+      "mrg_concentration_curl",
+      "mrg_rope_hammer",
+      "mrg_db_hammer"
+    ],
+    "defaults": {
+      "sets": 3,
+      "repMin": 10,
+      "repMax": 12,
+      "rir": "2",
+      "restSec": 90,
+      "unit": "reps"
+    }
+  },
+  {
+    "exerciseId": "mrg_preacher_curl",
+    "animKey": "preacher_curl",
+    "name": "Curl predicador en máquina",
+    "imageUrl": "png/Curl-Predicador-En-Maquina-Biceps.png",
+    "gifUrl": "gif/Curl-Predicador-En-Maquina-Biceps.gif",
+    "videoUrl": "mp4/Curl-Predicador-En-Maquina-Biceps.mp4",
+    "equipments": [
+      "MÁQUINA"
+    ],
+    "bodyParts": [
+      "BÍCEPS"
+    ],
+    "gender": "male",
+    "exerciseType": "FUERZA",
+    "targetMuscles": [
+      "Bíceps (cabeza corta)"
+    ],
+    "secondaryMuscles": [
+      "Braquial"
+    ],
+    "keywords": [
+      "Curl predicador en máquina",
+      "Curl predicador en máquina técnica",
+      "Ejercicio de bíceps con máquina",
+      "Bíceps (cabeza corta) ejercicio",
+      "Rutina de bíceps",
+      "Cómo hacer curl predicador en máquina",
+      "Curl predicador en máquina gif"
+    ],
+    "overview": "Curl predicador en máquina es un ejercicio de fuerza para bíceps que se realiza con máquina. Trabaja principalmente bíceps (cabeza corta), con apoyo de braquial. Es adecuado para principiantes e intermedios que buscan ganar masa muscular y fuerza con una técnica controlada.",
+    "instructions": [
+      "Axilas pegadas al borde del cojín.",
+      "Sube hasta contraer, sin despegar los brazos del soporte.",
+      "NO fuerces la extensión completa del codo abajo.",
+      "Bajada lenta (3 s)."
+    ],
+    "exerciseTips": [
+      "Movimientos controlados: sube en 1–2 s y baja en 2–3 s, sin impulso ni rebotes.",
+      "Rango completo y cómodo: busca el estiramiento y la contracción sin forzar la articulación.",
+      "Respiración: exhala al hacer el esfuerzo e inhala al volver a la posición inicial."
+    ],
+    "variations": [
+      "Curl en banco inclinado: trabaja bíceps (cabeza larga) con mancuernas y banco.",
+      "Curl en polea baja: trabaja bíceps con polea y barra.",
+      "Curl Bayesian en polea: trabaja bíceps (énfasis en estiramiento) con polea.",
+      "Curl con barra: trabaja bíceps con barra."
+    ],
+    "relatedExerciseIds": [
+      "mrg_incline_curl",
+      "mrg_low_cable_curl",
+      "mrg_bayesian_curl",
+      "mrg_barbell_curl",
+      "mrg_db_curl",
+      "mrg_concentration_curl",
+      "mrg_cable_curl_rope_high",
+      "mrg_rope_hammer",
+      "mrg_db_hammer"
+    ],
+    "defaults": {
+      "sets": 3,
+      "repMin": 10,
+      "repMax": 12,
+      "rir": "2",
+      "restSec": 90,
+      "unit": "reps"
+    }
+  },
+  {
+    "exerciseId": "mrg_rope_hammer",
+    "animKey": "rope_hammer",
+    "name": "Curl martillo con cuerda",
+    "imageUrl": "png/Curl-Martillo-Con-Cuerda-Biceps.png",
+    "gifUrl": "gif/Curl-Martillo-Con-Cuerda-Biceps.gif",
+    "videoUrl": "mp4/Curl-Martillo-Con-Cuerda-Biceps.mp4",
+    "equipments": [
+      "POLEA",
+      "CUERDA"
+    ],
+    "bodyParts": [
+      "BÍCEPS"
+    ],
+    "gender": "male",
+    "exerciseType": "FUERZA",
+    "targetMuscles": [
+      "Braquial"
+    ],
+    "secondaryMuscles": [
+      "Braquiorradial",
+      "Bíceps"
+    ],
+    "keywords": [
+      "Curl martillo con cuerda",
+      "Curl martillo con cuerda técnica",
+      "Ejercicio de bíceps con polea",
+      "Braquial ejercicio",
+      "Rutina de bíceps",
+      "Cómo hacer curl martillo con cuerda",
+      "Curl martillo con cuerda gif"
+    ],
+    "overview": "Curl martillo con cuerda es un ejercicio de fuerza para bíceps que se realiza con polea y cuerda. Trabaja principalmente braquial, con apoyo de braquiorradial, bíceps. Es adecuado para niveles intermedios que buscan ganar masa muscular y fuerza con una técnica controlada.",
+    "instructions": [
+      "Agarre neutro (palmas enfrentadas) en la cuerda.",
+      "Codos pegados a los costados.",
+      "Sube hasta la altura del pecho sin balancear.",
+      "Baja controlado."
+    ],
+    "exerciseTips": [
+      "Movimientos controlados: sube en 1–2 s y baja en 2–3 s, sin impulso ni rebotes.",
+      "Rango completo y cómodo: busca el estiramiento y la contracción sin forzar la articulación.",
+      "Respiración: exhala al hacer el esfuerzo e inhala al volver a la posición inicial."
+    ],
+    "variations": [
+      "Curl martillo con mancuernas: trabaja braquial con mancuernas.",
+      "Curl en banco inclinado: trabaja bíceps (cabeza larga) con mancuernas y banco.",
+      "Curl predicador en máquina: trabaja bíceps (cabeza corta) con máquina.",
+      "Curl en polea baja: trabaja bíceps con polea y barra."
+    ],
+    "relatedExerciseIds": [
+      "mrg_db_hammer",
+      "mrg_incline_curl",
+      "mrg_preacher_curl",
+      "mrg_low_cable_curl",
+      "mrg_bayesian_curl",
+      "mrg_barbell_curl",
+      "mrg_db_curl",
+      "mrg_concentration_curl",
+      "mrg_cable_curl_rope_high"
+    ],
+    "defaults": {
+      "sets": 3,
+      "repMin": 10,
+      "repMax": 12,
+      "rir": "2",
+      "restSec": 90,
+      "unit": "reps"
+    }
+  },
+  {
+    "exerciseId": "mrg_db_hammer",
+    "animKey": "db_hammer",
+    "name": "Curl martillo con mancuernas",
+    "imageUrl": "png/Curl-Martillo-Con-Mancuernas-Biceps.png",
+    "gifUrl": "gif/Curl-Martillo-Con-Mancuernas-Biceps.gif",
+    "videoUrl": "mp4/Curl-Martillo-Con-Mancuernas-Biceps.mp4",
+    "equipments": [
+      "MANCUERNAS"
+    ],
+    "bodyParts": [
+      "BÍCEPS"
+    ],
+    "gender": "male",
+    "exerciseType": "FUERZA",
+    "targetMuscles": [
+      "Braquial"
+    ],
+    "secondaryMuscles": [
+      "Braquiorradial",
+      "Bíceps"
+    ],
+    "keywords": [
+      "Curl martillo con mancuernas",
+      "Curl martillo con mancuernas técnica",
+      "Ejercicio de bíceps con mancuernas",
+      "Braquial ejercicio",
+      "Rutina de bíceps",
+      "Cómo hacer curl martillo con mancuernas",
+      "Curl martillo con mancuernas gif"
+    ],
+    "overview": "Curl martillo con mancuernas es un ejercicio de fuerza para bíceps que se realiza con mancuernas. Trabaja principalmente braquial, con apoyo de braquiorradial, bíceps. Es adecuado para niveles intermedios que buscan ganar masa muscular y fuerza con una técnica controlada.",
+    "instructions": [
+      "Mancuernas con agarre neutro.",
+      "Codos fijos al costado.",
+      "Sube sin girar la muñeca ni balancear el torso.",
+      "Baja en 2–3 s."
+    ],
+    "exerciseTips": [
+      "Movimientos controlados: sube en 1–2 s y baja en 2–3 s, sin impulso ni rebotes.",
+      "Rango completo y cómodo: busca el estiramiento y la contracción sin forzar la articulación.",
+      "Respiración: exhala al hacer el esfuerzo e inhala al volver a la posición inicial."
+    ],
+    "variations": [
+      "Curl martillo con cuerda: trabaja braquial con polea y cuerda.",
+      "Curl en banco inclinado: trabaja bíceps (cabeza larga) con mancuernas y banco.",
+      "Curl predicador en máquina: trabaja bíceps (cabeza corta) con máquina.",
+      "Curl en polea baja: trabaja bíceps con polea y barra."
+    ],
+    "relatedExerciseIds": [
+      "mrg_rope_hammer",
+      "mrg_incline_curl",
+      "mrg_preacher_curl",
+      "mrg_low_cable_curl",
+      "mrg_bayesian_curl",
+      "mrg_barbell_curl",
+      "mrg_concentration_curl",
+      "mrg_cable_curl_rope_high",
+      "mrg_db_curl"
+    ],
+    "defaults": {
+      "sets": 3,
+      "repMin": 10,
+      "repMax": 12,
+      "rir": "2",
+      "restSec": 90,
+      "unit": "reps"
+    }
+  },
+  {
+    "exerciseId": "mrg_low_cable_curl",
+    "animKey": "low_cable_curl",
+    "name": "Curl en polea baja",
+    "imageUrl": "png/Curl-En-Polea-Baja-Biceps.png",
+    "gifUrl": "gif/Curl-En-Polea-Baja-Biceps.gif",
+    "videoUrl": "mp4/Curl-En-Polea-Baja-Biceps.mp4",
+    "equipments": [
+      "POLEA",
+      "BARRA"
+    ],
+    "bodyParts": [
+      "BÍCEPS"
+    ],
+    "gender": "male",
+    "exerciseType": "FUERZA",
+    "targetMuscles": [
+      "Bíceps"
+    ],
+    "secondaryMuscles": [
+      "Braquial"
+    ],
+    "keywords": [
+      "Curl en polea baja",
+      "Curl en polea baja técnica",
+      "Ejercicio de bíceps con polea",
+      "Bíceps ejercicio",
+      "Rutina de bíceps",
+      "Cómo hacer curl en polea baja",
+      "Curl en polea baja gif"
+    ],
+    "overview": "Curl en polea baja es un ejercicio de fuerza para bíceps que se realiza con polea y barra. Trabaja principalmente bíceps, con apoyo de braquial. Es adecuado para niveles intermedios que buscan ganar masa muscular y fuerza con una técnica controlada.",
+    "instructions": [
+      "De pie, cerca de la polea, agarre supino.",
+      "Codos pegados al cuerpo.",
+      "Sube hasta contraer sin adelantar los codos.",
+      "Baja lento manteniendo la tensión del cable."
+    ],
+    "exerciseTips": [
+      "Movimientos controlados: sube en 1–2 s y baja en 2–3 s, sin impulso ni rebotes.",
+      "Rango completo y cómodo: busca el estiramiento y la contracción sin forzar la articulación.",
+      "Respiración: exhala al hacer el esfuerzo e inhala al volver a la posición inicial."
+    ],
+    "variations": [
+      "Curl en banco inclinado: trabaja bíceps (cabeza larga) con mancuernas y banco.",
+      "Curl predicador en máquina: trabaja bíceps (cabeza corta) con máquina.",
+      "Curl Bayesian en polea: trabaja bíceps (énfasis en estiramiento) con polea.",
+      "Curl con barra: trabaja bíceps con barra."
+    ],
+    "relatedExerciseIds": [
+      "mrg_incline_curl",
+      "mrg_preacher_curl",
+      "mrg_bayesian_curl",
+      "mrg_barbell_curl",
+      "mrg_db_curl",
+      "mrg_concentration_curl",
+      "mrg_cable_curl_rope_high",
+      "mrg_rope_hammer",
+      "mrg_db_hammer"
+    ],
+    "defaults": {
+      "sets": 3,
+      "repMin": 10,
+      "repMax": 12,
+      "rir": "2",
+      "restSec": 90,
+      "unit": "reps"
+    }
+  },
+  {
+    "exerciseId": "mrg_bayesian_curl",
+    "animKey": "bayesian_curl",
+    "name": "Curl Bayesian en polea",
+    "imageUrl": "png/Curl-Bayesian-En-Polea-Biceps.png",
+    "gifUrl": "gif/Curl-Bayesian-En-Polea-Biceps.gif",
+    "videoUrl": "mp4/Curl-Bayesian-En-Polea-Biceps.mp4",
+    "equipments": [
+      "POLEA"
+    ],
+    "bodyParts": [
+      "BÍCEPS"
+    ],
+    "gender": "male",
+    "exerciseType": "FUERZA",
+    "targetMuscles": [
+      "Bíceps (énfasis en estiramiento)"
+    ],
+    "secondaryMuscles": [],
+    "keywords": [
+      "Curl Bayesian en polea",
+      "Curl Bayesian en polea técnica",
+      "Ejercicio de bíceps con polea",
+      "Bíceps (énfasis en estiramiento) ejercicio",
+      "Rutina de bíceps",
+      "Cómo hacer curl bayesian en polea",
+      "Curl Bayesian en polea gif"
+    ],
+    "overview": "Curl Bayesian en polea es un ejercicio de fuerza para bíceps que se realiza con polea. Trabaja principalmente bíceps (énfasis en estiramiento). Es adecuado para niveles intermedios que buscan ganar masa muscular y fuerza con una técnica controlada.",
+    "instructions": [
+      "De espaldas a la polea, paso adelante.",
+      "Brazo ligeramente por detrás del torso.",
+      "Flexiona el codo sin moverlo hacia adelante.",
+      "Baja hasta un estiramiento cómodo y sin dolor de codo."
+    ],
+    "exerciseTips": [
+      "Movimientos controlados: sube en 1–2 s y baja en 2–3 s, sin impulso ni rebotes.",
+      "Rango completo y cómodo: busca el estiramiento y la contracción sin forzar la articulación.",
+      "Respiración: exhala al hacer el esfuerzo e inhala al volver a la posición inicial."
+    ],
+    "variations": [
+      "Curl en banco inclinado: trabaja bíceps (cabeza larga) con mancuernas y banco.",
+      "Curl predicador en máquina: trabaja bíceps (cabeza corta) con máquina.",
+      "Curl en polea baja: trabaja bíceps con polea y barra.",
+      "Curl con barra: trabaja bíceps con barra."
+    ],
+    "relatedExerciseIds": [
+      "mrg_incline_curl",
+      "mrg_preacher_curl",
+      "mrg_low_cable_curl",
+      "mrg_barbell_curl",
+      "mrg_db_curl",
+      "mrg_concentration_curl",
+      "mrg_cable_curl_rope_high",
+      "mrg_rope_hammer",
+      "mrg_db_hammer"
+    ],
+    "defaults": {
+      "sets": 3,
+      "repMin": 10,
+      "repMax": 12,
+      "rir": "2",
+      "restSec": 90,
+      "unit": "reps"
+    }
+  },
+  {
+    "exerciseId": "mrg_tri_unilateral",
+    "animKey": "tri_unilateral",
+    "name": "Extensión unilateral de tríceps en polea",
+    "imageUrl": "png/Extension-Unilateral-De-Triceps-En-Polea-Triceps.png",
+    "gifUrl": "gif/Extension-Unilateral-De-Triceps-En-Polea-Triceps.gif",
+    "videoUrl": "mp4/Extension-Unilateral-De-Triceps-En-Polea-Triceps.mp4",
+    "equipments": [
+      "POLEA"
+    ],
+    "bodyParts": [
+      "TRÍCEPS"
+    ],
+    "gender": "male",
+    "exerciseType": "FUERZA",
+    "targetMuscles": [
+      "Tríceps"
+    ],
+    "secondaryMuscles": [],
+    "keywords": [
+      "Extensión unilateral de tríceps en polea",
+      "Extensión unilateral de tríceps en polea técnica",
+      "Ejercicio de tríceps con polea",
+      "Tríceps ejercicio",
+      "Rutina de tríceps",
+      "Cómo hacer extensión unilateral de tríceps en polea",
+      "Extensión unilateral de tríceps en polea gif"
+    ],
+    "overview": "Extensión unilateral de tríceps en polea es un ejercicio de fuerza para tríceps que se realiza con polea. Trabaja principalmente tríceps. Es adecuado para niveles intermedios que buscan ganar masa muscular y fuerza con una técnica controlada.",
+    "instructions": [
+      "OPCIONAL: solo si no hay dolor de codo.",
+      "Codo pegado al costado y fijo.",
+      "Extiende hacia abajo sin bloquear de golpe.",
+      "Sube controlado hasta ~90°."
+    ],
+    "exerciseTips": [
+      "Movimientos controlados: sube en 1–2 s y baja en 2–3 s, sin impulso ni rebotes.",
+      "Rango completo y cómodo: busca el estiramiento y la contracción sin forzar la articulación.",
+      "Respiración: exhala al hacer el esfuerzo e inhala al volver a la posición inicial."
+    ],
+    "variations": [
+      "Fondos en paralelas: trabaja tríceps con paralelas y peso corporal.",
+      "Fondos en banco: trabaja tríceps con banco y peso corporal.",
+      "Press francés (rompecráneos): trabaja tríceps (cabeza larga) con barra y banco.",
+      "Extensión de tríceps sobre la cabeza: trabaja tríceps (cabeza larga) con mancuernas."
+    ],
+    "relatedExerciseIds": [
+      "mrg_dips",
+      "mrg_bench_dips",
+      "mrg_skull_crusher",
+      "mrg_overhead_tri_ext",
+      "mrg_tri_kickback",
+      "mrg_tri_pushdown_bar",
+      "mrg_tri_cross"
+    ],
+    "defaults": {
+      "sets": 3,
+      "repMin": 10,
+      "repMax": 12,
+      "rir": "2",
+      "restSec": 90,
+      "unit": "reps"
+    }
+  },
+  {
+    "exerciseId": "mrg_tri_cross",
+    "animKey": "tri_cross",
+    "name": "Extensión cruzada de tríceps en polea",
+    "imageUrl": "png/Extension-Cruzada-De-Triceps-En-Polea-Triceps.png",
+    "gifUrl": "gif/Extension-Cruzada-De-Triceps-En-Polea-Triceps.gif",
+    "videoUrl": "mp4/Extension-Cruzada-De-Triceps-En-Polea-Triceps.mp4",
+    "equipments": [
+      "POLEA"
+    ],
+    "bodyParts": [
+      "TRÍCEPS"
+    ],
+    "gender": "male",
+    "exerciseType": "FUERZA",
+    "targetMuscles": [
+      "Tríceps (cabeza lateral)"
+    ],
+    "secondaryMuscles": [],
+    "keywords": [
+      "Extensión cruzada de tríceps en polea",
+      "Extensión cruzada de tríceps en polea técnica",
+      "Ejercicio de tríceps con polea",
+      "Tríceps (cabeza lateral) ejercicio",
+      "Rutina de tríceps",
+      "Cómo hacer extensión cruzada de tríceps en polea",
+      "Extensión cruzada de tríceps en polea gif"
+    ],
+    "overview": "Extensión cruzada de tríceps en polea es un ejercicio de fuerza para tríceps que se realiza con polea. Trabaja principalmente tríceps (cabeza lateral). Es adecuado para niveles intermedios que buscan ganar masa muscular y fuerza con una técnica controlada.",
+    "instructions": [
+      "OPCIONAL: solo si no hay dolor de codo.",
+      "Polea alta del lado contrario, codo a la altura del hombro.",
+      "Extiende el antebrazo hacia afuera hasta casi estirar.",
+      "Regresa lento cruzando frente al cuerpo."
+    ],
+    "exerciseTips": [
+      "Movimientos controlados: sube en 1–2 s y baja en 2–3 s, sin impulso ni rebotes.",
+      "Rango completo y cómodo: busca el estiramiento y la contracción sin forzar la articulación.",
+      "Respiración: exhala al hacer el esfuerzo e inhala al volver a la posición inicial."
+    ],
+    "variations": [
+      "Fondos en paralelas: trabaja tríceps con paralelas y peso corporal.",
+      "Fondos en banco: trabaja tríceps con banco y peso corporal.",
+      "Press francés (rompecráneos): trabaja tríceps (cabeza larga) con barra y banco.",
+      "Extensión de tríceps sobre la cabeza: trabaja tríceps (cabeza larga) con mancuernas."
+    ],
+    "relatedExerciseIds": [
+      "mrg_dips",
+      "mrg_bench_dips",
+      "mrg_skull_crusher",
+      "mrg_overhead_tri_ext",
+      "mrg_tri_kickback",
+      "mrg_tri_pushdown_bar",
+      "mrg_tri_unilateral"
+    ],
+    "defaults": {
+      "sets": 3,
+      "repMin": 10,
+      "repMax": 12,
+      "rir": "2",
+      "restSec": 90,
+      "unit": "reps"
+    }
+  },
+  {
+    "exerciseId": "mrg_bike",
+    "animKey": "bike",
+    "name": "Bicicleta estática",
+    "imageUrl": "png/Bicicleta-Estatica-Cardio.png",
+    "gifUrl": "gif/Bicicleta-Estatica-Cardio.gif",
+    "videoUrl": "mp4/Bicicleta-Estatica-Cardio.mp4",
+    "equipments": [
+      "BICICLETA ESTÁTICA"
+    ],
+    "bodyParts": [
+      "CARDIO"
+    ],
+    "gender": "male",
+    "exerciseType": "CARDIO",
+    "targetMuscles": [
+      "Cuádriceps"
+    ],
+    "secondaryMuscles": [
+      "Glúteos",
+      "Pantorrillas"
+    ],
+    "keywords": [
+      "Bicicleta estática",
+      "Bicicleta estática técnica",
+      "Ejercicio de cardio con bicicleta estática",
+      "Cuádriceps ejercicio",
+      "Rutina de cardio",
+      "Cómo hacer bicicleta estática",
+      "Bicicleta estática gif"
+    ],
+    "overview": "Bicicleta estática es un ejercicio cardiovascular que se realiza con bicicleta estática. Trabaja cuádriceps, glúteos, pantorrillas mientras eleva la frecuencia cardiaca. Sirve para mejorar la resistencia, apoyar la pérdida de grasa y recuperar activamente entre días de fuerza; se registra en minutos, con km y kcal opcionales.",
+    "instructions": [
+      "Sillín a la altura de la cadera: rodilla casi extendida abajo.",
+      "Espalda neutra, hombros relajados.",
+      "Ritmo constante; ajusta la resistencia para hablar con algo de esfuerzo.",
+      "Buena opción de bajo impacto para la rodilla."
+    ],
+    "exerciseTips": [
+      "Intensidad conversacional: debes poder hablar con algo de esfuerzo en la mayor parte de la sesión.",
+      "Postura erguida: hombros relajados, abdomen activo y mirada al frente.",
+      "Progresa poco a poco: sube primero el tiempo y luego la intensidad o la inclinación."
+    ],
+    "variations": [
+      "Caminata en máquina: trabaja piernas y glúteos con caminadora.",
+      "Trote / carrera en máquina: trabaja piernas con caminadora.",
+      "Elíptica: trabaja cuerpo completo con elíptica.",
+      "Remo ergómetro (máquina de remo): trabaja espalda con remo ergómetro."
+    ],
+    "relatedExerciseIds": [
+      "mrg_treadmill_walk",
+      "mrg_treadmill_run",
+      "mrg_elliptical",
+      "mrg_rowing_machine",
+      "mrg_stair_climber",
+      "mrg_jump_rope"
+    ],
+    "defaults": {
+      "sets": 1,
+      "repMin": 15,
+      "repMax": 30,
+      "rir": "—",
+      "restSec": 0,
+      "unit": "cardio"
+    }
+  },
+  {
+    "exerciseId": "mrg_treadmill_walk",
+    "animKey": "treadmill_walk",
+    "name": "Caminata en máquina",
+    "imageUrl": "png/Caminata-En-Maquina-Cardio.png",
+    "gifUrl": "gif/Caminata-En-Maquina-Cardio.gif",
+    "videoUrl": "mp4/Caminata-En-Maquina-Cardio.mp4",
+    "equipments": [
+      "CAMINADORA"
+    ],
+    "bodyParts": [
+      "CARDIO"
+    ],
+    "gender": "male",
+    "exerciseType": "CARDIO",
+    "targetMuscles": [
+      "Piernas y glúteos"
+    ],
+    "secondaryMuscles": [],
+    "keywords": [
+      "Caminata en máquina",
+      "Caminata en máquina técnica",
+      "Ejercicio de cardio con caminadora",
+      "Piernas y glúteos ejercicio",
+      "Rutina de cardio",
+      "Cómo hacer caminata en máquina",
+      "Caminata en máquina gif"
+    ],
+    "overview": "Caminata en máquina es un ejercicio cardiovascular que se realiza con caminadora. Trabaja piernas y glúteos mientras eleva la frecuencia cardiaca. Sirve para mejorar la resistencia, apoyar la pérdida de grasa y recuperar activamente entre días de fuerza; se registra en minutos, con km y kcal opcionales.",
+    "instructions": [
+      "Mira al frente y camina erguido, sin colgarte de las barras.",
+      "Puedes usar inclinación (3–8 %) para más gasto sin impacto.",
+      "Pisa de talón a punta.",
+      "Registra tiempo, distancia y calorías del panel."
+    ],
+    "exerciseTips": [
+      "Intensidad conversacional: debes poder hablar con algo de esfuerzo en la mayor parte de la sesión.",
+      "Postura erguida: hombros relajados, abdomen activo y mirada al frente.",
+      "Progresa poco a poco: sube primero el tiempo y luego la intensidad o la inclinación."
+    ],
+    "variations": [
+      "Trote / carrera en máquina: trabaja piernas con caminadora.",
+      "Bicicleta estática: trabaja cuádriceps con bicicleta estática.",
+      "Elíptica: trabaja cuerpo completo con elíptica.",
+      "Remo ergómetro (máquina de remo): trabaja espalda con remo ergómetro."
+    ],
+    "relatedExerciseIds": [
+      "mrg_treadmill_run",
+      "mrg_bike",
+      "mrg_elliptical",
+      "mrg_rowing_machine",
+      "mrg_stair_climber",
+      "mrg_jump_rope"
+    ],
+    "defaults": {
+      "sets": 1,
+      "repMin": 20,
+      "repMax": 40,
+      "rir": "—",
+      "restSec": 0,
+      "unit": "cardio"
+    }
+  },
+  {
+    "exerciseId": "mrg_treadmill_run",
+    "animKey": "treadmill_run",
+    "name": "Trote / carrera en máquina",
+    "imageUrl": "png/Trote-Carrera-En-Maquina-Cardio.png",
+    "gifUrl": "gif/Trote-Carrera-En-Maquina-Cardio.gif",
+    "videoUrl": "mp4/Trote-Carrera-En-Maquina-Cardio.mp4",
+    "equipments": [
+      "CAMINADORA"
+    ],
+    "bodyParts": [
+      "CARDIO"
+    ],
+    "gender": "male",
+    "exerciseType": "CARDIO",
+    "targetMuscles": [
+      "Piernas"
+    ],
+    "secondaryMuscles": [
+      "Glúteos",
+      "Core"
+    ],
+    "keywords": [
+      "Trote / carrera en máquina",
+      "Trote / carrera en máquina técnica",
+      "Ejercicio de cardio con caminadora",
+      "Piernas ejercicio",
+      "Rutina de cardio",
+      "Cómo hacer trote / carrera en máquina",
+      "Trote / carrera en máquina gif"
+    ],
+    "overview": "Trote / carrera en máquina es un ejercicio cardiovascular que se realiza con caminadora. Trabaja piernas, glúteos, core mientras eleva la frecuencia cardiaca. Sirve para mejorar la resistencia, apoyar la pérdida de grasa y recuperar activamente entre días de fuerza; se registra en minutos, con km y kcal opcionales.",
+    "instructions": [
+      "Zancada corta y cadencia alta.",
+      "Aterriza bajo la cadera, no muy adelante.",
+      "Brazos a 90° acompañando el ritmo.",
+      "Si molesta la rodilla, cambia a caminata inclinada o bicicleta."
+    ],
+    "exerciseTips": [
+      "Intensidad conversacional: debes poder hablar con algo de esfuerzo en la mayor parte de la sesión.",
+      "Postura erguida: hombros relajados, abdomen activo y mirada al frente.",
+      "Progresa poco a poco: sube primero el tiempo y luego la intensidad o la inclinación."
+    ],
+    "variations": [
+      "Caminata en máquina: trabaja piernas y glúteos con caminadora.",
+      "Bicicleta estática: trabaja cuádriceps con bicicleta estática.",
+      "Elíptica: trabaja cuerpo completo con elíptica.",
+      "Remo ergómetro (máquina de remo): trabaja espalda con remo ergómetro."
+    ],
+    "relatedExerciseIds": [
+      "mrg_treadmill_walk",
+      "mrg_bike",
+      "mrg_elliptical",
+      "mrg_rowing_machine",
+      "mrg_stair_climber",
+      "mrg_jump_rope"
+    ],
+    "defaults": {
+      "sets": 1,
+      "repMin": 15,
+      "repMax": 30,
+      "rir": "—",
+      "restSec": 0,
+      "unit": "cardio"
+    }
+  },
+  {
+    "exerciseId": "mrg_elliptical",
+    "animKey": "elliptical",
+    "name": "Elíptica",
+    "imageUrl": "png/Eliptica-Cardio.png",
+    "gifUrl": "gif/Eliptica-Cardio.gif",
+    "videoUrl": "mp4/Eliptica-Cardio.mp4",
+    "equipments": [
+      "ELÍPTICA"
+    ],
+    "bodyParts": [
+      "CARDIO"
+    ],
+    "gender": "male",
+    "exerciseType": "CARDIO",
+    "targetMuscles": [
+      "Cuerpo completo"
+    ],
+    "secondaryMuscles": [
+      "Bajo impacto"
+    ],
+    "keywords": [
+      "Elíptica",
+      "Elíptica técnica",
+      "Ejercicio de cardio con elíptica",
+      "Cuerpo completo ejercicio",
+      "Rutina de cardio",
+      "Cómo hacer elíptica",
+      "Elíptica gif"
+    ],
+    "overview": "Elíptica es un ejercicio cardiovascular que se realiza con elíptica. Trabaja cuerpo completo, bajo impacto mientras eleva la frecuencia cardiaca. Sirve para mejorar la resistencia, apoyar la pérdida de grasa y recuperar activamente entre días de fuerza; se registra en minutos, con km y kcal opcionales.",
+    "instructions": [
+      "Pies completos sobre los pedales.",
+      "Empuja y tira de los brazos para involucrar el tren superior.",
+      "Torso erguido, sin apoyar el peso en las manos.",
+      "Bajo impacto: buena opción con molestia de rodilla si es tolerada."
+    ],
+    "exerciseTips": [
+      "Intensidad conversacional: debes poder hablar con algo de esfuerzo en la mayor parte de la sesión.",
+      "Postura erguida: hombros relajados, abdomen activo y mirada al frente.",
+      "Progresa poco a poco: sube primero el tiempo y luego la intensidad o la inclinación."
+    ],
+    "variations": [
+      "Bicicleta estática: trabaja cuádriceps con bicicleta estática.",
+      "Caminata en máquina: trabaja piernas y glúteos con caminadora.",
+      "Trote / carrera en máquina: trabaja piernas con caminadora.",
+      "Remo ergómetro (máquina de remo): trabaja espalda con remo ergómetro."
+    ],
+    "relatedExerciseIds": [
+      "mrg_bike",
+      "mrg_treadmill_walk",
+      "mrg_treadmill_run",
+      "mrg_rowing_machine",
+      "mrg_stair_climber",
+      "mrg_jump_rope"
+    ],
+    "defaults": {
+      "sets": 1,
+      "repMin": 20,
+      "repMax": 30,
+      "rir": "—",
+      "restSec": 0,
+      "unit": "cardio"
+    }
+  },
+  {
+    "exerciseId": "mrg_rowing_machine",
+    "animKey": "rowing_machine",
+    "name": "Remo ergómetro (máquina de remo)",
+    "imageUrl": "png/Remo-Ergometro-Maquina-De-Remo-Cardio.png",
+    "gifUrl": "gif/Remo-Ergometro-Maquina-De-Remo-Cardio.gif",
+    "videoUrl": "mp4/Remo-Ergometro-Maquina-De-Remo-Cardio.mp4",
+    "equipments": [
+      "REMO ERGÓMETRO"
+    ],
+    "bodyParts": [
+      "CARDIO"
+    ],
+    "gender": "male",
+    "exerciseType": "CARDIO",
+    "targetMuscles": [
+      "Espalda"
+    ],
+    "secondaryMuscles": [
+      "Piernas",
+      "Glúteos",
+      "Brazos"
+    ],
+    "keywords": [
+      "Remo ergómetro (máquina de remo)",
+      "Remo ergómetro (máquina de remo) técnica",
+      "Ejercicio de cardio con remo ergómetro",
+      "Espalda ejercicio",
+      "Rutina de cardio",
+      "Cómo hacer remo ergómetro (máquina de remo)",
+      "Remo ergómetro (máquina de remo) gif"
+    ],
+    "overview": "Remo ergómetro (máquina de remo) es un ejercicio cardiovascular que se realiza con remo ergómetro. Trabaja espalda, piernas, glúteos, brazos mientras eleva la frecuencia cardiaca. Sirve para mejorar la resistencia, apoyar la pérdida de grasa y recuperar activamente entre días de fuerza; se registra en minutos, con km y kcal opcionales.",
+    "instructions": [
+      "Orden al jalar: piernas → torso → brazos.",
+      "Orden al volver: brazos → torso → piernas.",
+      "Espalda neutra todo el tiempo.",
+      "Si hay molestia lumbar, reduce la inclinación del torso."
+    ],
+    "exerciseTips": [
+      "Intensidad conversacional: debes poder hablar con algo de esfuerzo en la mayor parte de la sesión.",
+      "Postura erguida: hombros relajados, abdomen activo y mirada al frente.",
+      "Progresa poco a poco: sube primero el tiempo y luego la intensidad o la inclinación."
+    ],
+    "variations": [
+      "Bicicleta estática: trabaja cuádriceps con bicicleta estática.",
+      "Caminata en máquina: trabaja piernas y glúteos con caminadora.",
+      "Trote / carrera en máquina: trabaja piernas con caminadora.",
+      "Elíptica: trabaja cuerpo completo con elíptica."
+    ],
+    "relatedExerciseIds": [
+      "mrg_bike",
+      "mrg_treadmill_walk",
+      "mrg_treadmill_run",
+      "mrg_elliptical",
+      "mrg_stair_climber",
+      "mrg_jump_rope"
+    ],
+    "defaults": {
+      "sets": 1,
+      "repMin": 10,
+      "repMax": 20,
+      "rir": "—",
+      "restSec": 0,
+      "unit": "cardio"
+    }
+  },
+  {
+    "exerciseId": "mrg_stair_climber",
+    "animKey": "stair_climber",
+    "name": "Escaladora (stairmaster)",
+    "imageUrl": "png/Escaladora-Stairmaster-Cardio.png",
+    "gifUrl": "gif/Escaladora-Stairmaster-Cardio.gif",
+    "videoUrl": "mp4/Escaladora-Stairmaster-Cardio.mp4",
+    "equipments": [
+      "ESCALADORA"
+    ],
+    "bodyParts": [
+      "CARDIO"
+    ],
+    "gender": "male",
+    "exerciseType": "CARDIO",
+    "targetMuscles": [
+      "Glúteos"
+    ],
+    "secondaryMuscles": [
+      "Cuádriceps",
+      "Pantorrillas"
+    ],
+    "keywords": [
+      "Escaladora (stairmaster)",
+      "Escaladora (stairmaster) técnica",
+      "Ejercicio de cardio con escaladora",
+      "Glúteos ejercicio",
+      "Rutina de cardio",
+      "Cómo hacer escaladora (stairmaster)",
+      "Escaladora (stairmaster) gif"
+    ],
+    "overview": "Escaladora (stairmaster) es un ejercicio cardiovascular que se realiza con escaladora. Trabaja glúteos, cuádriceps, pantorrillas mientras eleva la frecuencia cardiaca. Sirve para mejorar la resistencia, apoyar la pérdida de grasa y recuperar activamente entre días de fuerza; se registra en minutos, con km y kcal opcionales.",
+    "instructions": [
+      "Apoya todo el pie en cada escalón.",
+      "Torso erguido; manos solo para equilibrio.",
+      "Ritmo moderado y constante.",
+      "Evítala si sube el dolor de rodilla."
+    ],
+    "exerciseTips": [
+      "Intensidad conversacional: debes poder hablar con algo de esfuerzo en la mayor parte de la sesión.",
+      "Postura erguida: hombros relajados, abdomen activo y mirada al frente.",
+      "Progresa poco a poco: sube primero el tiempo y luego la intensidad o la inclinación."
+    ],
+    "variations": [
+      "Bicicleta estática: trabaja cuádriceps con bicicleta estática.",
+      "Caminata en máquina: trabaja piernas y glúteos con caminadora.",
+      "Trote / carrera en máquina: trabaja piernas con caminadora.",
+      "Elíptica: trabaja cuerpo completo con elíptica."
+    ],
+    "relatedExerciseIds": [
+      "mrg_bike",
+      "mrg_treadmill_walk",
+      "mrg_treadmill_run",
+      "mrg_elliptical",
+      "mrg_rowing_machine",
+      "mrg_jump_rope"
+    ],
+    "defaults": {
+      "sets": 1,
+      "repMin": 10,
+      "repMax": 20,
+      "rir": "—",
+      "restSec": 0,
+      "unit": "cardio"
+    }
+  },
+  {
+    "exerciseId": "mrg_jump_rope",
+    "animKey": "jump_rope",
+    "name": "Saltar cuerda",
+    "imageUrl": "png/Saltar-Cuerda-Cardio.png",
+    "gifUrl": "gif/Saltar-Cuerda-Cardio.gif",
+    "videoUrl": "mp4/Saltar-Cuerda-Cardio.mp4",
+    "equipments": [
+      "CUERDA PARA SALTAR"
+    ],
+    "bodyParts": [
+      "CARDIO"
+    ],
+    "gender": "male",
+    "exerciseType": "CARDIO",
+    "targetMuscles": [
+      "Pantorrillas"
+    ],
+    "secondaryMuscles": [
+      "Hombros",
+      "Coordinación"
+    ],
+    "keywords": [
+      "Saltar cuerda",
+      "Saltar cuerda técnica",
+      "Ejercicio de cardio con cuerda para saltar",
+      "Pantorrillas ejercicio",
+      "Rutina de cardio",
+      "Cómo hacer saltar cuerda",
+      "Saltar cuerda gif"
+    ],
+    "overview": "Saltar cuerda es un ejercicio cardiovascular que se realiza con cuerda para saltar. Trabaja pantorrillas, hombros, coordinación mientras eleva la frecuencia cardiaca. Sirve para mejorar la resistencia, apoyar la pérdida de grasa y recuperar activamente entre días de fuerza; se registra en minutos, con km y kcal opcionales.",
+    "instructions": [
+      "Saltos bajos, sobre la punta de los pies.",
+      "Gira la cuerda con las muñecas, codos pegados.",
+      "Rodillas suaves al aterrizar.",
+      "Impacto alto: evítalo si molesta la rodilla."
+    ],
+    "exerciseTips": [
+      "Intensidad conversacional: debes poder hablar con algo de esfuerzo en la mayor parte de la sesión.",
+      "Postura erguida: hombros relajados, abdomen activo y mirada al frente.",
+      "Progresa poco a poco: sube primero el tiempo y luego la intensidad o la inclinación."
+    ],
+    "variations": [
+      "Bicicleta estática: trabaja cuádriceps con bicicleta estática.",
+      "Caminata en máquina: trabaja piernas y glúteos con caminadora.",
+      "Trote / carrera en máquina: trabaja piernas con caminadora.",
+      "Elíptica: trabaja cuerpo completo con elíptica."
+    ],
+    "relatedExerciseIds": [
+      "mrg_bike",
+      "mrg_treadmill_walk",
+      "mrg_treadmill_run",
+      "mrg_elliptical",
+      "mrg_rowing_machine",
+      "mrg_stair_climber"
+    ],
+    "defaults": {
+      "sets": 3,
+      "repMin": 1,
+      "repMax": 3,
+      "rir": "—",
+      "restSec": 60,
+      "unit": "cardio"
+    }
+  },
+  {
+    "exerciseId": "mrg_mountain_climber",
+    "animKey": "mountain_climber",
+    "name": "Escaladores (mountain climbers)",
+    "imageUrl": "png/Escaladores-Mountain-Climbers-Core.png",
+    "gifUrl": "gif/Escaladores-Mountain-Climbers-Core.gif",
+    "videoUrl": "mp4/Escaladores-Mountain-Climbers-Core.mp4",
+    "equipments": [
+      "PESO CORPORAL"
+    ],
+    "bodyParts": [
+      "CORE"
+    ],
+    "gender": "male",
+    "exerciseType": "ISOMÉTRICO",
+    "targetMuscles": [
+      "Core"
+    ],
+    "secondaryMuscles": [
+      "Hombros",
+      "Cardio"
+    ],
+    "keywords": [
+      "Escaladores (mountain climbers)",
+      "Escaladores (mountain climbers) técnica",
+      "Ejercicio de core con peso corporal",
+      "Core ejercicio",
+      "Rutina de core",
+      "Cómo hacer escaladores (mountain climbers)",
+      "Escaladores (mountain climbers) gif"
+    ],
+    "overview": "Escaladores (mountain climbers) es un ejercicio isométrico (peso corporal) en el que se sostiene una posición sin movimiento. Trabaja principalmente core, con apoyo de hombros, cardio. Desarrolla resistencia muscular y estabilidad con poca carga articular; se registra en segundos.",
+    "instructions": [
+      "Posición de plancha alta con manos bajo hombros.",
+      "Lleva las rodillas al pecho alternando.",
+      "Cadera baja y estable, sin subir los glúteos.",
+      "Ritmo controlado si eres principiante."
+    ],
+    "exerciseTips": [
+      "Respiración continua: no aguantes el aire durante el isométrico.",
+      "Calidad antes que tiempo: termina la serie cuando se pierda la postura correcta.",
+      "Sin dolor articular: detente si aparece molestia en rodilla, hombro o zona lumbar."
+    ],
+    "variations": [
+      "Bird dog: trabaja core con peso corporal.",
+      "Dead bug: trabaja core profundo (transverso) con peso corporal.",
+      "Plancha abdominal: trabaja recto abdominal con peso corporal.",
+      "Plancha lateral: trabaja oblicuos con peso corporal."
+    ],
+    "relatedExerciseIds": [
+      "mrg_bird_dog",
+      "mrg_dead_bug",
+      "mrg_plank",
+      "mrg_side_plank",
+      "mrg_crunch",
+      "mrg_leg_raise"
+    ],
+    "defaults": {
+      "sets": 3,
+      "repMin": 20,
+      "repMax": 40,
+      "rir": "—",
+      "restSec": 60,
+      "unit": "seg"
+    }
+  },
+  {
+    "exerciseId": "mrg_bench_press",
+    "animKey": "bench_press",
+    "name": "Press de banca con barra",
+    "imageUrl": "png/Press-De-Banca-Con-Barra-Pecho.png",
+    "gifUrl": "gif/Press-De-Banca-Con-Barra-Pecho.gif",
+    "videoUrl": "mp4/Press-De-Banca-Con-Barra-Pecho.mp4",
+    "equipments": [
+      "BARRA",
+      "BANCO"
+    ],
+    "bodyParts": [
+      "PECHO"
+    ],
+    "gender": "male",
+    "exerciseType": "FUERZA",
+    "targetMuscles": [
+      "Pectoral mayor"
+    ],
+    "secondaryMuscles": [
+      "Deltoides anterior",
+      "Tríceps"
+    ],
+    "keywords": [
+      "Press de banca con barra",
+      "Press de banca con barra técnica",
+      "Ejercicio de pecho con barra",
+      "Pectoral mayor ejercicio",
+      "Rutina de pecho",
+      "Cómo hacer press de banca con barra",
+      "Press de banca con barra gif"
+    ],
+    "overview": "Press de banca con barra es un ejercicio de fuerza para pecho que se realiza con barra y banco. Trabaja principalmente pectoral mayor, con apoyo de deltoides anterior, tríceps. Es adecuado para niveles intermedios que buscan ganar masa muscular y fuerza con una técnica controlada.",
+    "instructions": [
+      "Escápulas retraídas, pies firmes en el suelo.",
+      "Baja la barra a la parte media/baja del pecho.",
+      "Codos a ~45–60° del torso.",
+      "Usa ayudante o topes de seguridad."
+    ],
+    "exerciseTips": [
+      "Movimientos controlados: sube en 1–2 s y baja en 2–3 s, sin impulso ni rebotes.",
+      "Rango completo y cómodo: busca el estiramiento y la contracción sin forzar la articulación.",
+      "Respiración: exhala al hacer el esfuerzo e inhala al volver a la posición inicial."
+    ],
+    "variations": [
+      "Press de pecho (máquina): trabaja pectoral mayor con máquina.",
+      "Press inclinado (máquina): trabaja pectoral superior (clavicular) con máquina.",
+      "Press inclinado con mancuernas: trabaja pectoral superior con mancuernas y banco.",
+      "Aperturas de pecho (máquina): trabaja pectoral mayor con máquina."
+    ],
+    "relatedExerciseIds": [
+      "mrg_chest_press",
+      "mrg_incline_machine_press",
+      "mrg_incline_db_press",
+      "mrg_pec_fly",
+      "mrg_db_bench_press",
+      "mrg_push_up",
+      "mrg_cable_crossover",
+      "mrg_pec_deck_classic"
+    ],
+    "defaults": {
+      "sets": 3,
+      "repMin": 6,
+      "repMax": 10,
+      "rir": "2",
+      "restSec": 120,
+      "unit": "reps"
+    }
+  },
+  {
+    "exerciseId": "mrg_db_bench_press",
+    "animKey": "db_bench_press",
+    "name": "Press plano con mancuernas",
+    "imageUrl": "png/Press-Plano-Con-Mancuernas-Pecho.png",
+    "gifUrl": "gif/Press-Plano-Con-Mancuernas-Pecho.gif",
+    "videoUrl": "mp4/Press-Plano-Con-Mancuernas-Pecho.mp4",
+    "equipments": [
+      "MANCUERNAS",
+      "BANCO"
+    ],
+    "bodyParts": [
+      "PECHO"
+    ],
+    "gender": "male",
+    "exerciseType": "FUERZA",
+    "targetMuscles": [
+      "Pectoral mayor"
+    ],
+    "secondaryMuscles": [
+      "Deltoides anterior",
+      "Tríceps"
+    ],
+    "keywords": [
+      "Press plano con mancuernas",
+      "Press plano con mancuernas técnica",
+      "Ejercicio de pecho con mancuernas",
+      "Pectoral mayor ejercicio",
+      "Rutina de pecho",
+      "Cómo hacer press plano con mancuernas",
+      "Press plano con mancuernas gif"
+    ],
+    "overview": "Press plano con mancuernas es un ejercicio de fuerza para pecho que se realiza con mancuernas y banco. Trabaja principalmente pectoral mayor, con apoyo de deltoides anterior, tríceps. Es adecuado para niveles intermedios que buscan ganar masa muscular y fuerza con una técnica controlada.",
+    "instructions": [
+      "Mancuernas a los lados del pecho al bajar.",
+      "Sube juntándolas ligeramente sin chocarlas.",
+      "Mayor rango que la barra: baja hasta un estiramiento cómodo.",
+      "Controla la bajada en 2–3 s."
+    ],
+    "exerciseTips": [
+      "Movimientos controlados: sube en 1–2 s y baja en 2–3 s, sin impulso ni rebotes.",
+      "Rango completo y cómodo: busca el estiramiento y la contracción sin forzar la articulación.",
+      "Respiración: exhala al hacer el esfuerzo e inhala al volver a la posición inicial."
+    ],
+    "variations": [
+      "Press de pecho (máquina): trabaja pectoral mayor con máquina.",
+      "Press inclinado (máquina): trabaja pectoral superior (clavicular) con máquina.",
+      "Aperturas de pecho (máquina): trabaja pectoral mayor con máquina.",
+      "Press de banca con barra: trabaja pectoral mayor con barra y banco."
+    ],
+    "relatedExerciseIds": [
+      "mrg_chest_press",
+      "mrg_incline_machine_press",
+      "mrg_pec_fly",
+      "mrg_bench_press",
+      "mrg_push_up",
+      "mrg_cable_crossover",
+      "mrg_pec_deck_classic",
+      "mrg_incline_db_press"
+    ],
+    "defaults": {
+      "sets": 3,
+      "repMin": 8,
+      "repMax": 12,
+      "rir": "2",
+      "restSec": 120,
+      "unit": "reps"
+    }
+  },
+  {
+    "exerciseId": "mrg_push_up",
+    "animKey": "push_up",
+    "name": "Flexiones de pecho",
+    "imageUrl": "png/Flexiones-De-Pecho-Pecho.png",
+    "gifUrl": "gif/Flexiones-De-Pecho-Pecho.gif",
+    "videoUrl": "mp4/Flexiones-De-Pecho-Pecho.mp4",
+    "equipments": [
+      "PESO CORPORAL"
+    ],
+    "bodyParts": [
+      "PECHO"
+    ],
+    "gender": "male",
+    "exerciseType": "FUERZA",
+    "targetMuscles": [
+      "Pectoral"
+    ],
+    "secondaryMuscles": [
+      "Tríceps",
+      "Deltoides anterior",
+      "Core"
+    ],
+    "keywords": [
+      "Flexiones de pecho",
+      "Flexiones de pecho técnica",
+      "Ejercicio de pecho con peso corporal",
+      "Pectoral ejercicio",
+      "Rutina de pecho",
+      "Cómo hacer flexiones de pecho",
+      "Flexiones de pecho gif"
+    ],
+    "overview": "Flexiones de pecho es un ejercicio de fuerza para pecho que se realiza con peso corporal. Trabaja principalmente pectoral, con apoyo de tríceps, deltoides anterior, core. Es adecuado para principiantes e intermedios que buscan ganar masa muscular y fuerza con una técnica controlada.",
+    "instructions": [
+      "Manos algo más abiertas que los hombros.",
+      "Cuerpo recto de cabeza a talones (aprieta glúteos y abdomen).",
+      "Baja hasta que el pecho casi toque el suelo.",
+      "Versión fácil: con rodillas apoyadas o manos en un banco."
+    ],
+    "exerciseTips": [
+      "Movimientos controlados: sube en 1–2 s y baja en 2–3 s, sin impulso ni rebotes.",
+      "Rango completo y cómodo: busca el estiramiento y la contracción sin forzar la articulación.",
+      "Respiración: exhala al hacer el esfuerzo e inhala al volver a la posición inicial."
+    ],
+    "variations": [
+      "Press de pecho (máquina): trabaja pectoral mayor con máquina.",
+      "Press inclinado (máquina): trabaja pectoral superior (clavicular) con máquina.",
+      "Press inclinado con mancuernas: trabaja pectoral superior con mancuernas y banco.",
+      "Aperturas de pecho (máquina): trabaja pectoral mayor con máquina."
+    ],
+    "relatedExerciseIds": [
+      "mrg_chest_press",
+      "mrg_incline_machine_press",
+      "mrg_incline_db_press",
+      "mrg_pec_fly",
+      "mrg_bench_press",
+      "mrg_db_bench_press",
+      "mrg_cable_crossover",
+      "mrg_pec_deck_classic"
+    ],
+    "defaults": {
+      "sets": 3,
+      "repMin": 8,
+      "repMax": 15,
+      "rir": "2",
+      "restSec": 90,
+      "unit": "bw"
+    }
+  },
+  {
+    "exerciseId": "mrg_cable_crossover",
+    "animKey": "cable_crossover",
+    "name": "Cruce de poleas",
+    "imageUrl": "png/Cruce-De-Poleas-Pecho.png",
+    "gifUrl": "gif/Cruce-De-Poleas-Pecho.gif",
+    "videoUrl": "mp4/Cruce-De-Poleas-Pecho.mp4",
+    "equipments": [
+      "POLEA"
+    ],
+    "bodyParts": [
+      "PECHO"
+    ],
+    "gender": "male",
+    "exerciseType": "FUERZA",
+    "targetMuscles": [
+      "Pectoral (fibras inferiores e internas)"
+    ],
+    "secondaryMuscles": [],
+    "keywords": [
+      "Cruce de poleas",
+      "Cruce de poleas técnica",
+      "Ejercicio de pecho con polea",
+      "Pectoral (fibras inferiores e internas) ejercicio",
+      "Rutina de pecho",
+      "Cómo hacer cruce de poleas",
+      "Cruce de poleas gif"
+    ],
+    "overview": "Cruce de poleas es un ejercicio de fuerza para pecho que se realiza con polea. Trabaja principalmente pectoral (fibras inferiores e internas). Es adecuado para niveles intermedios que buscan ganar masa muscular y fuerza con una técnica controlada.",
+    "instructions": [
+      "Poleas altas, un paso adelante.",
+      "Codos ligeramente flexionados y fijos.",
+      "Junta las manos frente a la cadera en arco.",
+      "Abre controlado hasta sentir estiramiento."
+    ],
+    "exerciseTips": [
+      "Movimientos controlados: sube en 1–2 s y baja en 2–3 s, sin impulso ni rebotes.",
+      "Rango completo y cómodo: busca el estiramiento y la contracción sin forzar la articulación.",
+      "Respiración: exhala al hacer el esfuerzo e inhala al volver a la posición inicial."
+    ],
+    "variations": [
+      "Press de pecho (máquina): trabaja pectoral mayor con máquina.",
+      "Press inclinado (máquina): trabaja pectoral superior (clavicular) con máquina.",
+      "Press inclinado con mancuernas: trabaja pectoral superior con mancuernas y banco.",
+      "Aperturas de pecho (máquina): trabaja pectoral mayor con máquina."
+    ],
+    "relatedExerciseIds": [
+      "mrg_chest_press",
+      "mrg_incline_machine_press",
+      "mrg_incline_db_press",
+      "mrg_pec_fly",
+      "mrg_bench_press",
+      "mrg_db_bench_press",
+      "mrg_push_up",
+      "mrg_pec_deck_classic"
+    ],
+    "defaults": {
+      "sets": 3,
+      "repMin": 12,
+      "repMax": 15,
+      "rir": "2",
+      "restSec": 90,
+      "unit": "reps"
+    }
+  },
+  {
+    "exerciseId": "mrg_pec_deck_classic",
+    "animKey": "pec_deck_classic",
+    "name": "Pec deck (contractor de pecho)",
+    "imageUrl": "png/Pec-Deck-Contractor-De-Pecho-Pecho.png",
+    "gifUrl": "gif/Pec-Deck-Contractor-De-Pecho-Pecho.gif",
+    "videoUrl": "mp4/Pec-Deck-Contractor-De-Pecho-Pecho.mp4",
+    "equipments": [
+      "MÁQUINA"
+    ],
+    "bodyParts": [
+      "PECHO"
+    ],
+    "gender": "male",
+    "exerciseType": "FUERZA",
+    "targetMuscles": [
+      "Pectoral mayor"
+    ],
+    "secondaryMuscles": [],
+    "keywords": [
+      "Pec deck (contractor de pecho)",
+      "Pec deck (contractor de pecho) técnica",
+      "Ejercicio de pecho con máquina",
+      "Pectoral mayor ejercicio",
+      "Rutina de pecho",
+      "Cómo hacer pec deck (contractor de pecho)",
+      "Pec deck (contractor de pecho) gif"
+    ],
+    "overview": "Pec deck (contractor de pecho) es un ejercicio de fuerza para pecho que se realiza con máquina. Trabaja principalmente pectoral mayor. Es adecuado para principiantes e intermedios que buscan ganar masa muscular y fuerza con una técnica controlada.",
+    "instructions": [
+      "Antebrazos apoyados en los cojines, codos a la altura del hombro.",
+      "Junta los brazos apretando el pecho.",
+      "Abre lento sin pasar un estiramiento cómodo.",
+      "Espalda pegada al respaldo."
+    ],
+    "exerciseTips": [
+      "Movimientos controlados: sube en 1–2 s y baja en 2–3 s, sin impulso ni rebotes.",
+      "Rango completo y cómodo: busca el estiramiento y la contracción sin forzar la articulación.",
+      "Respiración: exhala al hacer el esfuerzo e inhala al volver a la posición inicial."
+    ],
+    "variations": [
+      "Press inclinado con mancuernas: trabaja pectoral superior con mancuernas y banco.",
+      "Press de banca con barra: trabaja pectoral mayor con barra y banco.",
+      "Press plano con mancuernas: trabaja pectoral mayor con mancuernas y banco.",
+      "Flexiones de pecho: trabaja pectoral con peso corporal."
+    ],
+    "relatedExerciseIds": [
+      "mrg_incline_db_press",
+      "mrg_bench_press",
+      "mrg_db_bench_press",
+      "mrg_push_up",
+      "mrg_cable_crossover",
+      "mrg_chest_press",
+      "mrg_incline_machine_press",
+      "mrg_pec_fly"
+    ],
+    "defaults": {
+      "sets": 3,
+      "repMin": 12,
+      "repMax": 15,
+      "rir": "2",
+      "restSec": 90,
+      "unit": "reps"
+    }
+  },
+  {
+    "exerciseId": "mrg_pullup",
+    "animKey": "pullup",
+    "name": "Dominadas libres",
+    "imageUrl": "png/Dominadas-Libres-Espalda.png",
+    "gifUrl": "gif/Dominadas-Libres-Espalda.gif",
+    "videoUrl": "mp4/Dominadas-Libres-Espalda.mp4",
+    "equipments": [
+      "BARRA DE DOMINADAS",
+      "PESO CORPORAL"
+    ],
+    "bodyParts": [
+      "ESPALDA"
+    ],
+    "gender": "male",
+    "exerciseType": "FUERZA",
+    "targetMuscles": [
+      "Dorsal ancho"
+    ],
+    "secondaryMuscles": [
+      "Redondo mayor",
+      "Bíceps",
+      "Core"
+    ],
+    "keywords": [
+      "Dominadas libres",
+      "Dominadas libres técnica",
+      "Ejercicio de espalda con barra de dominadas",
+      "Dorsal ancho ejercicio",
+      "Rutina de espalda",
+      "Cómo hacer dominadas libres",
+      "Dominadas libres gif"
+    ],
+    "overview": "Dominadas libres es un ejercicio de fuerza para espalda que se realiza con barra de dominadas y peso corporal. Trabaja principalmente dorsal ancho, con apoyo de redondo mayor, bíceps, core. Es adecuado para principiantes e intermedios que buscan ganar masa muscular y fuerza con una técnica controlada.",
+    "instructions": [
+      "Agarre algo más abierto que los hombros.",
+      "Inicia bajando las escápulas, luego tira con los codos.",
+      "Sube hasta que el mentón pase la barra.",
+      "Baja completo y controlado. Peso = lastre (kg) si usas cinturón."
+    ],
+    "exerciseTips": [
+      "Movimientos controlados: sube en 1–2 s y baja en 2–3 s, sin impulso ni rebotes.",
+      "Rango completo y cómodo: busca el estiramiento y la contracción sin forzar la articulación.",
+      "Respiración: exhala al hacer el esfuerzo e inhala al volver a la posición inicial."
+    ],
+    "variations": [
+      "Remo sentado (máquina): trabaja dorsal ancho con máquina de polea.",
+      "Remo con pecho apoyado: trabaja dorsal con máquina.",
+      "Jalón al pecho: trabaja dorsal ancho con máquina de polea.",
+      "Dominadas asistidas: trabaja dorsal ancho con máquina asistida."
+    ],
+    "relatedExerciseIds": [
+      "mrg_seated_row",
+      "mrg_chest_supported_row",
+      "mrg_lat_pulldown",
+      "mrg_pullup_assisted",
+      "mrg_barbell_row",
+      "mrg_one_arm_db_row",
+      "mrg_straight_arm_pulldown",
+      "mrg_back_extension",
+      "mrg_rdl"
+    ],
+    "defaults": {
+      "sets": 3,
+      "repMin": 5,
+      "repMax": 10,
+      "rir": "2",
+      "restSec": 120,
+      "unit": "reps"
+    }
+  },
+  {
+    "exerciseId": "mrg_pullup_assisted",
+    "animKey": "pullup_assisted",
+    "name": "Dominadas asistidas",
+    "imageUrl": "png/Dominadas-Asistidas-Espalda.png",
+    "gifUrl": "gif/Dominadas-Asistidas-Espalda.gif",
+    "videoUrl": "mp4/Dominadas-Asistidas-Espalda.mp4",
+    "equipments": [
+      "MÁQUINA ASISTIDA"
+    ],
+    "bodyParts": [
+      "ESPALDA"
+    ],
+    "gender": "male",
+    "exerciseType": "FUERZA",
+    "targetMuscles": [
+      "Dorsal ancho"
+    ],
+    "secondaryMuscles": [
+      "Redondo mayor",
+      "Bíceps"
+    ],
+    "keywords": [
+      "Dominadas asistidas",
+      "Dominadas asistidas técnica",
+      "Ejercicio de espalda con máquina asistida",
+      "Dorsal ancho ejercicio",
+      "Rutina de espalda",
+      "Cómo hacer dominadas asistidas",
+      "Dominadas asistidas gif"
+    ],
+    "overview": "Dominadas asistidas es un ejercicio de fuerza para espalda que se realiza con máquina asistida. Trabaja principalmente dorsal ancho, con apoyo de redondo mayor, bíceps. Es adecuado para principiantes e intermedios que buscan ganar masa muscular y fuerza con una técnica controlada.",
+    "instructions": [
+      "Rodillas sobre la plataforma de asistencia.",
+      "Peso = kg de ASISTENCIA: progresas cuando usas menos.",
+      "Baja escápulas y tira con los codos hacia las costillas.",
+      "Bajada lenta hasta estirar los brazos."
+    ],
+    "exerciseTips": [
+      "Movimientos controlados: sube en 1–2 s y baja en 2–3 s, sin impulso ni rebotes.",
+      "Rango completo y cómodo: busca el estiramiento y la contracción sin forzar la articulación.",
+      "Respiración: exhala al hacer el esfuerzo e inhala al volver a la posición inicial."
+    ],
+    "variations": [
+      "Remo sentado (máquina): trabaja dorsal ancho con máquina de polea.",
+      "Remo con pecho apoyado: trabaja dorsal con máquina.",
+      "Jalón al pecho: trabaja dorsal ancho con máquina de polea.",
+      "Dominadas libres: trabaja dorsal ancho con barra de dominadas y peso corporal."
+    ],
+    "relatedExerciseIds": [
+      "mrg_seated_row",
+      "mrg_chest_supported_row",
+      "mrg_lat_pulldown",
+      "mrg_pullup",
+      "mrg_barbell_row",
+      "mrg_one_arm_db_row",
+      "mrg_straight_arm_pulldown",
+      "mrg_back_extension",
+      "mrg_rdl"
+    ],
+    "defaults": {
+      "sets": 3,
+      "repMin": 8,
+      "repMax": 12,
+      "rir": "2",
+      "restSec": 90,
+      "unit": "reps"
+    }
+  },
+  {
+    "exerciseId": "mrg_barbell_row",
+    "animKey": "barbell_row",
+    "name": "Remo con barra",
+    "imageUrl": "png/Remo-Con-Barra-Espalda.png",
+    "gifUrl": "gif/Remo-Con-Barra-Espalda.gif",
+    "videoUrl": "mp4/Remo-Con-Barra-Espalda.mp4",
+    "equipments": [
+      "BARRA"
+    ],
+    "bodyParts": [
+      "ESPALDA"
+    ],
+    "gender": "male",
+    "exerciseType": "FUERZA",
+    "targetMuscles": [
+      "Dorsal"
+    ],
+    "secondaryMuscles": [
+      "Romboides",
+      "Trapecio",
+      "Deltoides posterior"
+    ],
+    "keywords": [
+      "Remo con barra",
+      "Remo con barra técnica",
+      "Ejercicio de espalda con barra",
+      "Dorsal ejercicio",
+      "Rutina de espalda",
+      "Cómo hacer remo con barra",
+      "Remo con barra gif"
+    ],
+    "overview": "Remo con barra es un ejercicio de fuerza para espalda que se realiza con barra. Trabaja principalmente dorsal, con apoyo de romboides, trapecio, deltoides posterior. Es adecuado para niveles intermedios que buscan ganar masa muscular y fuerza con una técnica controlada.",
+    "instructions": [
+      "Bisagra de cadera con espalda neutra y rodillas flexionadas.",
+      "Lleva la barra hacia el ombligo con los codos atrás.",
+      "No uses impulso del torso.",
+      "⚠️ Exige zona lumbar: prefiere remo con pecho apoyado si molesta."
+    ],
+    "exerciseTips": [
+      "Movimientos controlados: sube en 1–2 s y baja en 2–3 s, sin impulso ni rebotes.",
+      "Rango completo y cómodo: busca el estiramiento y la contracción sin forzar la articulación.",
+      "Respiración: exhala al hacer el esfuerzo e inhala al volver a la posición inicial."
+    ],
+    "variations": [
+      "Remo sentado (máquina): trabaja dorsal ancho con máquina de polea.",
+      "Remo con pecho apoyado: trabaja dorsal con máquina.",
+      "Jalón al pecho: trabaja dorsal ancho con máquina de polea.",
+      "Dominadas libres: trabaja dorsal ancho con barra de dominadas y peso corporal."
+    ],
+    "relatedExerciseIds": [
+      "mrg_seated_row",
+      "mrg_chest_supported_row",
+      "mrg_lat_pulldown",
+      "mrg_pullup",
+      "mrg_pullup_assisted",
+      "mrg_one_arm_db_row",
+      "mrg_straight_arm_pulldown",
+      "mrg_back_extension",
+      "mrg_rdl"
+    ],
+    "defaults": {
+      "sets": 3,
+      "repMin": 8,
+      "repMax": 12,
+      "rir": "2",
+      "restSec": 120,
+      "unit": "reps"
+    }
+  },
+  {
+    "exerciseId": "mrg_one_arm_db_row",
+    "animKey": "one_arm_db_row",
+    "name": "Remo con mancuerna a una mano",
+    "imageUrl": "png/Remo-Con-Mancuerna-A-Una-Mano-Espalda.png",
+    "gifUrl": "gif/Remo-Con-Mancuerna-A-Una-Mano-Espalda.gif",
+    "videoUrl": "mp4/Remo-Con-Mancuerna-A-Una-Mano-Espalda.mp4",
+    "equipments": [
+      "MANCUERNAS",
+      "BANCO"
+    ],
+    "bodyParts": [
+      "ESPALDA"
+    ],
+    "gender": "male",
+    "exerciseType": "FUERZA",
+    "targetMuscles": [
+      "Dorsal ancho"
+    ],
+    "secondaryMuscles": [
+      "Romboides",
+      "Bíceps"
+    ],
+    "keywords": [
+      "Remo con mancuerna a una mano",
+      "Remo con mancuerna a una mano técnica",
+      "Ejercicio de espalda con mancuernas",
+      "Dorsal ancho ejercicio",
+      "Rutina de espalda",
+      "Cómo hacer remo con mancuerna a una mano",
+      "Remo con mancuerna a una mano gif"
+    ],
+    "overview": "Remo con mancuerna a una mano es un ejercicio de fuerza para espalda que se realiza con mancuernas y banco. Trabaja principalmente dorsal ancho, con apoyo de romboides, bíceps. Es adecuado para niveles intermedios que buscan ganar masa muscular y fuerza con una técnica controlada.",
+    "instructions": [
+      "Mano y rodilla del mismo lado sobre el banco.",
+      "Espalda plana, paralela al suelo.",
+      "Lleva la mancuerna hacia la cadera, codo pegado.",
+      "Baja hasta estirar sin girar el torso."
+    ],
+    "exerciseTips": [
+      "Movimientos controlados: sube en 1–2 s y baja en 2–3 s, sin impulso ni rebotes.",
+      "Rango completo y cómodo: busca el estiramiento y la contracción sin forzar la articulación.",
+      "Respiración: exhala al hacer el esfuerzo e inhala al volver a la posición inicial."
+    ],
+    "variations": [
+      "Remo sentado (máquina): trabaja dorsal ancho con máquina de polea.",
+      "Remo con pecho apoyado: trabaja dorsal con máquina.",
+      "Jalón al pecho: trabaja dorsal ancho con máquina de polea.",
+      "Dominadas libres: trabaja dorsal ancho con barra de dominadas y peso corporal."
+    ],
+    "relatedExerciseIds": [
+      "mrg_seated_row",
+      "mrg_chest_supported_row",
+      "mrg_lat_pulldown",
+      "mrg_pullup",
+      "mrg_pullup_assisted",
+      "mrg_barbell_row",
+      "mrg_straight_arm_pulldown",
+      "mrg_back_extension",
+      "mrg_rdl"
+    ],
+    "defaults": {
+      "sets": 3,
+      "repMin": 10,
+      "repMax": 12,
+      "rir": "2",
+      "restSec": 90,
+      "unit": "reps"
+    }
+  },
+  {
+    "exerciseId": "mrg_straight_arm_pulldown",
+    "animKey": "straight_arm_pulldown",
+    "name": "Pullover en polea (brazos rectos)",
+    "imageUrl": "png/Pullover-En-Polea-Brazos-Rectos-Espalda.png",
+    "gifUrl": "gif/Pullover-En-Polea-Brazos-Rectos-Espalda.gif",
+    "videoUrl": "mp4/Pullover-En-Polea-Brazos-Rectos-Espalda.mp4",
+    "equipments": [
+      "POLEA"
+    ],
+    "bodyParts": [
+      "ESPALDA"
+    ],
+    "gender": "male",
+    "exerciseType": "FUERZA",
+    "targetMuscles": [
+      "Dorsal ancho"
+    ],
+    "secondaryMuscles": [
+      "Redondo mayor"
+    ],
+    "keywords": [
+      "Pullover en polea (brazos rectos)",
+      "Pullover en polea (brazos rectos) técnica",
+      "Ejercicio de espalda con polea",
+      "Dorsal ancho ejercicio",
+      "Rutina de espalda",
+      "Cómo hacer pullover en polea (brazos rectos)",
+      "Pullover en polea (brazos rectos) gif"
+    ],
+    "overview": "Pullover en polea (brazos rectos) es un ejercicio de fuerza para espalda que se realiza con polea. Trabaja principalmente dorsal ancho, con apoyo de redondo mayor. Es adecuado para niveles intermedios que buscan ganar masa muscular y fuerza con una técnica controlada.",
+    "instructions": [
+      "Polea alta, ligera inclinación del torso.",
+      "Brazos casi rectos todo el recorrido.",
+      "Lleva la barra hasta los muslos apretando los dorsales.",
+      "Sube controlado hasta la altura de la cabeza."
+    ],
+    "exerciseTips": [
+      "Movimientos controlados: sube en 1–2 s y baja en 2–3 s, sin impulso ni rebotes.",
+      "Rango completo y cómodo: busca el estiramiento y la contracción sin forzar la articulación.",
+      "Respiración: exhala al hacer el esfuerzo e inhala al volver a la posición inicial."
+    ],
+    "variations": [
+      "Remo sentado (máquina): trabaja dorsal ancho con máquina de polea.",
+      "Remo con pecho apoyado: trabaja dorsal con máquina.",
+      "Jalón al pecho: trabaja dorsal ancho con máquina de polea.",
+      "Dominadas libres: trabaja dorsal ancho con barra de dominadas y peso corporal."
+    ],
+    "relatedExerciseIds": [
+      "mrg_seated_row",
+      "mrg_chest_supported_row",
+      "mrg_lat_pulldown",
+      "mrg_pullup",
+      "mrg_pullup_assisted",
+      "mrg_barbell_row",
+      "mrg_one_arm_db_row",
+      "mrg_back_extension",
+      "mrg_rdl"
+    ],
+    "defaults": {
+      "sets": 3,
+      "repMin": 12,
+      "repMax": 15,
+      "rir": "2",
+      "restSec": 90,
+      "unit": "reps"
+    }
+  },
+  {
+    "exerciseId": "mrg_back_extension",
+    "animKey": "back_extension",
+    "name": "Hiperextensiones lumbares (45°)",
+    "imageUrl": "png/Hiperextensiones-Lumbares-45-Espalda.png",
+    "gifUrl": "gif/Hiperextensiones-Lumbares-45-Espalda.gif",
+    "videoUrl": "mp4/Hiperextensiones-Lumbares-45-Espalda.mp4",
+    "equipments": [
+      "BANCO DE HIPEREXTENSIONES"
+    ],
+    "bodyParts": [
+      "ESPALDA"
+    ],
+    "gender": "male",
+    "exerciseType": "FUERZA",
+    "targetMuscles": [
+      "Erectores espinales"
+    ],
+    "secondaryMuscles": [
+      "Glúteos",
+      "Isquiotibiales"
+    ],
+    "keywords": [
+      "Hiperextensiones lumbares (45°)",
+      "Hiperextensiones lumbares (45°) técnica",
+      "Ejercicio de espalda con banco de hiperextensiones",
+      "Erectores espinales ejercicio",
+      "Rutina de espalda",
+      "Cómo hacer hiperextensiones lumbares (45°)",
+      "Hiperextensiones lumbares (45°) gif"
+    ],
+    "overview": "Hiperextensiones lumbares (45°) es un ejercicio de fuerza para espalda que se realiza con banco de hiperextensiones. Trabaja principalmente erectores espinales, con apoyo de glúteos, isquiotibiales. Es adecuado para niveles intermedios que buscan ganar masa muscular y fuerza con una técnica controlada.",
+    "instructions": [
+      "Cojín a la altura de la cadera (no del abdomen).",
+      "Baja con la espalda neutra y sube hasta alinear con las piernas.",
+      "NO hiperextiendas al final.",
+      "⚠️ Solo si no reproduce dolor lumbar."
+    ],
+    "exerciseTips": [
+      "Movimientos controlados: sube en 1–2 s y baja en 2–3 s, sin impulso ni rebotes.",
+      "Rango completo y cómodo: busca el estiramiento y la contracción sin forzar la articulación.",
+      "Respiración: exhala al hacer el esfuerzo e inhala al volver a la posición inicial."
+    ],
+    "variations": [
+      "Remo sentado (máquina): trabaja dorsal ancho con máquina de polea.",
+      "Remo con pecho apoyado: trabaja dorsal con máquina.",
+      "Jalón al pecho: trabaja dorsal ancho con máquina de polea.",
+      "Dominadas libres: trabaja dorsal ancho con barra de dominadas y peso corporal."
+    ],
+    "relatedExerciseIds": [
+      "mrg_seated_row",
+      "mrg_chest_supported_row",
+      "mrg_lat_pulldown",
+      "mrg_pullup",
+      "mrg_pullup_assisted",
+      "mrg_barbell_row",
+      "mrg_one_arm_db_row",
+      "mrg_straight_arm_pulldown",
+      "mrg_rdl"
+    ],
+    "defaults": {
+      "sets": 3,
+      "repMin": 12,
+      "repMax": 15,
+      "rir": "3",
+      "restSec": 90,
+      "unit": "bw"
+    }
+  },
+  {
+    "exerciseId": "mrg_rdl",
+    "animKey": "rdl",
+    "name": "Peso muerto rumano",
+    "imageUrl": "png/Peso-Muerto-Rumano-Espalda.png",
+    "gifUrl": "gif/Peso-Muerto-Rumano-Espalda.gif",
+    "videoUrl": "mp4/Peso-Muerto-Rumano-Espalda.mp4",
+    "equipments": [
+      "BARRA"
+    ],
+    "bodyParts": [
+      "ESPALDA"
+    ],
+    "gender": "male",
+    "exerciseType": "FUERZA",
+    "targetMuscles": [
+      "Isquiotibiales"
+    ],
+    "secondaryMuscles": [
+      "Glúteos",
+      "Erectores"
+    ],
+    "keywords": [
+      "Peso muerto rumano",
+      "Peso muerto rumano técnica",
+      "Ejercicio de espalda con barra",
+      "Isquiotibiales ejercicio",
+      "Rutina de espalda",
+      "Cómo hacer peso muerto rumano",
+      "Peso muerto rumano gif"
+    ],
+    "overview": "Peso muerto rumano es un ejercicio de fuerza para espalda que se realiza con barra. Trabaja principalmente isquiotibiales, con apoyo de glúteos, erectores. Es adecuado para niveles intermedios que buscan ganar masa muscular y fuerza con una técnica controlada.",
+    "instructions": [
+      "Rodillas suaves, lleva la cadera hacia atrás.",
+      "Barra pegada a las piernas, espalda neutra.",
+      "Baja hasta sentir el estiramiento femoral.",
+      "⚠️ Tu PDF lo excluye por la zona lumbar: úsalo solo con autorización."
+    ],
+    "exerciseTips": [
+      "Movimientos controlados: sube en 1–2 s y baja en 2–3 s, sin impulso ni rebotes.",
+      "Rango completo y cómodo: busca el estiramiento y la contracción sin forzar la articulación.",
+      "Respiración: exhala al hacer el esfuerzo e inhala al volver a la posición inicial."
+    ],
+    "variations": [
+      "Remo sentado (máquina): trabaja dorsal ancho con máquina de polea.",
+      "Remo con pecho apoyado: trabaja dorsal con máquina.",
+      "Jalón al pecho: trabaja dorsal ancho con máquina de polea.",
+      "Dominadas libres: trabaja dorsal ancho con barra de dominadas y peso corporal."
+    ],
+    "relatedExerciseIds": [
+      "mrg_seated_row",
+      "mrg_chest_supported_row",
+      "mrg_lat_pulldown",
+      "mrg_pullup",
+      "mrg_pullup_assisted",
+      "mrg_one_arm_db_row",
+      "mrg_straight_arm_pulldown",
+      "mrg_back_extension",
+      "mrg_barbell_row"
+    ],
+    "defaults": {
+      "sets": 3,
+      "repMin": 8,
+      "repMax": 10,
+      "rir": "3",
+      "restSec": 120,
+      "unit": "reps"
+    }
+  },
+  {
+    "exerciseId": "mrg_db_shoulder_press",
+    "animKey": "db_shoulder_press",
+    "name": "Press de hombro con mancuernas",
+    "imageUrl": "png/Press-De-Hombro-Con-Mancuernas-Hombros.png",
+    "gifUrl": "gif/Press-De-Hombro-Con-Mancuernas-Hombros.gif",
+    "videoUrl": "mp4/Press-De-Hombro-Con-Mancuernas-Hombros.mp4",
+    "equipments": [
+      "MANCUERNAS",
+      "BANCO"
+    ],
+    "bodyParts": [
+      "HOMBROS"
+    ],
+    "gender": "male",
+    "exerciseType": "FUERZA",
+    "targetMuscles": [
+      "Deltoides anterior y lateral"
+    ],
+    "secondaryMuscles": [
+      "Tríceps"
+    ],
+    "keywords": [
+      "Press de hombro con mancuernas",
+      "Press de hombro con mancuernas técnica",
+      "Ejercicio de hombros con mancuernas",
+      "Deltoides anterior y lateral ejercicio",
+      "Rutina de hombros",
+      "Cómo hacer press de hombro con mancuernas",
+      "Press de hombro con mancuernas gif"
+    ],
+    "overview": "Press de hombro con mancuernas es un ejercicio de fuerza para hombros que se realiza con mancuernas y banco. Trabaja principalmente deltoides anterior y lateral, con apoyo de tríceps. Es adecuado para niveles intermedios que buscan ganar masa muscular y fuerza con una técnica controlada.",
+    "instructions": [
+      "Sentado con respaldo, mancuernas a la altura de las orejas.",
+      "Empuja hacia arriba sin bloquear codos.",
+      "Costillas abajo: no arquees la espalda.",
+      "Baja controlado hasta ~90° de codo."
+    ],
+    "exerciseTips": [
+      "Movimientos controlados: sube en 1–2 s y baja en 2–3 s, sin impulso ni rebotes.",
+      "Rango completo y cómodo: busca el estiramiento y la contracción sin forzar la articulación.",
+      "Respiración: exhala al hacer el esfuerzo e inhala al volver a la posición inicial."
+    ],
+    "variations": [
+      "Elevación lateral en polea: trabaja deltoides lateral con polea.",
+      "Elevación lateral (máquina): trabaja deltoides lateral con máquina.",
+      "Reverse pec deck (vista posterior): trabaja deltoides posterior con máquina.",
+      "Elevación frontal: trabaja deltoides anterior con mancuernas."
+    ],
+    "relatedExerciseIds": [
+      "mrg_cable_lateral",
+      "mrg_machine_lateral",
+      "mrg_reverse_fly",
+      "mrg_front_raise",
+      "mrg_face_pull",
+      "mrg_upright_row",
+      "mrg_shrugs"
+    ],
+    "defaults": {
+      "sets": 3,
+      "repMin": 8,
+      "repMax": 12,
+      "rir": "2",
+      "restSec": 120,
+      "unit": "reps"
+    }
+  },
+  {
+    "exerciseId": "mrg_front_raise",
+    "animKey": "front_raise",
+    "name": "Elevación frontal",
+    "imageUrl": "png/Elevacion-Frontal-Hombros.png",
+    "gifUrl": "gif/Elevacion-Frontal-Hombros.gif",
+    "videoUrl": "mp4/Elevacion-Frontal-Hombros.mp4",
+    "equipments": [
+      "MANCUERNAS"
+    ],
+    "bodyParts": [
+      "HOMBROS"
+    ],
+    "gender": "male",
+    "exerciseType": "FUERZA",
+    "targetMuscles": [
+      "Deltoides anterior"
+    ],
+    "secondaryMuscles": [],
+    "keywords": [
+      "Elevación frontal",
+      "Elevación frontal técnica",
+      "Ejercicio de hombros con mancuernas",
+      "Deltoides anterior ejercicio",
+      "Rutina de hombros",
+      "Cómo hacer elevación frontal",
+      "Elevación frontal gif"
+    ],
+    "overview": "Elevación frontal es un ejercicio de fuerza para hombros que se realiza con mancuernas. Trabaja principalmente deltoides anterior. Es adecuado para niveles intermedios que buscan ganar masa muscular y fuerza con una técnica controlada.",
+    "instructions": [
+      "Codos casi rectos.",
+      "Eleva al frente hasta la altura de los hombros.",
+      "Sin balancear el torso.",
+      "Baja en 2–3 s."
+    ],
+    "exerciseTips": [
+      "Movimientos controlados: sube en 1–2 s y baja en 2–3 s, sin impulso ni rebotes.",
+      "Rango completo y cómodo: busca el estiramiento y la contracción sin forzar la articulación.",
+      "Respiración: exhala al hacer el esfuerzo e inhala al volver a la posición inicial."
+    ],
+    "variations": [
+      "Elevación lateral en polea: trabaja deltoides lateral con polea.",
+      "Elevación lateral (máquina): trabaja deltoides lateral con máquina.",
+      "Reverse pec deck (vista posterior): trabaja deltoides posterior con máquina.",
+      "Press de hombro con mancuernas: trabaja deltoides anterior y lateral con mancuernas y banco."
+    ],
+    "relatedExerciseIds": [
+      "mrg_cable_lateral",
+      "mrg_machine_lateral",
+      "mrg_reverse_fly",
+      "mrg_db_shoulder_press",
+      "mrg_face_pull",
+      "mrg_upright_row",
+      "mrg_shrugs"
+    ],
+    "defaults": {
+      "sets": 3,
+      "repMin": 12,
+      "repMax": 15,
+      "rir": "2",
+      "restSec": 75,
+      "unit": "reps"
+    }
+  },
+  {
+    "exerciseId": "mrg_face_pull",
+    "animKey": "face_pull",
+    "name": "Face pull en polea",
+    "imageUrl": "png/Face-Pull-En-Polea-Hombros.png",
+    "gifUrl": "gif/Face-Pull-En-Polea-Hombros.gif",
+    "videoUrl": "mp4/Face-Pull-En-Polea-Hombros.mp4",
+    "equipments": [
+      "POLEA",
+      "CUERDA"
+    ],
+    "bodyParts": [
+      "HOMBROS"
+    ],
+    "gender": "male",
+    "exerciseType": "FUERZA",
+    "targetMuscles": [
+      "Deltoides posterior"
+    ],
+    "secondaryMuscles": [
+      "Manguito rotador",
+      "Trapecio medio"
+    ],
+    "keywords": [
+      "Face pull en polea",
+      "Face pull en polea técnica",
+      "Ejercicio de hombros con polea",
+      "Deltoides posterior ejercicio",
+      "Rutina de hombros",
+      "Cómo hacer face pull en polea",
+      "Face pull en polea gif"
+    ],
+    "overview": "Face pull en polea es un ejercicio de fuerza para hombros que se realiza con polea y cuerda. Trabaja principalmente deltoides posterior, con apoyo de manguito rotador, trapecio medio. Es adecuado para niveles intermedios que buscan ganar masa muscular y fuerza con una técnica controlada.",
+    "instructions": [
+      "Polea a la altura de la cara, agarre con cuerda.",
+      "Tira hacia la frente separando las manos.",
+      "Codos altos y rotación externa al final.",
+      "Excelente para la salud del hombro."
+    ],
+    "exerciseTips": [
+      "Movimientos controlados: sube en 1–2 s y baja en 2–3 s, sin impulso ni rebotes.",
+      "Rango completo y cómodo: busca el estiramiento y la contracción sin forzar la articulación.",
+      "Respiración: exhala al hacer el esfuerzo e inhala al volver a la posición inicial."
+    ],
+    "variations": [
+      "Elevación lateral en polea: trabaja deltoides lateral con polea.",
+      "Elevación lateral (máquina): trabaja deltoides lateral con máquina.",
+      "Reverse pec deck (vista posterior): trabaja deltoides posterior con máquina.",
+      "Press de hombro con mancuernas: trabaja deltoides anterior y lateral con mancuernas y banco."
+    ],
+    "relatedExerciseIds": [
+      "mrg_cable_lateral",
+      "mrg_machine_lateral",
+      "mrg_reverse_fly",
+      "mrg_db_shoulder_press",
+      "mrg_front_raise",
+      "mrg_upright_row",
+      "mrg_shrugs"
+    ],
+    "defaults": {
+      "sets": 3,
+      "repMin": 12,
+      "repMax": 15,
+      "rir": "2",
+      "restSec": 75,
+      "unit": "reps"
+    }
+  },
+  {
+    "exerciseId": "mrg_shrugs",
+    "animKey": "shrugs",
+    "name": "Encogimientos de hombros",
+    "imageUrl": "png/Encogimientos-De-Hombros-Hombros.png",
+    "gifUrl": "gif/Encogimientos-De-Hombros-Hombros.gif",
+    "videoUrl": "mp4/Encogimientos-De-Hombros-Hombros.mp4",
+    "equipments": [
+      "MANCUERNAS"
+    ],
+    "bodyParts": [
+      "HOMBROS"
+    ],
+    "gender": "male",
+    "exerciseType": "FUERZA",
+    "targetMuscles": [
+      "Trapecio superior"
+    ],
+    "secondaryMuscles": [],
+    "keywords": [
+      "Encogimientos de hombros",
+      "Encogimientos de hombros técnica",
+      "Ejercicio de hombros con mancuernas",
+      "Trapecio superior ejercicio",
+      "Rutina de hombros",
+      "Cómo hacer encogimientos de hombros",
+      "Encogimientos de hombros gif"
+    ],
+    "overview": "Encogimientos de hombros es un ejercicio de fuerza para hombros que se realiza con mancuernas. Trabaja principalmente trapecio superior. Es adecuado para niveles intermedios que buscan ganar masa muscular y fuerza con una técnica controlada.",
+    "instructions": [
+      "Brazos estirados con mancuernas a los lados.",
+      "Sube los hombros hacia las orejas.",
+      "Pausa 1 s arriba, sin girar los hombros.",
+      "Baja lento."
+    ],
+    "exerciseTips": [
+      "Movimientos controlados: sube en 1–2 s y baja en 2–3 s, sin impulso ni rebotes.",
+      "Rango completo y cómodo: busca el estiramiento y la contracción sin forzar la articulación.",
+      "Respiración: exhala al hacer el esfuerzo e inhala al volver a la posición inicial."
+    ],
+    "variations": [
+      "Elevación lateral en polea: trabaja deltoides lateral con polea.",
+      "Elevación lateral (máquina): trabaja deltoides lateral con máquina.",
+      "Reverse pec deck (vista posterior): trabaja deltoides posterior con máquina.",
+      "Press de hombro con mancuernas: trabaja deltoides anterior y lateral con mancuernas y banco."
+    ],
+    "relatedExerciseIds": [
+      "mrg_cable_lateral",
+      "mrg_machine_lateral",
+      "mrg_reverse_fly",
+      "mrg_db_shoulder_press",
+      "mrg_face_pull",
+      "mrg_upright_row",
+      "mrg_front_raise"
+    ],
+    "defaults": {
+      "sets": 3,
+      "repMin": 12,
+      "repMax": 15,
+      "rir": "2",
+      "restSec": 75,
+      "unit": "reps"
+    }
+  },
+  {
+    "exerciseId": "mrg_upright_row",
+    "animKey": "upright_row",
+    "name": "Remo al mentón (polea o barra)",
+    "imageUrl": "png/Remo-Al-Menton-Polea-O-Barra-Hombros.png",
+    "gifUrl": "gif/Remo-Al-Menton-Polea-O-Barra-Hombros.gif",
+    "videoUrl": "mp4/Remo-Al-Menton-Polea-O-Barra-Hombros.mp4",
+    "equipments": [
+      "POLEA",
+      "BARRA"
+    ],
+    "bodyParts": [
+      "HOMBROS"
+    ],
+    "gender": "male",
+    "exerciseType": "FUERZA",
+    "targetMuscles": [
+      "Deltoides lateral"
+    ],
+    "secondaryMuscles": [
+      "Trapecio"
+    ],
+    "keywords": [
+      "Remo al mentón (polea o barra)",
+      "Remo al mentón (polea o barra) técnica",
+      "Ejercicio de hombros con polea",
+      "Deltoides lateral ejercicio",
+      "Rutina de hombros",
+      "Cómo hacer remo al mentón (polea o barra)",
+      "Remo al mentón (polea o barra) gif"
+    ],
+    "overview": "Remo al mentón (polea o barra) es un ejercicio de fuerza para hombros que se realiza con polea y barra. Trabaja principalmente deltoides lateral, con apoyo de trapecio. Es adecuado para niveles intermedios que buscan ganar masa muscular y fuerza con una técnica controlada.",
+    "instructions": [
+      "Agarre a la anchura de hombros (no cerrado).",
+      "Sube con los codos por delante hasta el pecho.",
+      "No subas por encima de los hombros si molesta.",
+      "Baja controlado."
+    ],
+    "exerciseTips": [
+      "Movimientos controlados: sube en 1–2 s y baja en 2–3 s, sin impulso ni rebotes.",
+      "Rango completo y cómodo: busca el estiramiento y la contracción sin forzar la articulación.",
+      "Respiración: exhala al hacer el esfuerzo e inhala al volver a la posición inicial."
+    ],
+    "variations": [
+      "Elevación lateral en polea: trabaja deltoides lateral con polea.",
+      "Elevación lateral (máquina): trabaja deltoides lateral con máquina.",
+      "Reverse pec deck (vista posterior): trabaja deltoides posterior con máquina.",
+      "Press de hombro con mancuernas: trabaja deltoides anterior y lateral con mancuernas y banco."
+    ],
+    "relatedExerciseIds": [
+      "mrg_cable_lateral",
+      "mrg_machine_lateral",
+      "mrg_reverse_fly",
+      "mrg_db_shoulder_press",
+      "mrg_front_raise",
+      "mrg_face_pull",
+      "mrg_shrugs"
+    ],
+    "defaults": {
+      "sets": 3,
+      "repMin": 12,
+      "repMax": 15,
+      "rir": "2",
+      "restSec": 75,
+      "unit": "reps"
+    }
+  },
+  {
+    "exerciseId": "mrg_barbell_curl",
+    "animKey": "barbell_curl",
+    "name": "Curl con barra",
+    "imageUrl": "png/Curl-Con-Barra-Biceps.png",
+    "gifUrl": "gif/Curl-Con-Barra-Biceps.gif",
+    "videoUrl": "mp4/Curl-Con-Barra-Biceps.mp4",
+    "equipments": [
+      "BARRA"
+    ],
+    "bodyParts": [
+      "BÍCEPS"
+    ],
+    "gender": "male",
+    "exerciseType": "FUERZA",
+    "targetMuscles": [
+      "Bíceps"
+    ],
+    "secondaryMuscles": [
+      "Braquial"
+    ],
+    "keywords": [
+      "Curl con barra",
+      "Curl con barra técnica",
+      "Ejercicio de bíceps con barra",
+      "Bíceps ejercicio",
+      "Rutina de bíceps",
+      "Cómo hacer curl con barra",
+      "Curl con barra gif"
+    ],
+    "overview": "Curl con barra es un ejercicio de fuerza para bíceps que se realiza con barra. Trabaja principalmente bíceps, con apoyo de braquial. Es adecuado para niveles intermedios que buscan ganar masa muscular y fuerza con una técnica controlada.",
+    "instructions": [
+      "Agarre supino a la anchura de hombros.",
+      "Codos pegados al cuerpo.",
+      "Sube sin balancear la espalda.",
+      "Baja en 2–3 s."
+    ],
+    "exerciseTips": [
+      "Movimientos controlados: sube en 1–2 s y baja en 2–3 s, sin impulso ni rebotes.",
+      "Rango completo y cómodo: busca el estiramiento y la contracción sin forzar la articulación.",
+      "Respiración: exhala al hacer el esfuerzo e inhala al volver a la posición inicial."
+    ],
+    "variations": [
+      "Curl en banco inclinado: trabaja bíceps (cabeza larga) con mancuernas y banco.",
+      "Curl predicador en máquina: trabaja bíceps (cabeza corta) con máquina.",
+      "Curl en polea baja: trabaja bíceps con polea y barra.",
+      "Curl Bayesian en polea: trabaja bíceps (énfasis en estiramiento) con polea."
+    ],
+    "relatedExerciseIds": [
+      "mrg_incline_curl",
+      "mrg_preacher_curl",
+      "mrg_low_cable_curl",
+      "mrg_bayesian_curl",
+      "mrg_db_curl",
+      "mrg_concentration_curl",
+      "mrg_cable_curl_rope_high",
+      "mrg_rope_hammer",
+      "mrg_db_hammer"
+    ],
+    "defaults": {
+      "sets": 3,
+      "repMin": 8,
+      "repMax": 12,
+      "rir": "2",
+      "restSec": 90,
+      "unit": "reps"
+    }
+  },
+  {
+    "exerciseId": "mrg_db_curl",
+    "animKey": "db_curl",
+    "name": "Curl con mancuernas alterno",
+    "imageUrl": "png/Curl-Con-Mancuernas-Alterno-Biceps.png",
+    "gifUrl": "gif/Curl-Con-Mancuernas-Alterno-Biceps.gif",
+    "videoUrl": "mp4/Curl-Con-Mancuernas-Alterno-Biceps.mp4",
+    "equipments": [
+      "MANCUERNAS"
+    ],
+    "bodyParts": [
+      "BÍCEPS"
+    ],
+    "gender": "male",
+    "exerciseType": "FUERZA",
+    "targetMuscles": [
+      "Bíceps"
+    ],
+    "secondaryMuscles": [
+      "Braquial"
+    ],
+    "keywords": [
+      "Curl con mancuernas alterno",
+      "Curl con mancuernas alterno técnica",
+      "Ejercicio de bíceps con mancuernas",
+      "Bíceps ejercicio",
+      "Rutina de bíceps",
+      "Cómo hacer curl con mancuernas alterno",
+      "Curl con mancuernas alterno gif"
+    ],
+    "overview": "Curl con mancuernas alterno es un ejercicio de fuerza para bíceps que se realiza con mancuernas. Trabaja principalmente bíceps, con apoyo de braquial. Es adecuado para niveles intermedios que buscan ganar masa muscular y fuerza con una técnica controlada.",
+    "instructions": [
+      "Gira la palma hacia arriba al subir (supinación).",
+      "Alterna brazos con control.",
+      "Codo fijo al costado.",
+      "Sin impulso."
+    ],
+    "exerciseTips": [
+      "Movimientos controlados: sube en 1–2 s y baja en 2–3 s, sin impulso ni rebotes.",
+      "Rango completo y cómodo: busca el estiramiento y la contracción sin forzar la articulación.",
+      "Respiración: exhala al hacer el esfuerzo e inhala al volver a la posición inicial."
+    ],
+    "variations": [
+      "Curl en banco inclinado: trabaja bíceps (cabeza larga) con mancuernas y banco.",
+      "Curl predicador en máquina: trabaja bíceps (cabeza corta) con máquina.",
+      "Curl en polea baja: trabaja bíceps con polea y barra.",
+      "Curl Bayesian en polea: trabaja bíceps (énfasis en estiramiento) con polea."
+    ],
+    "relatedExerciseIds": [
+      "mrg_incline_curl",
+      "mrg_preacher_curl",
+      "mrg_low_cable_curl",
+      "mrg_bayesian_curl",
+      "mrg_barbell_curl",
+      "mrg_concentration_curl",
+      "mrg_cable_curl_rope_high",
+      "mrg_rope_hammer",
+      "mrg_db_hammer"
+    ],
+    "defaults": {
+      "sets": 3,
+      "repMin": 10,
+      "repMax": 12,
+      "rir": "2",
+      "restSec": 90,
+      "unit": "reps"
+    }
+  },
+  {
+    "exerciseId": "mrg_concentration_curl",
+    "animKey": "concentration_curl",
+    "name": "Curl concentrado",
+    "imageUrl": "png/Curl-Concentrado-Biceps.png",
+    "gifUrl": "gif/Curl-Concentrado-Biceps.gif",
+    "videoUrl": "mp4/Curl-Concentrado-Biceps.mp4",
+    "equipments": [
+      "MANCUERNAS",
+      "BANCO"
+    ],
+    "bodyParts": [
+      "BÍCEPS"
+    ],
+    "gender": "male",
+    "exerciseType": "FUERZA",
+    "targetMuscles": [
+      "Bíceps"
+    ],
+    "secondaryMuscles": [],
+    "keywords": [
+      "Curl concentrado",
+      "Curl concentrado técnica",
+      "Ejercicio de bíceps con mancuernas",
+      "Bíceps ejercicio",
+      "Rutina de bíceps",
+      "Cómo hacer curl concentrado",
+      "Curl concentrado gif"
+    ],
+    "overview": "Curl concentrado es un ejercicio de fuerza para bíceps que se realiza con mancuernas y banco. Trabaja principalmente bíceps. Es adecuado para niveles intermedios que buscan ganar masa muscular y fuerza con una técnica controlada.",
+    "instructions": [
+      "Sentado, codo apoyado en la cara interna del muslo.",
+      "Sube hasta el hombro apretando el bíceps.",
+      "No despegues el codo.",
+      "Baja completo y lento."
+    ],
+    "exerciseTips": [
+      "Movimientos controlados: sube en 1–2 s y baja en 2–3 s, sin impulso ni rebotes.",
+      "Rango completo y cómodo: busca el estiramiento y la contracción sin forzar la articulación.",
+      "Respiración: exhala al hacer el esfuerzo e inhala al volver a la posición inicial."
+    ],
+    "variations": [
+      "Curl predicador en máquina: trabaja bíceps (cabeza corta) con máquina.",
+      "Curl en polea baja: trabaja bíceps con polea y barra.",
+      "Curl Bayesian en polea: trabaja bíceps (énfasis en estiramiento) con polea.",
+      "Curl con barra: trabaja bíceps con barra."
+    ],
+    "relatedExerciseIds": [
+      "mrg_preacher_curl",
+      "mrg_low_cable_curl",
+      "mrg_bayesian_curl",
+      "mrg_barbell_curl",
+      "mrg_db_curl",
+      "mrg_cable_curl_rope_high",
+      "mrg_incline_curl",
+      "mrg_rope_hammer",
+      "mrg_db_hammer"
+    ],
+    "defaults": {
+      "sets": 3,
+      "repMin": 10,
+      "repMax": 12,
+      "rir": "2",
+      "restSec": 75,
+      "unit": "reps"
+    }
+  },
+  {
+    "exerciseId": "mrg_cable_curl_rope_high",
+    "animKey": "cable_curl_rope_high",
+    "name": "Curl en polea alta (doble)",
+    "imageUrl": "png/Curl-En-Polea-Alta-Doble-Biceps.png",
+    "gifUrl": "gif/Curl-En-Polea-Alta-Doble-Biceps.gif",
+    "videoUrl": "mp4/Curl-En-Polea-Alta-Doble-Biceps.mp4",
+    "equipments": [
+      "POLEA"
+    ],
+    "bodyParts": [
+      "BÍCEPS"
+    ],
+    "gender": "male",
+    "exerciseType": "FUERZA",
+    "targetMuscles": [
+      "Bíceps (contracción máxima)"
+    ],
+    "secondaryMuscles": [],
+    "keywords": [
+      "Curl en polea alta (doble)",
+      "Curl en polea alta (doble) técnica",
+      "Ejercicio de bíceps con polea",
+      "Bíceps (contracción máxima) ejercicio",
+      "Rutina de bíceps",
+      "Cómo hacer curl en polea alta (doble)",
+      "Curl en polea alta (doble) gif"
+    ],
+    "overview": "Curl en polea alta (doble) es un ejercicio de fuerza para bíceps que se realiza con polea. Trabaja principalmente bíceps (contracción máxima). Es adecuado para niveles intermedios que buscan ganar masa muscular y fuerza con una técnica controlada.",
+    "instructions": [
+      "Brazos en cruz a la altura de los hombros.",
+      "Flexiona llevando las manos hacia las sienes.",
+      "Codos fijos.",
+      "Extiende lento sin forzar el codo."
+    ],
+    "exerciseTips": [
+      "Movimientos controlados: sube en 1–2 s y baja en 2–3 s, sin impulso ni rebotes.",
+      "Rango completo y cómodo: busca el estiramiento y la contracción sin forzar la articulación.",
+      "Respiración: exhala al hacer el esfuerzo e inhala al volver a la posición inicial."
+    ],
+    "variations": [
+      "Curl en banco inclinado: trabaja bíceps (cabeza larga) con mancuernas y banco.",
+      "Curl predicador en máquina: trabaja bíceps (cabeza corta) con máquina.",
+      "Curl en polea baja: trabaja bíceps con polea y barra.",
+      "Curl con barra: trabaja bíceps con barra."
+    ],
+    "relatedExerciseIds": [
+      "mrg_incline_curl",
+      "mrg_preacher_curl",
+      "mrg_low_cable_curl",
+      "mrg_barbell_curl",
+      "mrg_db_curl",
+      "mrg_concentration_curl",
+      "mrg_bayesian_curl",
+      "mrg_rope_hammer",
+      "mrg_db_hammer"
+    ],
+    "defaults": {
+      "sets": 3,
+      "repMin": 12,
+      "repMax": 15,
+      "rir": "2",
+      "restSec": 75,
+      "unit": "reps"
+    }
+  },
+  {
+    "exerciseId": "mrg_dips",
+    "animKey": "dips",
+    "name": "Fondos en paralelas",
+    "imageUrl": "png/Fondos-En-Paralelas-Triceps.png",
+    "gifUrl": "gif/Fondos-En-Paralelas-Triceps.gif",
+    "videoUrl": "mp4/Fondos-En-Paralelas-Triceps.mp4",
+    "equipments": [
+      "PARALELAS",
+      "PESO CORPORAL"
+    ],
+    "bodyParts": [
+      "TRÍCEPS"
+    ],
+    "gender": "male",
+    "exerciseType": "FUERZA",
+    "targetMuscles": [
+      "Tríceps"
+    ],
+    "secondaryMuscles": [
+      "Pectoral inferior",
+      "Deltoides anterior"
+    ],
+    "keywords": [
+      "Fondos en paralelas",
+      "Fondos en paralelas técnica",
+      "Ejercicio de tríceps con paralelas",
+      "Tríceps ejercicio",
+      "Rutina de tríceps",
+      "Cómo hacer fondos en paralelas",
+      "Fondos en paralelas gif"
+    ],
+    "overview": "Fondos en paralelas es un ejercicio de fuerza para tríceps que se realiza con paralelas y peso corporal. Trabaja principalmente tríceps, con apoyo de pectoral inferior, deltoides anterior. Es adecuado para principiantes e intermedios que buscan ganar masa muscular y fuerza con una técnica controlada.",
+    "instructions": [
+      "Brazos rectos arriba, hombros lejos de las orejas.",
+      "Baja hasta ~90° de codo, sin ir más profundo si molesta.",
+      "Torso más erguido = más tríceps; inclinado = más pecho.",
+      "⚠️ Exige codo y hombro: solo sin dolor. Peso = lastre (kg)."
+    ],
+    "exerciseTips": [
+      "Movimientos controlados: sube en 1–2 s y baja en 2–3 s, sin impulso ni rebotes.",
+      "Rango completo y cómodo: busca el estiramiento y la contracción sin forzar la articulación.",
+      "Respiración: exhala al hacer el esfuerzo e inhala al volver a la posición inicial."
+    ],
+    "variations": [
+      "Extensión unilateral de tríceps en polea: trabaja tríceps con polea.",
+      "Extensión cruzada de tríceps en polea: trabaja tríceps (cabeza lateral) con polea.",
+      "Fondos en banco: trabaja tríceps con banco y peso corporal.",
+      "Press francés (rompecráneos): trabaja tríceps (cabeza larga) con barra y banco."
+    ],
+    "relatedExerciseIds": [
+      "mrg_tri_unilateral",
+      "mrg_tri_cross",
+      "mrg_bench_dips",
+      "mrg_skull_crusher",
+      "mrg_overhead_tri_ext",
+      "mrg_tri_kickback",
+      "mrg_tri_pushdown_bar"
+    ],
+    "defaults": {
+      "sets": 3,
+      "repMin": 6,
+      "repMax": 12,
+      "rir": "2",
+      "restSec": 120,
+      "unit": "reps"
+    }
+  },
+  {
+    "exerciseId": "mrg_bench_dips",
+    "animKey": "bench_dips",
+    "name": "Fondos en banco",
+    "imageUrl": "png/Fondos-En-Banco-Triceps.png",
+    "gifUrl": "gif/Fondos-En-Banco-Triceps.gif",
+    "videoUrl": "mp4/Fondos-En-Banco-Triceps.mp4",
+    "equipments": [
+      "BANCO",
+      "PESO CORPORAL"
+    ],
+    "bodyParts": [
+      "TRÍCEPS"
+    ],
+    "gender": "male",
+    "exerciseType": "FUERZA",
+    "targetMuscles": [
+      "Tríceps"
+    ],
+    "secondaryMuscles": [],
+    "keywords": [
+      "Fondos en banco",
+      "Fondos en banco técnica",
+      "Ejercicio de tríceps con banco",
+      "Tríceps ejercicio",
+      "Rutina de tríceps",
+      "Cómo hacer fondos en banco",
+      "Fondos en banco gif"
+    ],
+    "overview": "Fondos en banco es un ejercicio de fuerza para tríceps que se realiza con banco y peso corporal. Trabaja principalmente tríceps. Es adecuado para principiantes e intermedios que buscan ganar masa muscular y fuerza con una técnica controlada.",
+    "instructions": [
+      "Manos en el borde del banco, dedos hacia adelante.",
+      "Baja flexionando codos hacia atrás hasta ~90°.",
+      "Mantén la espalda cerca del banco.",
+      "⚠️ Evítalo si molesta el hombro o el codo."
+    ],
+    "exerciseTips": [
+      "Movimientos controlados: sube en 1–2 s y baja en 2–3 s, sin impulso ni rebotes.",
+      "Rango completo y cómodo: busca el estiramiento y la contracción sin forzar la articulación.",
+      "Respiración: exhala al hacer el esfuerzo e inhala al volver a la posición inicial."
+    ],
+    "variations": [
+      "Extensión unilateral de tríceps en polea: trabaja tríceps con polea.",
+      "Extensión cruzada de tríceps en polea: trabaja tríceps (cabeza lateral) con polea.",
+      "Fondos en paralelas: trabaja tríceps con paralelas y peso corporal.",
+      "Press francés (rompecráneos): trabaja tríceps (cabeza larga) con barra y banco."
+    ],
+    "relatedExerciseIds": [
+      "mrg_tri_unilateral",
+      "mrg_tri_cross",
+      "mrg_dips",
+      "mrg_skull_crusher",
+      "mrg_overhead_tri_ext",
+      "mrg_tri_kickback",
+      "mrg_tri_pushdown_bar"
+    ],
+    "defaults": {
+      "sets": 3,
+      "repMin": 10,
+      "repMax": 15,
+      "rir": "2",
+      "restSec": 75,
+      "unit": "bw"
+    }
+  },
+  {
+    "exerciseId": "mrg_skull_crusher",
+    "animKey": "skull_crusher",
+    "name": "Press francés (rompecráneos)",
+    "imageUrl": "png/Press-Frances-Rompecraneos-Triceps.png",
+    "gifUrl": "gif/Press-Frances-Rompecraneos-Triceps.gif",
+    "videoUrl": "mp4/Press-Frances-Rompecraneos-Triceps.mp4",
+    "equipments": [
+      "BARRA",
+      "BANCO"
+    ],
+    "bodyParts": [
+      "TRÍCEPS"
+    ],
+    "gender": "male",
+    "exerciseType": "FUERZA",
+    "targetMuscles": [
+      "Tríceps (cabeza larga)"
+    ],
+    "secondaryMuscles": [],
+    "keywords": [
+      "Press francés (rompecráneos)",
+      "Press francés (rompecráneos) técnica",
+      "Ejercicio de tríceps con barra",
+      "Tríceps (cabeza larga) ejercicio",
+      "Rutina de tríceps",
+      "Cómo hacer press francés (rompecráneos)",
+      "Press francés (rompecráneos) gif"
+    ],
+    "overview": "Press francés (rompecráneos) es un ejercicio de fuerza para tríceps que se realiza con barra y banco. Trabaja principalmente tríceps (cabeza larga). Es adecuado para niveles intermedios que buscan ganar masa muscular y fuerza con una técnica controlada.",
+    "instructions": [
+      "Brazos ligeramente inclinados hacia la cabeza.",
+      "Baja la barra hacia la frente moviendo solo el codo.",
+      "Extiende sin bloquear.",
+      "⚠️ Exige el codo: solo si es indoloro."
+    ],
+    "exerciseTips": [
+      "Movimientos controlados: sube en 1–2 s y baja en 2–3 s, sin impulso ni rebotes.",
+      "Rango completo y cómodo: busca el estiramiento y la contracción sin forzar la articulación.",
+      "Respiración: exhala al hacer el esfuerzo e inhala al volver a la posición inicial."
+    ],
+    "variations": [
+      "Extensión unilateral de tríceps en polea: trabaja tríceps con polea.",
+      "Extensión cruzada de tríceps en polea: trabaja tríceps (cabeza lateral) con polea.",
+      "Fondos en paralelas: trabaja tríceps con paralelas y peso corporal.",
+      "Fondos en banco: trabaja tríceps con banco y peso corporal."
+    ],
+    "relatedExerciseIds": [
+      "mrg_tri_unilateral",
+      "mrg_tri_cross",
+      "mrg_dips",
+      "mrg_bench_dips",
+      "mrg_overhead_tri_ext",
+      "mrg_tri_kickback",
+      "mrg_tri_pushdown_bar"
+    ],
+    "defaults": {
+      "sets": 3,
+      "repMin": 10,
+      "repMax": 12,
+      "rir": "2",
+      "restSec": 90,
+      "unit": "reps"
+    }
+  },
+  {
+    "exerciseId": "mrg_overhead_tri_ext",
+    "animKey": "overhead_tri_ext",
+    "name": "Extensión de tríceps sobre la cabeza",
+    "imageUrl": "png/Extension-De-Triceps-Sobre-La-Cabeza-Triceps.png",
+    "gifUrl": "gif/Extension-De-Triceps-Sobre-La-Cabeza-Triceps.gif",
+    "videoUrl": "mp4/Extension-De-Triceps-Sobre-La-Cabeza-Triceps.mp4",
+    "equipments": [
+      "MANCUERNAS"
+    ],
+    "bodyParts": [
+      "TRÍCEPS"
+    ],
+    "gender": "male",
+    "exerciseType": "FUERZA",
+    "targetMuscles": [
+      "Tríceps (cabeza larga)"
+    ],
+    "secondaryMuscles": [],
+    "keywords": [
+      "Extensión de tríceps sobre la cabeza",
+      "Extensión de tríceps sobre la cabeza técnica",
+      "Ejercicio de tríceps con mancuernas",
+      "Tríceps (cabeza larga) ejercicio",
+      "Rutina de tríceps",
+      "Cómo hacer extensión de tríceps sobre la cabeza",
+      "Extensión de tríceps sobre la cabeza gif"
+    ],
+    "overview": "Extensión de tríceps sobre la cabeza es un ejercicio de fuerza para tríceps que se realiza con mancuernas. Trabaja principalmente tríceps (cabeza larga). Es adecuado para niveles intermedios que buscan ganar masa muscular y fuerza con una técnica controlada.",
+    "instructions": [
+      "Codos apuntando al techo, cerca de la cabeza.",
+      "Baja la mancuerna por detrás de la cabeza.",
+      "Extiende sin mover los codos.",
+      "Abdomen firme, no arquees la espalda."
+    ],
+    "exerciseTips": [
+      "Movimientos controlados: sube en 1–2 s y baja en 2–3 s, sin impulso ni rebotes.",
+      "Rango completo y cómodo: busca el estiramiento y la contracción sin forzar la articulación.",
+      "Respiración: exhala al hacer el esfuerzo e inhala al volver a la posición inicial."
+    ],
+    "variations": [
+      "Extensión unilateral de tríceps en polea: trabaja tríceps con polea.",
+      "Extensión cruzada de tríceps en polea: trabaja tríceps (cabeza lateral) con polea.",
+      "Fondos en paralelas: trabaja tríceps con paralelas y peso corporal.",
+      "Fondos en banco: trabaja tríceps con banco y peso corporal."
+    ],
+    "relatedExerciseIds": [
+      "mrg_tri_unilateral",
+      "mrg_tri_cross",
+      "mrg_dips",
+      "mrg_bench_dips",
+      "mrg_skull_crusher",
+      "mrg_tri_kickback",
+      "mrg_tri_pushdown_bar"
+    ],
+    "defaults": {
+      "sets": 3,
+      "repMin": 10,
+      "repMax": 12,
+      "rir": "2",
+      "restSec": 90,
+      "unit": "reps"
+    }
+  },
+  {
+    "exerciseId": "mrg_tri_kickback",
+    "animKey": "tri_kickback",
+    "name": "Patada de tríceps",
+    "imageUrl": "png/Patada-De-Triceps-Triceps.png",
+    "gifUrl": "gif/Patada-De-Triceps-Triceps.gif",
+    "videoUrl": "mp4/Patada-De-Triceps-Triceps.mp4",
+    "equipments": [
+      "MANCUERNAS",
+      "BANCO"
+    ],
+    "bodyParts": [
+      "TRÍCEPS"
+    ],
+    "gender": "male",
+    "exerciseType": "FUERZA",
+    "targetMuscles": [
+      "Tríceps"
+    ],
+    "secondaryMuscles": [],
+    "keywords": [
+      "Patada de tríceps",
+      "Patada de tríceps técnica",
+      "Ejercicio de tríceps con mancuernas",
+      "Tríceps ejercicio",
+      "Rutina de tríceps",
+      "Cómo hacer patada de tríceps",
+      "Patada de tríceps gif"
+    ],
+    "overview": "Patada de tríceps es un ejercicio de fuerza para tríceps que se realiza con mancuernas y banco. Trabaja principalmente tríceps. Es adecuado para niveles intermedios que buscan ganar masa muscular y fuerza con una técnica controlada.",
+    "instructions": [
+      "Torso inclinado, brazo pegado al cuerpo y paralelo al suelo.",
+      "Extiende el codo hacia atrás.",
+      "Pausa 1 s con el brazo estirado.",
+      "Vuelve a 90° sin mover el hombro."
+    ],
+    "exerciseTips": [
+      "Movimientos controlados: sube en 1–2 s y baja en 2–3 s, sin impulso ni rebotes.",
+      "Rango completo y cómodo: busca el estiramiento y la contracción sin forzar la articulación.",
+      "Respiración: exhala al hacer el esfuerzo e inhala al volver a la posición inicial."
+    ],
+    "variations": [
+      "Extensión unilateral de tríceps en polea: trabaja tríceps con polea.",
+      "Extensión cruzada de tríceps en polea: trabaja tríceps (cabeza lateral) con polea.",
+      "Fondos en paralelas: trabaja tríceps con paralelas y peso corporal.",
+      "Fondos en banco: trabaja tríceps con banco y peso corporal."
+    ],
+    "relatedExerciseIds": [
+      "mrg_tri_unilateral",
+      "mrg_tri_cross",
+      "mrg_dips",
+      "mrg_bench_dips",
+      "mrg_skull_crusher",
+      "mrg_overhead_tri_ext",
+      "mrg_tri_pushdown_bar"
+    ],
+    "defaults": {
+      "sets": 3,
+      "repMin": 12,
+      "repMax": 15,
+      "rir": "2",
+      "restSec": 75,
+      "unit": "reps"
+    }
+  },
+  {
+    "exerciseId": "mrg_tri_pushdown_bar",
+    "animKey": "tri_pushdown_bar",
+    "name": "Extensión de tríceps en polea (barra)",
+    "imageUrl": "png/Extension-De-Triceps-En-Polea-Barra-Triceps.png",
+    "gifUrl": "gif/Extension-De-Triceps-En-Polea-Barra-Triceps.gif",
+    "videoUrl": "mp4/Extension-De-Triceps-En-Polea-Barra-Triceps.mp4",
+    "equipments": [
+      "POLEA",
+      "BARRA"
+    ],
+    "bodyParts": [
+      "TRÍCEPS"
+    ],
+    "gender": "male",
+    "exerciseType": "FUERZA",
+    "targetMuscles": [
+      "Tríceps"
+    ],
+    "secondaryMuscles": [],
+    "keywords": [
+      "Extensión de tríceps en polea (barra)",
+      "Extensión de tríceps en polea (barra) técnica",
+      "Ejercicio de tríceps con polea",
+      "Tríceps ejercicio",
+      "Rutina de tríceps",
+      "Cómo hacer extensión de tríceps en polea (barra)",
+      "Extensión de tríceps en polea (barra) gif"
+    ],
+    "overview": "Extensión de tríceps en polea (barra) es un ejercicio de fuerza para tríceps que se realiza con polea y barra. Trabaja principalmente tríceps. Es adecuado para niveles intermedios que buscan ganar masa muscular y fuerza con una técnica controlada.",
+    "instructions": [
+      "Codos pegados a los costados.",
+      "Empuja la barra hacia abajo hasta extender.",
+      "Sube hasta ~90° sin mover los hombros.",
+      "Si molesta el codo, prueba con cuerda."
+    ],
+    "exerciseTips": [
+      "Movimientos controlados: sube en 1–2 s y baja en 2–3 s, sin impulso ni rebotes.",
+      "Rango completo y cómodo: busca el estiramiento y la contracción sin forzar la articulación.",
+      "Respiración: exhala al hacer el esfuerzo e inhala al volver a la posición inicial."
+    ],
+    "variations": [
+      "Extensión unilateral de tríceps en polea: trabaja tríceps con polea.",
+      "Extensión cruzada de tríceps en polea: trabaja tríceps (cabeza lateral) con polea.",
+      "Fondos en paralelas: trabaja tríceps con paralelas y peso corporal.",
+      "Fondos en banco: trabaja tríceps con banco y peso corporal."
+    ],
+    "relatedExerciseIds": [
+      "mrg_tri_unilateral",
+      "mrg_tri_cross",
+      "mrg_dips",
+      "mrg_bench_dips",
+      "mrg_skull_crusher",
+      "mrg_overhead_tri_ext",
+      "mrg_tri_kickback"
+    ],
+    "defaults": {
+      "sets": 3,
+      "repMin": 10,
+      "repMax": 15,
+      "rir": "2",
+      "restSec": 75,
+      "unit": "reps"
+    }
+  },
+  {
+    "exerciseId": "mrg_squat",
+    "animKey": "squat",
+    "name": "Sentadilla (goblet / libre)",
+    "imageUrl": "png/Sentadilla-Goblet-Libre-Piernas.png",
+    "gifUrl": "gif/Sentadilla-Goblet-Libre-Piernas.gif",
+    "videoUrl": "mp4/Sentadilla-Goblet-Libre-Piernas.mp4",
+    "equipments": [
+      "MANCUERNAS"
+    ],
+    "bodyParts": [
+      "PIERNAS"
+    ],
+    "gender": "male",
+    "exerciseType": "FUERZA",
+    "targetMuscles": [
+      "Cuádriceps"
+    ],
+    "secondaryMuscles": [
+      "Glúteos",
+      "Aductores"
+    ],
+    "keywords": [
+      "Sentadilla (goblet / libre)",
+      "Sentadilla (goblet / libre) técnica",
+      "Ejercicio de piernas con mancuernas",
+      "Cuádriceps ejercicio",
+      "Rutina de piernas",
+      "Cómo hacer sentadilla (goblet / libre)",
+      "Sentadilla (goblet / libre) gif"
+    ],
+    "overview": "Sentadilla (goblet / libre) es un ejercicio de fuerza para piernas que se realiza con mancuernas. Trabaja principalmente cuádriceps, con apoyo de glúteos, aductores. Es adecuado para niveles intermedios que buscan ganar masa muscular y fuerza con una técnica controlada.",
+    "instructions": [
+      "Pies a la anchura de hombros, puntas algo abiertas.",
+      "Baja llevando la cadera atrás y abajo, pecho alto.",
+      "Rodillas en línea con los pies.",
+      "⚠️ Profundidad solo hasta donde no duela la rodilla."
+    ],
+    "exerciseTips": [
+      "Movimientos controlados: sube en 1–2 s y baja en 2–3 s, sin impulso ni rebotes.",
+      "Rango completo y cómodo: busca el estiramiento y la contracción sin forzar la articulación.",
+      "Respiración: exhala al hacer el esfuerzo e inhala al volver a la posición inicial."
+    ],
+    "variations": [
+      "Prensa de piernas: trabaja cuádriceps con prensa.",
+      "Extensión isométrica de rodilla 90°: trabaja cuádriceps (isométrico) con máquina.",
+      "Sentadilla isométrica en pared: trabaja cuádriceps con peso corporal.",
+      "Sentadilla búlgara: trabaja cuádriceps con mancuernas y banco."
+    ],
+    "relatedExerciseIds": [
+      "mrg_leg_press",
+      "mrg_iso_knee_ext",
+      "mrg_wall_sit",
+      "mrg_bulgarian_split",
+      "mrg_leg_extension",
+      "mrg_step_up",
+      "mrg_lunge",
+      "mrg_leg_press_calf",
+      "mrg_adductor",
+      "mrg_seated_leg_curl"
+    ],
+    "defaults": {
+      "sets": 3,
+      "repMin": 8,
+      "repMax": 12,
+      "rir": "2",
+      "restSec": 120,
+      "unit": "reps"
+    }
+  },
+  {
+    "exerciseId": "mrg_bulgarian_split",
+    "animKey": "bulgarian_split",
+    "name": "Sentadilla búlgara",
+    "imageUrl": "png/Sentadilla-Bulgara-Piernas.png",
+    "gifUrl": "gif/Sentadilla-Bulgara-Piernas.gif",
+    "videoUrl": "mp4/Sentadilla-Bulgara-Piernas.mp4",
+    "equipments": [
+      "MANCUERNAS",
+      "BANCO"
+    ],
+    "bodyParts": [
+      "PIERNAS"
+    ],
+    "gender": "male",
+    "exerciseType": "FUERZA",
+    "targetMuscles": [
+      "Cuádriceps"
+    ],
+    "secondaryMuscles": [
+      "Glúteos"
+    ],
+    "keywords": [
+      "Sentadilla búlgara",
+      "Sentadilla búlgara técnica",
+      "Ejercicio de piernas con mancuernas",
+      "Cuádriceps ejercicio",
+      "Rutina de piernas",
+      "Cómo hacer sentadilla búlgara",
+      "Sentadilla búlgara gif"
+    ],
+    "overview": "Sentadilla búlgara es un ejercicio de fuerza para piernas que se realiza con mancuernas y banco. Trabaja principalmente cuádriceps, con apoyo de glúteos. Es adecuado para niveles intermedios que buscan ganar masa muscular y fuerza con una técnica controlada.",
+    "instructions": [
+      "Empeine del pie trasero sobre el banco.",
+      "Baja vertical hasta que el muslo delantero quede casi paralelo.",
+      "Peso en el talón delantero.",
+      "⚠️ Exige la rodilla: rango corto o evítala si duele."
+    ],
+    "exerciseTips": [
+      "Movimientos controlados: sube en 1–2 s y baja en 2–3 s, sin impulso ni rebotes.",
+      "Rango completo y cómodo: busca el estiramiento y la contracción sin forzar la articulación.",
+      "Respiración: exhala al hacer el esfuerzo e inhala al volver a la posición inicial."
+    ],
+    "variations": [
+      "Prensa de piernas: trabaja cuádriceps con prensa.",
+      "Extensión isométrica de rodilla 90°: trabaja cuádriceps (isométrico) con máquina.",
+      "Sentadilla isométrica en pared: trabaja cuádriceps con peso corporal.",
+      "Sentadilla (goblet / libre): trabaja cuádriceps con mancuernas."
+    ],
+    "relatedExerciseIds": [
+      "mrg_leg_press",
+      "mrg_iso_knee_ext",
+      "mrg_wall_sit",
+      "mrg_squat",
+      "mrg_lunge",
+      "mrg_leg_extension",
+      "mrg_step_up",
+      "mrg_leg_press_calf",
+      "mrg_adductor",
+      "mrg_seated_leg_curl"
+    ],
+    "defaults": {
+      "sets": 3,
+      "repMin": 8,
+      "repMax": 12,
+      "rir": "2",
+      "restSec": 90,
+      "unit": "reps"
+    }
+  },
+  {
+    "exerciseId": "mrg_lunge",
+    "animKey": "lunge",
+    "name": "Zancadas",
+    "imageUrl": "png/Zancadas-Piernas.png",
+    "gifUrl": "gif/Zancadas-Piernas.gif",
+    "videoUrl": "mp4/Zancadas-Piernas.mp4",
+    "equipments": [
+      "MANCUERNAS"
+    ],
+    "bodyParts": [
+      "PIERNAS"
+    ],
+    "gender": "male",
+    "exerciseType": "FUERZA",
+    "targetMuscles": [
+      "Cuádriceps"
+    ],
+    "secondaryMuscles": [
+      "Glúteos"
+    ],
+    "keywords": [
+      "Zancadas",
+      "Zancadas técnica",
+      "Ejercicio de piernas con mancuernas",
+      "Cuádriceps ejercicio",
+      "Rutina de piernas",
+      "Cómo hacer zancadas",
+      "Zancadas gif"
+    ],
+    "overview": "Zancadas es un ejercicio de fuerza para piernas que se realiza con mancuernas. Trabaja principalmente cuádriceps, con apoyo de glúteos. Es adecuado para niveles intermedios que buscan ganar masa muscular y fuerza con una técnica controlada.",
+    "instructions": [
+      "Paso largo, torso erguido.",
+      "Baja hasta que la rodilla trasera casi toque el suelo.",
+      "Empuja con el talón delantero.",
+      "⚠️ Tu PDF evita zancadas si dan dolor de rodilla."
+    ],
+    "exerciseTips": [
+      "Movimientos controlados: sube en 1–2 s y baja en 2–3 s, sin impulso ni rebotes.",
+      "Rango completo y cómodo: busca el estiramiento y la contracción sin forzar la articulación.",
+      "Respiración: exhala al hacer el esfuerzo e inhala al volver a la posición inicial."
+    ],
+    "variations": [
+      "Prensa de piernas: trabaja cuádriceps con prensa.",
+      "Extensión isométrica de rodilla 90°: trabaja cuádriceps (isométrico) con máquina.",
+      "Sentadilla isométrica en pared: trabaja cuádriceps con peso corporal.",
+      "Sentadilla búlgara: trabaja cuádriceps con mancuernas y banco."
+    ],
+    "relatedExerciseIds": [
+      "mrg_leg_press",
+      "mrg_iso_knee_ext",
+      "mrg_wall_sit",
+      "mrg_bulgarian_split",
+      "mrg_leg_extension",
+      "mrg_step_up",
+      "mrg_squat",
+      "mrg_leg_press_calf",
+      "mrg_adductor",
+      "mrg_seated_leg_curl"
+    ],
+    "defaults": {
+      "sets": 3,
+      "repMin": 10,
+      "repMax": 12,
+      "rir": "2",
+      "restSec": 90,
+      "unit": "reps"
+    }
+  },
+  {
+    "exerciseId": "mrg_leg_extension",
+    "animKey": "leg_extension",
+    "name": "Extensión de cuádriceps (máquina)",
+    "imageUrl": "png/Extension-De-Cuadriceps-Maquina-Piernas.png",
+    "gifUrl": "gif/Extension-De-Cuadriceps-Maquina-Piernas.gif",
+    "videoUrl": "mp4/Extension-De-Cuadriceps-Maquina-Piernas.mp4",
+    "equipments": [
+      "MÁQUINA"
+    ],
+    "bodyParts": [
+      "PIERNAS"
+    ],
+    "gender": "male",
+    "exerciseType": "FUERZA",
+    "targetMuscles": [
+      "Cuádriceps"
+    ],
+    "secondaryMuscles": [],
+    "keywords": [
+      "Extensión de cuádriceps (máquina)",
+      "Extensión de cuádriceps (máquina) técnica",
+      "Ejercicio de piernas con máquina",
+      "Cuádriceps ejercicio",
+      "Rutina de piernas",
+      "Cómo hacer extensión de cuádriceps (máquina)",
+      "Extensión de cuádriceps (máquina) gif"
+    ],
+    "overview": "Extensión de cuádriceps (máquina) es un ejercicio de fuerza para piernas que se realiza con máquina. Trabaja principalmente cuádriceps. Es adecuado para principiantes e intermedios que buscan ganar masa muscular y fuerza con una técnica controlada.",
+    "instructions": [
+      "Eje de la máquina alineado con la rodilla.",
+      "Extiende sin bloquear de golpe.",
+      "Baja lento.",
+      "⚠️ Tu PDF la evita por ahora (condromalacia): solo con autorización."
+    ],
+    "exerciseTips": [
+      "Movimientos controlados: sube en 1–2 s y baja en 2–3 s, sin impulso ni rebotes.",
+      "Rango completo y cómodo: busca el estiramiento y la contracción sin forzar la articulación.",
+      "Respiración: exhala al hacer el esfuerzo e inhala al volver a la posición inicial."
+    ],
+    "variations": [
+      "Prensa de piernas: trabaja cuádriceps con prensa.",
+      "Sentadilla isométrica en pared: trabaja cuádriceps con peso corporal.",
+      "Sentadilla (goblet / libre): trabaja cuádriceps con mancuernas.",
+      "Sentadilla búlgara: trabaja cuádriceps con mancuernas y banco."
+    ],
+    "relatedExerciseIds": [
+      "mrg_leg_press",
+      "mrg_wall_sit",
+      "mrg_squat",
+      "mrg_bulgarian_split",
+      "mrg_lunge",
+      "mrg_step_up",
+      "mrg_iso_knee_ext",
+      "mrg_leg_press_calf",
+      "mrg_adductor",
+      "mrg_seated_leg_curl"
+    ],
+    "defaults": {
+      "sets": 3,
+      "repMin": 12,
+      "repMax": 15,
+      "rir": "2",
+      "restSec": 90,
+      "unit": "reps"
+    }
+  },
+  {
+    "exerciseId": "mrg_step_up",
+    "animKey": "step_up",
+    "name": "Subida al cajón (step-up)",
+    "imageUrl": "png/Subida-Al-Cajon-Step-Up-Piernas.png",
+    "gifUrl": "gif/Subida-Al-Cajon-Step-Up-Piernas.gif",
+    "videoUrl": "mp4/Subida-Al-Cajon-Step-Up-Piernas.mp4",
+    "equipments": [
+      "CAJÓN",
+      "MANCUERNAS"
+    ],
+    "bodyParts": [
+      "PIERNAS"
+    ],
+    "gender": "male",
+    "exerciseType": "FUERZA",
+    "targetMuscles": [
+      "Cuádriceps"
+    ],
+    "secondaryMuscles": [
+      "Glúteos"
+    ],
+    "keywords": [
+      "Subida al cajón (step-up)",
+      "Subida al cajón (step-up) técnica",
+      "Ejercicio de piernas con cajón",
+      "Cuádriceps ejercicio",
+      "Rutina de piernas",
+      "Cómo hacer subida al cajón (step-up)",
+      "Subida al cajón (step-up) gif"
+    ],
+    "overview": "Subida al cajón (step-up) es un ejercicio de fuerza para piernas que se realiza con cajón y mancuernas. Trabaja principalmente cuádriceps, con apoyo de glúteos. Es adecuado para niveles intermedios que buscan ganar masa muscular y fuerza con una técnica controlada.",
+    "instructions": [
+      "Cajón bajo al inicio (20–30 cm).",
+      "Sube empujando con el talón del pie de arriba.",
+      "No te impulses con la pierna de abajo.",
+      "Baja controlado."
+    ],
+    "exerciseTips": [
+      "Movimientos controlados: sube en 1–2 s y baja en 2–3 s, sin impulso ni rebotes.",
+      "Rango completo y cómodo: busca el estiramiento y la contracción sin forzar la articulación.",
+      "Respiración: exhala al hacer el esfuerzo e inhala al volver a la posición inicial."
+    ],
+    "variations": [
+      "Prensa de piernas: trabaja cuádriceps con prensa.",
+      "Extensión isométrica de rodilla 90°: trabaja cuádriceps (isométrico) con máquina.",
+      "Sentadilla isométrica en pared: trabaja cuádriceps con peso corporal.",
+      "Sentadilla (goblet / libre): trabaja cuádriceps con mancuernas."
+    ],
+    "relatedExerciseIds": [
+      "mrg_leg_press",
+      "mrg_iso_knee_ext",
+      "mrg_wall_sit",
+      "mrg_squat",
+      "mrg_bulgarian_split",
+      "mrg_lunge",
+      "mrg_leg_extension",
+      "mrg_leg_press_calf",
+      "mrg_adductor",
+      "mrg_seated_leg_curl"
+    ],
+    "defaults": {
+      "sets": 3,
+      "repMin": 10,
+      "repMax": 12,
+      "rir": "2",
+      "restSec": 90,
+      "unit": "reps"
+    }
+  },
+  {
+    "exerciseId": "mrg_standing_calf",
+    "animKey": "standing_calf",
+    "name": "Pantorrilla de pie",
+    "imageUrl": "png/Pantorrilla-De-Pie-Piernas.png",
+    "gifUrl": "gif/Pantorrilla-De-Pie-Piernas.gif",
+    "videoUrl": "mp4/Pantorrilla-De-Pie-Piernas.mp4",
+    "equipments": [
+      "MÁQUINA"
+    ],
+    "bodyParts": [
+      "PIERNAS"
+    ],
+    "gender": "male",
+    "exerciseType": "FUERZA",
+    "targetMuscles": [
+      "Gastrocnemio"
+    ],
+    "secondaryMuscles": [],
+    "keywords": [
+      "Pantorrilla de pie",
+      "Pantorrilla de pie técnica",
+      "Ejercicio de piernas con máquina",
+      "Gastrocnemio ejercicio",
+      "Rutina de piernas",
+      "Cómo hacer pantorrilla de pie",
+      "Pantorrilla de pie gif"
+    ],
+    "overview": "Pantorrilla de pie es un ejercicio de fuerza para piernas que se realiza con máquina. Trabaja principalmente gastrocnemio. Es adecuado para principiantes e intermedios que buscan ganar masa muscular y fuerza con una técnica controlada.",
+    "instructions": [
+      "Puntas en el borde del escalón, rodillas estiradas.",
+      "Sube lo más alto posible y pausa.",
+      "Baja hasta un estiramiento profundo.",
+      "Sin rebotes."
+    ],
+    "exerciseTips": [
+      "Movimientos controlados: sube en 1–2 s y baja en 2–3 s, sin impulso ni rebotes.",
+      "Rango completo y cómodo: busca el estiramiento y la contracción sin forzar la articulación.",
+      "Respiración: exhala al hacer el esfuerzo e inhala al volver a la posición inicial."
+    ],
+    "variations": [
+      "Pantorrillas en prensa: trabaja gastrocnemio con prensa.",
+      "Prensa de piernas: trabaja cuádriceps con prensa.",
+      "Sentadilla isométrica en pared: trabaja cuádriceps con peso corporal.",
+      "Sentadilla (goblet / libre): trabaja cuádriceps con mancuernas."
+    ],
+    "relatedExerciseIds": [
+      "mrg_leg_press_calf",
+      "mrg_leg_press",
+      "mrg_wall_sit",
+      "mrg_squat",
+      "mrg_bulgarian_split",
+      "mrg_lunge",
+      "mrg_step_up",
+      "mrg_iso_knee_ext",
+      "mrg_adductor",
+      "mrg_seated_leg_curl"
+    ],
+    "defaults": {
+      "sets": 3,
+      "repMin": 12,
+      "repMax": 15,
+      "rir": "2",
+      "restSec": 60,
+      "unit": "reps"
+    }
+  },
+  {
+    "exerciseId": "mrg_glute_bridge",
+    "animKey": "glute_bridge",
+    "name": "Puente de glúteos",
+    "imageUrl": "png/Puente-De-Gluteos-Gluteos.png",
+    "gifUrl": "gif/Puente-De-Gluteos-Gluteos.gif",
+    "videoUrl": "mp4/Puente-De-Gluteos-Gluteos.mp4",
+    "equipments": [
+      "PESO CORPORAL"
+    ],
+    "bodyParts": [
+      "GLÚTEOS"
+    ],
+    "gender": "male",
+    "exerciseType": "FUERZA",
+    "targetMuscles": [
+      "Glúteo mayor"
+    ],
+    "secondaryMuscles": [
+      "Isquiotibiales"
+    ],
+    "keywords": [
+      "Puente de glúteos",
+      "Puente de glúteos técnica",
+      "Ejercicio de glúteos con peso corporal",
+      "Glúteo mayor ejercicio",
+      "Rutina de glúteos",
+      "Cómo hacer puente de glúteos",
+      "Puente de glúteos gif"
+    ],
+    "overview": "Puente de glúteos es un ejercicio de fuerza para glúteos que se realiza con peso corporal. Trabaja principalmente glúteo mayor, con apoyo de isquiotibiales. Es adecuado para principiantes e intermedios que buscan ganar masa muscular y fuerza con una técnica controlada.",
+    "instructions": [
+      "Boca arriba, rodillas flexionadas y pies a la anchura de cadera.",
+      "Sube la cadera apretando glúteos hasta alinear rodilla-cadera-hombro.",
+      "Pausa 1–2 s arriba.",
+      "No arquees la zona lumbar."
+    ],
+    "exerciseTips": [
+      "Movimientos controlados: sube en 1–2 s y baja en 2–3 s, sin impulso ni rebotes.",
+      "Rango completo y cómodo: busca el estiramiento y la contracción sin forzar la articulación.",
+      "Respiración: exhala al hacer el esfuerzo e inhala al volver a la posición inicial."
+    ],
+    "variations": [
+      "Abductores en máquina: trabaja glúteo medio y menor con máquina.",
+      "Hip thrust en máquina: trabaja glúteo mayor con máquina.",
+      "Patada de glúteo en polea: trabaja glúteo mayor con polea y tobillera.",
+      "Abducción de cadera de pie (polea): trabaja glúteo medio con polea y tobillera."
+    ],
+    "relatedExerciseIds": [
+      "mrg_abductor",
+      "mrg_hip_thrust",
+      "mrg_cable_kickback",
+      "mrg_hip_abduction_band",
+      "mrg_single_leg_bridge",
+      "mrg_donkey_kick"
+    ],
+    "defaults": {
+      "sets": 3,
+      "repMin": 12,
+      "repMax": 15,
+      "rir": "2",
+      "restSec": 60,
+      "unit": "bw"
+    }
+  },
+  {
+    "exerciseId": "mrg_single_leg_bridge",
+    "animKey": "single_leg_bridge",
+    "name": "Puente de glúteos unilateral",
+    "imageUrl": "png/Puente-De-Gluteos-Unilateral-Gluteos.png",
+    "gifUrl": "gif/Puente-De-Gluteos-Unilateral-Gluteos.gif",
+    "videoUrl": "mp4/Puente-De-Gluteos-Unilateral-Gluteos.mp4",
+    "equipments": [
+      "PESO CORPORAL"
+    ],
+    "bodyParts": [
+      "GLÚTEOS"
+    ],
+    "gender": "male",
+    "exerciseType": "FUERZA",
+    "targetMuscles": [
+      "Glúteo mayor y medio"
+    ],
+    "secondaryMuscles": [
+      "Isquiotibiales"
+    ],
+    "keywords": [
+      "Puente de glúteos unilateral",
+      "Puente de glúteos unilateral técnica",
+      "Ejercicio de glúteos con peso corporal",
+      "Glúteo mayor y medio ejercicio",
+      "Rutina de glúteos",
+      "Cómo hacer puente de glúteos unilateral",
+      "Puente de glúteos unilateral gif"
+    ],
+    "overview": "Puente de glúteos unilateral es un ejercicio de fuerza para glúteos que se realiza con peso corporal. Trabaja principalmente glúteo mayor y medio, con apoyo de isquiotibiales. Es adecuado para principiantes e intermedios que buscan ganar masa muscular y fuerza con una técnica controlada.",
+    "instructions": [
+      "Una pierna estirada en línea con el muslo.",
+      "Empuja con el talón de la pierna apoyada.",
+      "Cadera nivelada, sin rotar.",
+      "Haz las mismas repeticiones con cada pierna."
+    ],
+    "exerciseTips": [
+      "Movimientos controlados: sube en 1–2 s y baja en 2–3 s, sin impulso ni rebotes.",
+      "Rango completo y cómodo: busca el estiramiento y la contracción sin forzar la articulación.",
+      "Respiración: exhala al hacer el esfuerzo e inhala al volver a la posición inicial."
+    ],
+    "variations": [
+      "Abductores en máquina: trabaja glúteo medio y menor con máquina.",
+      "Hip thrust en máquina: trabaja glúteo mayor con máquina.",
+      "Patada de glúteo en polea: trabaja glúteo mayor con polea y tobillera.",
+      "Abducción de cadera de pie (polea): trabaja glúteo medio con polea y tobillera."
+    ],
+    "relatedExerciseIds": [
+      "mrg_abductor",
+      "mrg_hip_thrust",
+      "mrg_cable_kickback",
+      "mrg_hip_abduction_band",
+      "mrg_glute_bridge",
+      "mrg_donkey_kick"
+    ],
+    "defaults": {
+      "sets": 3,
+      "repMin": 10,
+      "repMax": 12,
+      "rir": "2",
+      "restSec": 60,
+      "unit": "bw"
+    }
+  },
+  {
+    "exerciseId": "mrg_cable_kickback",
+    "animKey": "cable_kickback",
+    "name": "Patada de glúteo en polea",
+    "imageUrl": "png/Patada-De-Gluteo-En-Polea-Gluteos.png",
+    "gifUrl": "gif/Patada-De-Gluteo-En-Polea-Gluteos.gif",
+    "videoUrl": "mp4/Patada-De-Gluteo-En-Polea-Gluteos.mp4",
+    "equipments": [
+      "POLEA",
+      "TOBILLERA"
+    ],
+    "bodyParts": [
+      "GLÚTEOS"
+    ],
+    "gender": "male",
+    "exerciseType": "FUERZA",
+    "targetMuscles": [
+      "Glúteo mayor"
+    ],
+    "secondaryMuscles": [],
+    "keywords": [
+      "Patada de glúteo en polea",
+      "Patada de glúteo en polea técnica",
+      "Ejercicio de glúteos con polea",
+      "Glúteo mayor ejercicio",
+      "Rutina de glúteos",
+      "Cómo hacer patada de glúteo en polea",
+      "Patada de glúteo en polea gif"
+    ],
+    "overview": "Patada de glúteo en polea es un ejercicio de fuerza para glúteos que se realiza con polea y tobillera. Trabaja principalmente glúteo mayor. Es adecuado para niveles intermedios que buscan ganar masa muscular y fuerza con una técnica controlada.",
+    "instructions": [
+      "Tobillera en la polea baja, manos en la máquina.",
+      "Lleva la pierna atrás sin arquear la espalda.",
+      "Aprieta el glúteo 1 s.",
+      "Vuelve controlado."
+    ],
+    "exerciseTips": [
+      "Movimientos controlados: sube en 1–2 s y baja en 2–3 s, sin impulso ni rebotes.",
+      "Rango completo y cómodo: busca el estiramiento y la contracción sin forzar la articulación.",
+      "Respiración: exhala al hacer el esfuerzo e inhala al volver a la posición inicial."
+    ],
+    "variations": [
+      "Abductores en máquina: trabaja glúteo medio y menor con máquina.",
+      "Hip thrust en máquina: trabaja glúteo mayor con máquina.",
+      "Puente de glúteos: trabaja glúteo mayor con peso corporal.",
+      "Puente de glúteos unilateral: trabaja glúteo mayor y medio con peso corporal."
+    ],
+    "relatedExerciseIds": [
+      "mrg_abductor",
+      "mrg_hip_thrust",
+      "mrg_glute_bridge",
+      "mrg_single_leg_bridge",
+      "mrg_donkey_kick",
+      "mrg_hip_abduction_band"
+    ],
+    "defaults": {
+      "sets": 3,
+      "repMin": 12,
+      "repMax": 15,
+      "rir": "2",
+      "restSec": 60,
+      "unit": "reps"
+    }
+  },
+  {
+    "exerciseId": "mrg_donkey_kick",
+    "animKey": "donkey_kick",
+    "name": "Patada de glúteo en cuadrupedia",
+    "imageUrl": "png/Patada-De-Gluteo-En-Cuadrupedia-Gluteos.png",
+    "gifUrl": "gif/Patada-De-Gluteo-En-Cuadrupedia-Gluteos.gif",
+    "videoUrl": "mp4/Patada-De-Gluteo-En-Cuadrupedia-Gluteos.mp4",
+    "equipments": [
+      "PESO CORPORAL"
+    ],
+    "bodyParts": [
+      "GLÚTEOS"
+    ],
+    "gender": "male",
+    "exerciseType": "FUERZA",
+    "targetMuscles": [
+      "Glúteo mayor"
+    ],
+    "secondaryMuscles": [],
+    "keywords": [
+      "Patada de glúteo en cuadrupedia",
+      "Patada de glúteo en cuadrupedia técnica",
+      "Ejercicio de glúteos con peso corporal",
+      "Glúteo mayor ejercicio",
+      "Rutina de glúteos",
+      "Cómo hacer patada de glúteo en cuadrupedia",
+      "Patada de glúteo en cuadrupedia gif"
+    ],
+    "overview": "Patada de glúteo en cuadrupedia es un ejercicio de fuerza para glúteos que se realiza con peso corporal. Trabaja principalmente glúteo mayor. Es adecuado para principiantes e intermedios que buscan ganar masa muscular y fuerza con una técnica controlada.",
+    "instructions": [
+      "En cuatro apoyos, manos bajo hombros y rodillas bajo cadera.",
+      "Rodilla a 90°, empuja el talón hacia el techo.",
+      "Sin arquear la zona lumbar.",
+      "Alterna o completa un lado y cambia."
+    ],
+    "exerciseTips": [
+      "Movimientos controlados: sube en 1–2 s y baja en 2–3 s, sin impulso ni rebotes.",
+      "Rango completo y cómodo: busca el estiramiento y la contracción sin forzar la articulación.",
+      "Respiración: exhala al hacer el esfuerzo e inhala al volver a la posición inicial."
+    ],
+    "variations": [
+      "Abductores en máquina: trabaja glúteo medio y menor con máquina.",
+      "Hip thrust en máquina: trabaja glúteo mayor con máquina.",
+      "Patada de glúteo en polea: trabaja glúteo mayor con polea y tobillera.",
+      "Abducción de cadera de pie (polea): trabaja glúteo medio con polea y tobillera."
+    ],
+    "relatedExerciseIds": [
+      "mrg_abductor",
+      "mrg_hip_thrust",
+      "mrg_cable_kickback",
+      "mrg_hip_abduction_band",
+      "mrg_glute_bridge",
+      "mrg_single_leg_bridge"
+    ],
+    "defaults": {
+      "sets": 3,
+      "repMin": 12,
+      "repMax": 15,
+      "rir": "2",
+      "restSec": 60,
+      "unit": "bw"
+    }
+  },
+  {
+    "exerciseId": "mrg_hip_abduction_band",
+    "animKey": "hip_abduction_band",
+    "name": "Abducción de cadera de pie (polea)",
+    "imageUrl": "png/Abduccion-De-Cadera-De-Pie-Polea-Gluteos.png",
+    "gifUrl": "gif/Abduccion-De-Cadera-De-Pie-Polea-Gluteos.gif",
+    "videoUrl": "mp4/Abduccion-De-Cadera-De-Pie-Polea-Gluteos.mp4",
+    "equipments": [
+      "POLEA",
+      "TOBILLERA"
+    ],
+    "bodyParts": [
+      "GLÚTEOS"
+    ],
+    "gender": "male",
+    "exerciseType": "FUERZA",
+    "targetMuscles": [
+      "Glúteo medio"
+    ],
+    "secondaryMuscles": [],
+    "keywords": [
+      "Abducción de cadera de pie (polea)",
+      "Abducción de cadera de pie (polea) técnica",
+      "Ejercicio de glúteos con polea",
+      "Glúteo medio ejercicio",
+      "Rutina de glúteos",
+      "Cómo hacer abducción de cadera de pie (polea)",
+      "Abducción de cadera de pie (polea) gif"
+    ],
+    "overview": "Abducción de cadera de pie (polea) es un ejercicio de fuerza para glúteos que se realiza con polea y tobillera. Trabaja principalmente glúteo medio. Es adecuado para niveles intermedios que buscan ganar masa muscular y fuerza con una técnica controlada.",
+    "instructions": [
+      "Tobillera en la pierna lejana a la polea.",
+      "Separa la pierna hacia afuera sin inclinar el torso.",
+      "Pausa 1 s.",
+      "Vuelve lento."
+    ],
+    "exerciseTips": [
+      "Movimientos controlados: sube en 1–2 s y baja en 2–3 s, sin impulso ni rebotes.",
+      "Rango completo y cómodo: busca el estiramiento y la contracción sin forzar la articulación.",
+      "Respiración: exhala al hacer el esfuerzo e inhala al volver a la posición inicial."
+    ],
+    "variations": [
+      "Abductores en máquina: trabaja glúteo medio y menor con máquina.",
+      "Hip thrust en máquina: trabaja glúteo mayor con máquina.",
+      "Puente de glúteos: trabaja glúteo mayor con peso corporal.",
+      "Puente de glúteos unilateral: trabaja glúteo mayor y medio con peso corporal."
+    ],
+    "relatedExerciseIds": [
+      "mrg_abductor",
+      "mrg_hip_thrust",
+      "mrg_glute_bridge",
+      "mrg_single_leg_bridge",
+      "mrg_donkey_kick",
+      "mrg_cable_kickback"
+    ],
+    "defaults": {
+      "sets": 3,
+      "repMin": 12,
+      "repMax": 15,
+      "rir": "2",
+      "restSec": 60,
+      "unit": "reps"
+    }
+  },
+  {
+    "exerciseId": "mrg_bird_dog",
+    "animKey": "bird_dog",
+    "name": "Bird dog",
+    "imageUrl": "png/Bird-Dog-Core.png",
+    "gifUrl": "gif/Bird-Dog-Core.gif",
+    "videoUrl": "mp4/Bird-Dog-Core.mp4",
+    "equipments": [
+      "PESO CORPORAL"
+    ],
+    "bodyParts": [
+      "CORE"
+    ],
+    "gender": "male",
+    "exerciseType": "FUERZA",
+    "targetMuscles": [
+      "Core"
+    ],
+    "secondaryMuscles": [
+      "Glúteos",
+      "Erectores (estabilidad lumbar)"
+    ],
+    "keywords": [
+      "Bird dog",
+      "Bird dog técnica",
+      "Ejercicio de core con peso corporal",
+      "Core ejercicio",
+      "Rutina de core",
+      "Cómo hacer bird dog",
+      "Bird dog gif"
+    ],
+    "overview": "Bird dog es un ejercicio de fuerza para core que se realiza con peso corporal. Trabaja principalmente core, con apoyo de glúteos, erectores (estabilidad lumbar). Es adecuado para principiantes e intermedios que buscan ganar masa muscular y fuerza con una técnica controlada.",
+    "instructions": [
+      "En cuatro apoyos con espalda neutra.",
+      "Extiende brazo y pierna contrarios a la vez.",
+      "Pausa 2 s sin girar la cadera.",
+      "Ideal para la zona lumbar: lento y controlado."
+    ],
+    "exerciseTips": [
+      "Movimientos controlados: sube en 1–2 s y baja en 2–3 s, sin impulso ni rebotes.",
+      "Rango completo y cómodo: busca el estiramiento y la contracción sin forzar la articulación.",
+      "Respiración: exhala al hacer el esfuerzo e inhala al volver a la posición inicial."
+    ],
+    "variations": [
+      "Escaladores (mountain climbers): trabaja core con peso corporal.",
+      "Dead bug: trabaja core profundo (transverso) con peso corporal.",
+      "Plancha abdominal: trabaja recto abdominal con peso corporal.",
+      "Plancha lateral: trabaja oblicuos con peso corporal."
+    ],
+    "relatedExerciseIds": [
+      "mrg_mountain_climber",
+      "mrg_dead_bug",
+      "mrg_plank",
+      "mrg_side_plank",
+      "mrg_crunch",
+      "mrg_leg_raise"
+    ],
+    "defaults": {
+      "sets": 3,
+      "repMin": 8,
+      "repMax": 12,
+      "rir": "—",
+      "restSec": 60,
+      "unit": "bw"
+    }
+  },
+  {
+    "exerciseId": "mrg_plank",
+    "animKey": "plank",
+    "name": "Plancha abdominal",
+    "imageUrl": "png/Plancha-Abdominal-Core.png",
+    "gifUrl": "gif/Plancha-Abdominal-Core.gif",
+    "videoUrl": "mp4/Plancha-Abdominal-Core.mp4",
+    "equipments": [
+      "PESO CORPORAL"
+    ],
+    "bodyParts": [
+      "CORE"
+    ],
+    "gender": "male",
+    "exerciseType": "ISOMÉTRICO",
+    "targetMuscles": [
+      "Recto abdominal"
+    ],
+    "secondaryMuscles": [
+      "Transverso",
+      "Core"
+    ],
+    "keywords": [
+      "Plancha abdominal",
+      "Plancha abdominal técnica",
+      "Ejercicio de core con peso corporal",
+      "Recto abdominal ejercicio",
+      "Rutina de core",
+      "Cómo hacer plancha abdominal",
+      "Plancha abdominal gif"
+    ],
+    "overview": "Plancha abdominal es un ejercicio isométrico (peso corporal) en el que se sostiene una posición sin movimiento. Trabaja principalmente recto abdominal, con apoyo de transverso, core. Desarrolla resistencia muscular y estabilidad con poca carga articular; se registra en segundos.",
+    "instructions": [
+      "Antebrazos bajo los hombros.",
+      "Línea recta de cabeza a talones.",
+      "Aprieta glúteos y abdomen; no hundas la cadera.",
+      "Respira normal durante el tiempo indicado."
+    ],
+    "exerciseTips": [
+      "Respiración continua: no aguantes el aire durante el isométrico.",
+      "Calidad antes que tiempo: termina la serie cuando se pierda la postura correcta.",
+      "Sin dolor articular: detente si aparece molestia en rodilla, hombro o zona lumbar."
+    ],
+    "variations": [
+      "Crunch abdominal: trabaja recto abdominal con peso corporal.",
+      "Escaladores (mountain climbers): trabaja core con peso corporal.",
+      "Bird dog: trabaja core con peso corporal.",
+      "Plancha lateral: trabaja oblicuos con peso corporal."
+    ],
+    "relatedExerciseIds": [
+      "mrg_crunch",
+      "mrg_mountain_climber",
+      "mrg_bird_dog",
+      "mrg_side_plank",
+      "mrg_leg_raise",
+      "mrg_dead_bug"
+    ],
+    "defaults": {
+      "sets": 3,
+      "repMin": 20,
+      "repMax": 45,
+      "rir": "—",
+      "restSec": 60,
+      "unit": "seg"
+    }
+  },
+  {
+    "exerciseId": "mrg_side_plank",
+    "animKey": "side_plank",
+    "name": "Plancha lateral",
+    "imageUrl": "png/Plancha-Lateral-Core.png",
+    "gifUrl": "gif/Plancha-Lateral-Core.gif",
+    "videoUrl": "mp4/Plancha-Lateral-Core.mp4",
+    "equipments": [
+      "PESO CORPORAL"
+    ],
+    "bodyParts": [
+      "CORE"
+    ],
+    "gender": "male",
+    "exerciseType": "ISOMÉTRICO",
+    "targetMuscles": [
+      "Oblicuos"
+    ],
+    "secondaryMuscles": [
+      "Glúteo medio",
+      "Core"
+    ],
+    "keywords": [
+      "Plancha lateral",
+      "Plancha lateral técnica",
+      "Ejercicio de core con peso corporal",
+      "Oblicuos ejercicio",
+      "Rutina de core",
+      "Cómo hacer plancha lateral",
+      "Plancha lateral gif"
+    ],
+    "overview": "Plancha lateral es un ejercicio isométrico (peso corporal) en el que se sostiene una posición sin movimiento. Trabaja principalmente oblicuos, con apoyo de glúteo medio, core. Desarrolla resistencia muscular y estabilidad con poca carga articular; se registra en segundos.",
+    "instructions": [
+      "Antebrazo bajo el hombro, pies apilados.",
+      "Eleva la cadera hasta alinear el cuerpo.",
+      "No dejes caer la cadera.",
+      "Mismo tiempo en cada lado."
+    ],
+    "exerciseTips": [
+      "Respiración continua: no aguantes el aire durante el isométrico.",
+      "Calidad antes que tiempo: termina la serie cuando se pierda la postura correcta.",
+      "Sin dolor articular: detente si aparece molestia en rodilla, hombro o zona lumbar."
+    ],
+    "variations": [
+      "Escaladores (mountain climbers): trabaja core con peso corporal.",
+      "Bird dog: trabaja core con peso corporal.",
+      "Plancha abdominal: trabaja recto abdominal con peso corporal.",
+      "Crunch abdominal: trabaja recto abdominal con peso corporal."
+    ],
+    "relatedExerciseIds": [
+      "mrg_mountain_climber",
+      "mrg_bird_dog",
+      "mrg_plank",
+      "mrg_crunch",
+      "mrg_leg_raise",
+      "mrg_dead_bug"
+    ],
+    "defaults": {
+      "sets": 3,
+      "repMin": 20,
+      "repMax": 30,
+      "rir": "—",
+      "restSec": 60,
+      "unit": "seg"
+    }
+  },
+  {
+    "exerciseId": "mrg_crunch",
+    "animKey": "crunch",
+    "name": "Crunch abdominal",
+    "imageUrl": "png/Crunch-Abdominal-Core.png",
+    "gifUrl": "gif/Crunch-Abdominal-Core.gif",
+    "videoUrl": "mp4/Crunch-Abdominal-Core.mp4",
+    "equipments": [
+      "PESO CORPORAL"
+    ],
+    "bodyParts": [
+      "CORE"
+    ],
+    "gender": "male",
+    "exerciseType": "FUERZA",
+    "targetMuscles": [
+      "Recto abdominal"
+    ],
+    "secondaryMuscles": [],
+    "keywords": [
+      "Crunch abdominal",
+      "Crunch abdominal técnica",
+      "Ejercicio de core con peso corporal",
+      "Recto abdominal ejercicio",
+      "Rutina de core",
+      "Cómo hacer crunch abdominal",
+      "Crunch abdominal gif"
+    ],
+    "overview": "Crunch abdominal es un ejercicio de fuerza para core que se realiza con peso corporal. Trabaja principalmente recto abdominal. Es adecuado para principiantes e intermedios que buscan ganar masa muscular y fuerza con una técnica controlada.",
+    "instructions": [
+      "Rodillas flexionadas, manos en el pecho o tras la cabeza (sin jalar el cuello).",
+      "Despega solo las escápulas del suelo.",
+      "Exhala al subir.",
+      "Baja lento."
+    ],
+    "exerciseTips": [
+      "Movimientos controlados: sube en 1–2 s y baja en 2–3 s, sin impulso ni rebotes.",
+      "Rango completo y cómodo: busca el estiramiento y la contracción sin forzar la articulación.",
+      "Respiración: exhala al hacer el esfuerzo e inhala al volver a la posición inicial."
+    ],
+    "variations": [
+      "Plancha abdominal: trabaja recto abdominal con peso corporal.",
+      "Escaladores (mountain climbers): trabaja core con peso corporal.",
+      "Bird dog: trabaja core con peso corporal.",
+      "Plancha lateral: trabaja oblicuos con peso corporal."
+    ],
+    "relatedExerciseIds": [
+      "mrg_plank",
+      "mrg_mountain_climber",
+      "mrg_bird_dog",
+      "mrg_side_plank",
+      "mrg_leg_raise",
+      "mrg_dead_bug"
+    ],
+    "defaults": {
+      "sets": 3,
+      "repMin": 15,
+      "repMax": 20,
+      "rir": "2",
+      "restSec": 60,
+      "unit": "bw"
+    }
+  },
+  {
+    "exerciseId": "mrg_leg_raise",
+    "animKey": "leg_raise",
+    "name": "Elevación de piernas acostado",
+    "imageUrl": "png/Elevacion-De-Piernas-Acostado-Core.png",
+    "gifUrl": "gif/Elevacion-De-Piernas-Acostado-Core.gif",
+    "videoUrl": "mp4/Elevacion-De-Piernas-Acostado-Core.mp4",
+    "equipments": [
+      "PESO CORPORAL"
+    ],
+    "bodyParts": [
+      "CORE"
+    ],
+    "gender": "male",
+    "exerciseType": "FUERZA",
+    "targetMuscles": [
+      "Abdomen inferior"
+    ],
+    "secondaryMuscles": [
+      "Flexores de cadera"
+    ],
+    "keywords": [
+      "Elevación de piernas acostado",
+      "Elevación de piernas acostado técnica",
+      "Ejercicio de core con peso corporal",
+      "Abdomen inferior ejercicio",
+      "Rutina de core",
+      "Cómo hacer elevación de piernas acostado",
+      "Elevación de piernas acostado gif"
+    ],
+    "overview": "Elevación de piernas acostado es un ejercicio de fuerza para core que se realiza con peso corporal. Trabaja principalmente abdomen inferior, con apoyo de flexores de cadera. Es adecuado para principiantes e intermedios que buscan ganar masa muscular y fuerza con una técnica controlada.",
+    "instructions": [
+      "Zona lumbar pegada al suelo (manos bajo los glúteos si hace falta).",
+      "Sube las piernas casi rectas hasta 90°.",
+      "Baja lento sin tocar el suelo.",
+      "⚠️ Si molesta la zona lumbar, flexiona las rodillas."
+    ],
+    "exerciseTips": [
+      "Movimientos controlados: sube en 1–2 s y baja en 2–3 s, sin impulso ni rebotes.",
+      "Rango completo y cómodo: busca el estiramiento y la contracción sin forzar la articulación.",
+      "Respiración: exhala al hacer el esfuerzo e inhala al volver a la posición inicial."
+    ],
+    "variations": [
+      "Escaladores (mountain climbers): trabaja core con peso corporal.",
+      "Bird dog: trabaja core con peso corporal.",
+      "Plancha abdominal: trabaja recto abdominal con peso corporal.",
+      "Plancha lateral: trabaja oblicuos con peso corporal."
+    ],
+    "relatedExerciseIds": [
+      "mrg_mountain_climber",
+      "mrg_bird_dog",
+      "mrg_plank",
+      "mrg_side_plank",
+      "mrg_crunch",
+      "mrg_dead_bug"
+    ],
+    "defaults": {
+      "sets": 3,
+      "repMin": 10,
+      "repMax": 15,
+      "rir": "2",
+      "restSec": 60,
+      "unit": "bw"
+    }
+  },
+  {
+    "exerciseId": "mrg_dead_bug",
+    "animKey": "dead_bug",
+    "name": "Dead bug",
+    "imageUrl": "png/Dead-Bug-Core.png",
+    "gifUrl": "gif/Dead-Bug-Core.gif",
+    "videoUrl": "mp4/Dead-Bug-Core.mp4",
+    "equipments": [
+      "PESO CORPORAL"
+    ],
+    "bodyParts": [
+      "CORE"
+    ],
+    "gender": "male",
+    "exerciseType": "FUERZA",
+    "targetMuscles": [
+      "Core profundo (transverso)"
+    ],
+    "secondaryMuscles": [
+      "Estabilidad lumbar"
+    ],
+    "keywords": [
+      "Dead bug",
+      "Dead bug técnica",
+      "Ejercicio de core con peso corporal",
+      "Core profundo (transverso) ejercicio",
+      "Rutina de core",
+      "Cómo hacer dead bug",
+      "Dead bug gif"
+    ],
+    "overview": "Dead bug es un ejercicio de fuerza para core que se realiza con peso corporal. Trabaja principalmente core profundo (transverso), con apoyo de estabilidad lumbar. Es adecuado para principiantes e intermedios que buscan ganar masa muscular y fuerza con una técnica controlada.",
+    "instructions": [
+      "Boca arriba, brazos al techo y rodillas a 90°.",
+      "Extiende brazo y pierna contrarios sin despegar la zona lumbar.",
+      "Vuelve y alterna.",
+      "Muy amigable con la espalda baja."
+    ],
+    "exerciseTips": [
+      "Movimientos controlados: sube en 1–2 s y baja en 2–3 s, sin impulso ni rebotes.",
+      "Rango completo y cómodo: busca el estiramiento y la contracción sin forzar la articulación.",
+      "Respiración: exhala al hacer el esfuerzo e inhala al volver a la posición inicial."
+    ],
+    "variations": [
+      "Escaladores (mountain climbers): trabaja core con peso corporal.",
+      "Bird dog: trabaja core con peso corporal.",
+      "Plancha abdominal: trabaja recto abdominal con peso corporal.",
+      "Plancha lateral: trabaja oblicuos con peso corporal."
+    ],
+    "relatedExerciseIds": [
+      "mrg_mountain_climber",
+      "mrg_bird_dog",
+      "mrg_plank",
+      "mrg_side_plank",
+      "mrg_crunch",
+      "mrg_leg_raise"
+    ],
+    "defaults": {
+      "sets": 3,
+      "repMin": 8,
+      "repMax": 12,
+      "rir": "—",
+      "restSec": 60,
+      "unit": "bw"
+    }
+  }
+]

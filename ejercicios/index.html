@@ -1,0 +1,39 @@
+<!DOCTYPE html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Mi Rutina Gym · GIFs de ejercicios</title>
+<style>
+:root{--bg:#f4f5f7;--card:#fff;--tx:#1d2026;--mut:#6b7280;--red:#e2412a;--or:#f08a62}
+*{box-sizing:border-box}body{margin:0;font:15px/1.45 system-ui,-apple-system,Segoe UI,Roboto,sans-serif;background:var(--bg);color:var(--tx)}
+header{padding:22px 18px 8px;max-width:1200px;margin:auto}h1{margin:0 0 4px;font-size:24px}header p{margin:0;color:var(--mut)}
+.bar{position:sticky;top:0;background:var(--bg);z-index:2;padding:10px 18px;max-width:1200px;margin:auto;display:flex;gap:8px;flex-wrap:wrap}
+input{flex:1;min-width:200px;padding:10px 12px;border:1px solid #d6d9df;border-radius:10px;font:inherit}
+.chip{border:1px solid #d6d9df;background:#fff;border-radius:99px;padding:7px 12px;cursor:pointer;font:inherit;font-size:13px}.chip.on{background:var(--tx);color:#fff;border-color:var(--tx)}
+main{max-width:1200px;margin:auto;padding:8px 18px 40px;display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:14px}
+.c{background:var(--card);border-radius:14px;overflow:hidden;box-shadow:0 1px 3px rgba(0,0,0,.08);cursor:pointer}.c img{width:100%;display:block;aspect-ratio:6/5}
+.c div{padding:10px 12px}.c b{display:block;font-size:14px}.c small{color:var(--mut)}
+.leg{display:flex;gap:14px;font-size:13px;color:var(--mut);margin-top:6px}.leg i{display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:5px;vertical-align:-1px}
+dialog{border:0;border-radius:16px;max-width:620px;width:94vw;padding:0}dialog::backdrop{background:rgba(0,0,0,.45)}
+.d{padding:16px 20px 20px}.d h2{margin:0 0 4px}.tags span{display:inline-block;background:#eef0f3;border-radius:6px;padding:2px 8px;font-size:12px;margin:2px 4px 2px 0}
+.d h4{margin:14px 0 4px}.d ol,.d ul{margin:0;padding-left:20px}.x{float:right;border:0;background:#eef0f3;border-radius:8px;padding:6px 10px;cursor:pointer}
+.dl a{margin-right:12px;font-size:13px}
+</style></head><body>
+<header><h1>Mi Rutina Gym · Ejercicios animados</h1><p id="cnt"></p>
+<div class="leg"><span><i style="background:var(--red)"></i>Músculo principal</span><span><i style="background:var(--or)"></i>Secundarios</span></div></header>
+<div class="bar"><input id="q" placeholder="Buscar ejercicio, músculo o equipo…"><div id="chips"></div></div>
+<main id="g"></main>
+<dialog id="dlg"><img id="dimg" style="width:100%;display:block"><div class="d" id="dd"></div></dialog>
+<script>
+let DATA=[],grp='Todos';
+const $=s=>document.querySelector(s),esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+function draw(){const q=$('#q').value.toLowerCase();const L=DATA.filter(e=>(grp==='Todos'||e.bodyParts.includes(grp))&&(!q||JSON.stringify([e.name,e.targetMuscles,e.secondaryMuscles,e.equipments]).toLowerCase().includes(q)));
+$('#cnt').textContent=L.length+' de '+DATA.length+' ejercicios · toca uno para ver la ficha';
+$('#g').innerHTML=L.map(e=>`<div class="c" data-id="${e.exerciseId}"><img loading="lazy" src="${e.gifUrl}" alt="${esc(e.name)}"><div><b>${esc(e.name)}</b><small>${esc(e.targetMuscles[0])} · ${esc(e.equipments.join(', ').toLowerCase())}</small></div></div>`).join('');}
+function open_(id){const e=DATA.find(x=>x.exerciseId===id);$('#dimg').src=e.gifUrl;const nm=i=>(DATA.find(x=>x.exerciseId===i)||{}).name;
+$('#dd').innerHTML=`<button class="x" onclick="dlg.close()">✕</button><h2>${esc(e.name)}</h2><div class="tags">${[...e.bodyParts,e.exerciseType,...e.equipments].map(t=>`<span>${esc(t)}</span>`).join('')}</div>
+<p>${esc(e.overview)}</p><p><b>Principal:</b> ${esc(e.targetMuscles.join(', '))}${e.secondaryMuscles.length?`<br><b>Secundarios:</b> ${esc(e.secondaryMuscles.join(', '))}`:''}</p>
+<h4>Instrucciones</h4><ol>${e.instructions.map(i=>`<li>${esc(i)}</li>`).join('')}</ol><h4>Consejos</h4><ul>${e.exerciseTips.map(i=>`<li>${esc(i)}</li>`).join('')}</ul>
+<h4>Relacionados</h4><p>${e.relatedExerciseIds.map(i=>`<a href="#" onclick="open_('${i}');return false">${esc(nm(i))}</a>`).join(' · ')}</p>
+<p class="dl"><small>Archivo: ${esc(e.gifUrl)} · id ${esc(e.exerciseId)}</small></p>`;if(!dlg.open)dlg.showModal();}
+fetch('ejercicios.json').then(r=>r.json()).then(d=>{DATA=d;const G=['Todos',...new Set(d.map(e=>e.bodyParts[0]))];
+$('#chips').innerHTML=G.map(g=>`<button class="chip ${g===grp?'on':''}" data-g="${g}">${g[0]+g.slice(1).toLowerCase()}</button>`).join('');draw();});
+$('#chips').onclick=e=>{const b=e.target.closest('.chip');if(!b)return;grp=b.dataset.g;document.querySelectorAll('.chip').forEach(c=>c.classList.toggle('on',c===b));draw();};
+$('#q').oninput=draw;$('#g').onclick=e=>{const c=e.target.closest('.c');if(c)open_(c.dataset.id);};$('#dlg').onclick=e=>{if(e.target.id==='dlg')dlg.close();};
+</script></body></html>
