@@ -60,3 +60,9 @@ Respaldo: Más → Exportar abre el menú Compartir para enviarte el respaldo (W
 - `ejercicios/ejercicios.json`: catálogo con `exerciseId` (`mrg_<clave>`), `animKey`, músculos, equipo, instrucciones, consejos, variaciones, relacionados y valores por defecto.
 - `ejercicios/index.html`: galería con buscador. En la versión web queda en `<tu-página>/ejercicios/`.
 - No van dentro del APK (no está en `assets`), así que la app no aumenta de tamaño.
+
+## v1.8
+- Tiempo del entrenamiento en formato horas: pasada la hora se muestra "1 h 20 min 05 s".
+- Rachas diarias en Hoy: racha actual, mejor racha, entrenos del mes y los últimos 14 días. Un día de descanso marcado como completado mantiene la racha.
+- Calorías estimadas al finalizar (fórmula MET según tu peso, series y repeticiones marcadas); se guardan en el historial.
+- Aviso de fin de descanso más pequeño ("¡Vamos de nuevo!"): ocupa una franja chica, dura ~2 s y se quita al tocarlo.
