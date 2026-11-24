@@ -100,6 +100,22 @@ tr.done .chk{background:var(--ok);border-color:var(--ok)} tr.done .chk svg{strok
 .timer .bar{height:6px;background:var(--card2);border-radius:9px;overflow:hidden;margin:8px 0 12px}
 .timer .bar i{display:block;height:100%;background:var(--acc);transition:width .25s linear}
 .timer.end .big{color:var(--ok)}
+/* fin de descanso: aviso compacto que no tapa la pantalla */
+.timer.end{pointer-events:none;padding:0 12px calc(12px + var(--safe-b))}
+.timer.end .in{pointer-events:auto;width:auto;max-width:340px;border:1px solid var(--ok);border-radius:16px;padding:9px 16px;box-shadow:0 6px 24px rgba(0,0,0,.35);cursor:pointer}
+.timer.end .lbl,.timer.end .bar,.timer.end .btn,.timer.end .small{display:none}
+.timer.end .big{font-size:19px;letter-spacing:0;line-height:1.2;text-align:center}
+.streak{display:flex;align-items:center;gap:12px}
+.streak .fire{font-size:34px;line-height:1}
+.streak .n{font-size:28px;font-weight:800;line-height:1}
+.sdays{display:grid;grid-template-columns:repeat(14,minmax(0,1fr));gap:4px;margin:12px 0 6px}
+.sdays div{text-align:center;font-size:10px;color:var(--mut)}
+.sdays i{display:block;aspect-ratio:1;border-radius:6px;background:var(--card2);margin-bottom:3px;border:1px solid transparent}
+.sdays i.on{background:var(--acc)}
+.sdays i.rest{background:var(--line)}
+.sdays i.today{border-color:var(--acc2)}
+.kcal{display:flex;align-items:baseline;gap:8px}
+.kcal b{font-size:30px;color:var(--acc)}
 .hold{font-size:44px;font-weight:800;text-align:center;font-variant-numeric:tabular-nums}
 .empty{text-align:center;padding:30px 10px;color:var(--mut)}
 .hist{display:flex;align-items:center;gap:12px;padding:11px 0;border-top:1px solid var(--line)}
@@ -1293,7 +1309,8 @@ const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': 
 const $ = s => document.querySelector(s);
 const todayISO = () => { const d = new Date(); d.setMinutes(d.getMinutes() - d.getTimezoneOffset()); return d.toISOString().slice(0, 10); };
 const fmtT = s => { s = Math.max(0, Math.round(s)); const m = Math.floor(s / 60), r = s % 60; return m + ':' + String(r).padStart(2, '0'); };
-const fmtDur = s => { const h = Math.floor(s / 3600), m = Math.round((s % 3600) / 60); return h ? `${h} h ${m} min` : `${m} min`; };
+const fmtEl = s => { s = Math.max(0, Math.round(s)); if (s < 3600) return fmtT(s); const h = Math.floor(s / 3600), m = Math.floor((s % 3600) / 60), r = s % 60; return `${h} h ${String(m).padStart(2, '0')} min ${String(r).padStart(2, '0')} s`; };
+const fmtDur = s => { s = Math.round(s || 0); const h = Math.floor(s / 3600), m = Math.floor((s % 3600) / 60); return h ? `${h} h ${m} min` : `${Math.max(1, Math.round(s / 60))} min`; };
 const MESES = ['ene', 'feb', 'mar', 'abr', 'may', 'jun', 'jul', 'ago', 'sep', 'oct', 'nov', 'dic'];
 const num = v => { if (v === '' || v == null) return null; const n = parseFloat(String(v).replace(',', '.')); return isNaN(n) ? null : n; };
 
@@ -1436,6 +1453,57 @@ let timer = null; // {end, total, label, kind}
 let holdT = null;
 let timerInt = null;
 
+/* ===== Rachas diarias ===== */
+const dKey = d => { d = new Date(d); return d.getFullYear() + '-' + String(d.getMonth() + 1).padStart(2, '0') + '-' + String(d.getDate()).padStart(2, '0'); };
+const addDays = (k, n) => { const [y, m, d] = k.split('-').map(Number); return dKey(new Date(y, m - 1, d + n)); };
+function streakInfo() {
+  const train = new Set(S.logs.map(l => dKey(l.date))), rest = new Set((S.restDays || []).filter(k => !train.has(k)));
+  const ok = k => train.has(k) || rest.has(k), today = dKey(new Date());
+  let cur = 0, k = ok(today) ? today : addDays(today, -1);
+  while (ok(k)) { cur++; k = addDays(k, -1); }
+  const all = [...new Set([...train, ...rest])].sort(); let best = 0, run = 0, prev = null;
+  all.forEach(x => { run = prev && addDays(prev, 1) === x ? run + 1 : 1; best = Math.max(best, run); prev = x; });
+  const mon = today.slice(0, 7);
+  return { cur, best: Math.max(best, cur), today: train.has(today), restToday: rest.has(today), train, rest, todayK: today, month: [...train].filter(x => x.startsWith(mon)).length, total: train.size };
+}
+const MILES = [3, 7, 14, 21, 30, 45, 60, 90, 100, 150, 200, 365];
+function streakMsg(st) {
+  if (!st.cur) return 'Entrena hoy para encender tu racha. ¡El primer día es el más importante!';
+  if (!st.today && !st.restToday) return `Entrena hoy para mantener viva tu racha de ${st.cur} ${st.cur === 1 ? 'día' : 'días'}. 💪`;
+  const nx = MILES.find(m => m > st.cur);
+  return MILES.includes(st.cur) ? `¡Llegaste a ${st.cur} días seguidos! Eres imparable. 🏆` : `¡Hoy ya sumaste! ${nx ? `Faltan ${nx - st.cur} para la meta de ${nx} días.` : 'Sigue así.'}`;
+}
+function streakCard() {
+  const st = streakInfo(), DL = ['D', 'L', 'M', 'X', 'J', 'V', 'S'];
+  const cells = Array.from({ length: 14 }, (_, i) => { const k = addDays(st.todayK, i - 13), [y, m, d] = k.split('-').map(Number), wd = new Date(y, m - 1, d).getDay();
+    return `<div><i class="${st.train.has(k) ? 'on' : st.rest.has(k) ? 'rest' : ''} ${k === st.todayK ? 'today' : ''}"></i>${DL[wd]}</div>`; }).join('');
+  return `<div class="card"><div class="streak"><div class="fire">${st.cur ? '🔥' : '🕯️'}</div><div class="sp"><div class="n">${st.cur} ${st.cur === 1 ? 'día' : 'días'}</div><div class="small mut">Racha actual</div></div>
+    <div style="text-align:right"><b>${st.best}</b><div class="small mut">Mejor racha</div></div><div style="text-align:right"><b>${st.month}</b><div class="small mut">Este mes</div></div></div>
+    <div class="sdays">${cells}</div><div class="small mut" style="display:flex;gap:12px;flex-wrap:wrap;margin-bottom:6px"><span><i style="display:inline-block;width:9px;height:9px;border-radius:3px;background:var(--acc)"></i> Entrenado</span><span><i style="display:inline-block;width:9px;height:9px;border-radius:3px;background:var(--line)"></i> Descanso marcado</span></div>
+    <div class="small">${streakMsg(st)}</div></div>`;
+}
+
+/* ===== Calorías estimadas (MET) ===== */
+const MET_G = { Piernas: 6, Espalda: 6, 'Glúteos': 5.5, Pecho: 5, Hombros: 4.5, 'Bíceps': 4, 'Tríceps': 4, Core: 4, Otros: 4.5 };
+const MET_C = { bike: 7, treadmill_walk: 4.3, treadmill_run: 9, elliptical: 5, rowing_machine: 7, stair_climber: 9, jump_rope: 11, mountain_climber: 8 };
+const wkg = () => { if (S.settings.peso) return S.settings.peso; const b = [...(S.body || [])].filter(x => x.peso).sort((a, c) => a.date.localeCompare(c.date)).pop(); return b ? b.peso : 70; };
+function kcalEst(exs, kg) {
+  const k = (met, sec) => met * 3.5 * kg / 200 * sec / 60;
+  let tot = 0; const by = [];
+  exs.forEach(e => {
+    const a = ANIM.LIB[e.anim] || {}, done = (e.sets || []).filter(x => x.done); if (!done.length) return;
+    let v = 0;
+    done.forEach(x => {
+      if (e.unit === 'cardio') v += x.kcal != null && x.kcal !== '' ? +x.kcal : k(MET_C[e.anim] || 7, (+x.r || e.repMax || 10) * 60);
+      else if (e.unit === 'seg') v += k(MET_C[e.anim] || 4, +x.r || e.repMax || 30) + k(2.5, 60);
+      else v += k(MET_C[e.anim] || MET_G[a.group] || 4.5, (+x.r || e.repMax || 10) * 4) + k(2.5, 90);
+    });
+    tot += v; by.push({ name: e.name, v });
+  });
+  return { tot: Math.round(tot), by: by.sort((a, b) => b.v - a.v) };
+}
+const logKcal = l => l.kcal != null ? l.kcal : kcalEst(l.exercises, l.kg || wkg()).tot;
+
 function toast(m) { const t = document.createElement('div'); t.className = 'toast'; t.textContent = m; document.body.appendChild(t); setTimeout(() => t.remove(), 2200); }
 
 /* ---------- Audio / vibración ---------- */
@@ -1554,7 +1622,7 @@ function renderNav() {
 function ensureTick() {
   clearInterval(timerInt);
   if (!S.active) return;
-  timerInt = setInterval(() => { const e = $('#elapsed'); if (e && S.active) e.textContent = fmtT((Date.now() - S.active.start) / 1000); tickTimer(); }, 500);
+  timerInt = setInterval(() => { const e = $('#elapsed'); if (e && S.active) e.textContent = fmtEl((Date.now() - S.active.start) / 1000); tickTimer(); }, 500);
 }
 function renderMini() {
   let m = $('.minibar'); if (m) m.remove();
@@ -1562,7 +1630,7 @@ function renderMini() {
   const A = S.active, d = A.exercises.reduce((a, e) => a + e.sets.filter(x => x.done).length, 0), tot = A.exercises.reduce((a, e) => a + e.sets.length, 0);
   const cur = A.exercises[A.idx];
   m = document.createElement('div'); m.className = 'minibar';
-  m.innerHTML = `<div class="in" data-act="wkmax"><div class="mb-dot"></div><div class="sp" style="min-width:0"><div class="mb-t">${esc(A.dayName)} · <span id="elapsed">${fmtT((Date.now() - A.start) / 1000)}</span></div>
+  m.innerHTML = `<div class="in" data-act="wkmax"><div class="mb-dot"></div><div class="sp" style="min-width:0"><div class="mb-t">${esc(A.dayName)} · <span id="elapsed">${fmtEl((Date.now() - A.start) / 1000)}</span></div>
     <div class="mb-s">${cur ? esc(cur.name) + ' · ' : ''}${d}/${tot} series</div></div>
     <div class="mb-r" id="mb_t">${timer || holdT ? '' : ''}</div><button class="btn sm pri" data-act="wkmax">Abrir ⌃</button></div>`;
   document.body.appendChild(m); tickTimer();
@@ -1592,6 +1660,7 @@ function renderHoy() {
   return `<header class="top"><div class="row"><div class="sp"><h1>Mi Rutina</h1><div class="sub">Hipertrofia · Ciclo de 8 días</div></div><button class="ibtn" data-act="themetoggle" title="Cambiar tema">${isDark() ? IC.sun : IC.moon}</button></div></header><main>
     <div class="card"><div class="row"><div class="sp"><b>Fase actual · Semana ${ph.w}</b><div class="small mut">${ph.t}</div></div></div>
     <div class="cycle">${cyc}</div><div class="small mut">Toca un número para cambiar de día. No comprimas sesiones para "recuperar".</div></div>
+    ${streakCard()}
     ${body}
     ${last ? `<div class="card"><div class="small mut">Último entrenamiento</div><b>${esc(last.dayName)}</b> · ${fmtDate(last.date)} · ${fmtDur(last.dur)}</div>` : ''}
   </main>`;
@@ -1819,7 +1888,7 @@ function renderWorkout() {
   else if (mode === 'tabs') body = `<div class="chips">${chips}</div>${exCard(A.idx, 'tabs')}
      <div class="grid2"><button class="btn" data-act="prevex" ${A.idx === 0 ? 'disabled' : ''}>← Anterior</button><button class="btn pri" data-act="nextex">${A.idx === A.exercises.length - 1 ? 'Terminar ✓' : 'Siguiente →'}</button></div>${tools}`;
   else body = `<div class="chips">${chips}</div>${A.exercises.map((_, i) => exCard(i, 'list')).join('')}${tools}<button class="btn ok blk" data-act="wkfinish">🏁 Finalizar entrenamiento</button>`;
-  return `<header class="top"><div class="wk-top"><button class="ibtn" data-act="wkmin" title="Minimizar">${IC.down}</button><div class="sp"><h1 style="font-size:17px">${esc(A.dayName)}</h1><div class="sub"><span id="elapsed">${fmtT(el)}</span> · ${doneSets}/${totSets} series</div></div><button class="ibtn" data-act="wkcancel" title="Descartar" style="color:var(--bad)">${IC.x}</button><button class="btn ok sm" data-act="wkfinish">Finalizar</button></div></header>
+  return `<header class="top"><div class="wk-top"><button class="ibtn" data-act="wkmin" title="Minimizar">${IC.down}</button><div class="sp"><h1 style="font-size:17px">${esc(A.dayName)}</h1><div class="sub"><span id="elapsed">${fmtEl(el)}</span> · ${doneSets}/${totSets} series</div></div><button class="ibtn" data-act="wkcancel" title="Descartar" style="color:var(--bad)">${IC.x}</button><button class="btn ok sm" data-act="wkfinish">Finalizar</button></div></header>
   <main>${viewSeg}${body}<div style="height:${timer || holdT ? 230 : 10}px"></div></main>`;
 }
 function bindWorkout() {
@@ -1864,6 +1933,7 @@ function renderTimer() {
   el.innerHTML = `<div class="in"><div class="row"><div class="sp"><div class="lbl" id="tlbl">${esc(timer.label)}</div><div class="big" id="tbig">${fmtT((timer.end - Date.now()) / 1000)}</div>${timer.next ? `<div class="small mut">${esc(timer.next)}</div>` : ''}</div>
     <div style="display:flex;flex-direction:column;gap:6px"><button class="btn sm" data-act="t+">+15 s</button><button class="btn sm" data-act="t-">−15 s</button></div></div>
     <div class="bar"><i id="tbar"></i></div><button class="btn pri blk" data-act="tskip">${timer.kind === 'ex' ? 'Siguiente ejercicio →' : 'Saltar descanso'}</button></div>`;
+  el.addEventListener('click', ev => { if (el.classList.contains('end')) { ev.stopPropagation(); dismissEnd(); } }, true);
   document.body.appendChild(el); tickTimer();
 }
 function tickTimer() {
@@ -1882,10 +1952,12 @@ function tickTimer() {
   if (!timer) return;
   const left = (timer.end - Date.now()) / 1000;
   const big = $('#tbig'), bar = $('#tbar');
-  if (big) big.textContent = left > 0 ? fmtT(left) : '¡Vamos!';
+  if (big) big.textContent = left > 0 ? fmtT(left) : '💪 ¡Vamos de nuevo!';
   if (bar) bar.style.width = Math.max(0, Math.min(100, 100 - left / timer.total * 100)) + '%';
   const box = $('.timer'); if (box) box.classList.toggle('end', left <= 0);
-  if (left <= 0 && !timer.fired) { timer.fired = true; if (!NATIVE) beep('rest'); if (timer.kind === 'ex') setTimeout(() => { if (timer && timer.fired && timer.kind === 'ex') { timer = null; nextEx(); } }, 1500); else setTimeout(() => { if (timer && timer.fired) { timer = null; render(); } }, 4000); }
+  if (left <= 0 && !timer.fired) { timer.fired = true; if (!NATIVE) beep('rest'); setTimeout(() => { if (timer && timer.fired) dismissEnd(); }, 1800); }
+}
+function dismissEnd() { if (!timer) return; const k = timer.kind; timer = null; if (k === 'ex') nextEx(); else render();
 }
 function startHold(ei, i) { unlockAudio(); clearTimer(); const x = S.active.exercises[ei]; S.active.idx = ei; holdT = { e: ei, i, start: Date.now(), target: (x.repMax || 20) * (x.unit === 'cardio' ? 60 : 1), cardio: x.unit === 'cardio' }; nativeTimer(holdT.start + holdT.target * 1000, '✅ ¡Tiempo cumplido!', `${x.unit === 'cardio' ? 'Cardio' : 'Isométrico'} · ${x.name}`, 'hold'); render(); }
 function stopHold(save_ = false) {
@@ -1977,16 +2049,24 @@ function finishModal() {
   const A = S.active; const doneSets = A.exercises.reduce((a, e) => a + e.sets.filter(s => s.done).length, 0);
   const sl = (id, l) => `<div class="field"><label>${l}: <b id="${id}v">0</b>/10</label><input type="range" min="0" max="10" value="0" id="${id}" oninput="document.getElementById('${id}v').textContent=this.value"></div>`;
   modal(`<h2>🏁 Finalizar entrenamiento</h2><p class="mut small">${doneSets} series completadas · ${fmtDur((Date.now() - A.start) / 1000)}</p>
+   <div class="card" style="margin:0 0 12px"><div class="small mut">Calorías quemadas (estimado)</div><div class="kcal"><b id="k_tot">≈ ${kcalEst(A.exercises, wkg()).tot}</b><span class="mut">kcal</span></div>
+     <div class="small mut" id="k_by" style="margin:4px 0 8px"></div>
+     <div class="row" style="gap:8px;align-items:center"><label class="small" for="k_kg" style="white-space:nowrap">Tu peso (kg)</label><input id="k_kg" type="number" inputmode="decimal" value="${wkg()}" style="max-width:90px"></div>
+     <div class="small mut" style="margin-top:6px">Aproximado según tu peso, las series y repeticiones marcadas y el tipo de ejercicio. En cardio se usan las kcal de la máquina si las anotaste.</div></div>
    <h3>Molestias (durante la sesión)</h3>${sl('p_rod', 'Rodilla')}${sl('p_cod', 'Codo')}${sl('p_lum', 'Zona lumbar')}
    <div class="field"><label>Notas de la sesión</label><textarea id="p_note" rows="3" placeholder="Cómo te sentiste, ajustes, molestias…"></textarea></div>
    <div class="tip warn">Si el dolor aumenta en las próximas 24 h o hay inflamación, suspende el ejercicio implicado y consulta.</div>
    <div class="grid2"><button class="btn" data-act="mclose">Seguir entrenando</button><button class="btn ok" id="p_ok">Guardar registro</button></div>`);
+  const kg = () => { const v = parseFloat(String($('#k_kg').value).replace(',', '.')); return v > 25 && v < 300 ? v : wkg(); };
+  const upK = () => { const r = kcalEst(A.exercises, kg()); $('#k_tot').textContent = '≈ ' + r.tot; $('#k_by').innerHTML = r.by.slice(0, 4).map(x => `${esc(x.name)}: ${Math.round(x.v)}`).join(' · '); };
+  $('#k_kg').oninput = upK; upK();
   $('#p_ok').onclick = () => {
-    const log = { id: uid(), date: new Date().toISOString(), dayId: A.dayId, dayName: A.dayName, dur: Math.round((Date.now() - A.start) / 1000),
+    const kgv = kg(); if (kgv !== wkg()) S.settings.peso = kgv;
+    const log = { id: uid(), date: new Date().toISOString(), dayId: A.dayId, dayName: A.dayName, dur: Math.round((Date.now() - A.start) / 1000), kg: kgv, kcal: kcalEst(A.exercises, kgv).tot,
       pain: { rodilla: +$('#p_rod').value, codo: +$('#p_cod').value, lumbar: +$('#p_lum').value }, notes: $('#p_note').value.trim(),
       exercises: A.exercises.map(e => ({ exId: e.exId, name: e.name, anim: e.anim, unit: e.unit, fields: e.fields || [], repMax: e.repMax, sets: e.sets.map(s => ({ w: s.w, r: s.r, rir: s.rir, km: s.km ?? null, kcal: s.kcal ?? null, done: s.done })) })) };
     S.logs.push(log); cloudLog(log); S.active = null; clearTimer(); holdT = null; clearInterval(timerInt); UI.wkMin = false;
-    advanceCycle(); save(); closeModal(); UI.tab = 'hoy'; render(); toast('¡Entrenamiento guardado! 💪');
+    advanceCycle(); save(); closeModal(); UI.tab = 'hoy'; render(); const st = streakInfo(); toast(`¡Guardado! 💪 ≈${log.kcal} kcal · 🔥 racha ${st.cur} ${st.cur === 1 ? 'día' : 'días'}`);
   };
 }
 function advanceCycle() { S.cycle = (S.cycle + 1) % S.days.length; }
@@ -2001,7 +2081,7 @@ function renderProg() {
     const vol = S.logs.filter(l => Date.now() - new Date(l.date) < 7 * 864e5).reduce((a, l) => a + l.exercises.reduce((b, e) => b + e.sets.filter(s => s.done && (!e.unit || e.unit === 'reps')).reduce((c2, s) => c2 + (s.w || 0) * (s.r || 0), 0), 0), 0);
     c = `<div class="grid3" style="margin-bottom:12px"><div class="card" style="margin:0;text-align:center"><b style="font-size:22px">${S.logs.length}</b><div class="small mut">Sesiones</div></div><div class="card" style="margin:0;text-align:center"><b style="font-size:22px">${wk}</b><div class="small mut">Últimos 7 días</div></div><div class="card" style="margin:0;text-align:center"><b style="font-size:22px">${Math.round(vol / 100) / 10}t</b><div class="small mut">Volumen 7 d</div></div></div>
      <div class="card">${L.map(l => { const d = new Date(l.date); const ns = l.exercises.reduce((a, e) => a + e.sets.filter(s => s.done).length, 0); const pmax = Math.max(l.pain?.rodilla || 0, l.pain?.codo || 0, l.pain?.lumbar || 0);
-       return `<div class="hist" data-act="openlog" data-id="${l.id}" style="cursor:pointer"><div class="dt"><b>${d.getDate()}</b><span>${MESES[d.getMonth()]}</span></div><div class="sp"><b>${esc(l.dayName)}</b><div class="small mut">${ns} series · ${fmtDur(l.dur)}${pmax ? ` · <span style="color:${pmax > 4 ? 'var(--bad)' : 'var(--warn)'}">molestia ${pmax}/10</span>` : ''}</div></div>${IC.right.replace('<svg', '<svg width="18" height="18" stroke="var(--mut)" fill="none" stroke-width="2"')}</div>`; }).join('') || '<div class="empty">Aún no hay entrenamientos registrados.<br>Completa tu primera sesión desde "Hoy".</div>'}</div>`;
+       return `<div class="hist" data-act="openlog" data-id="${l.id}" style="cursor:pointer"><div class="dt"><b>${d.getDate()}</b><span>${MESES[d.getMonth()]}</span></div><div class="sp"><b>${esc(l.dayName)}</b><div class="small mut">${ns} series · ${fmtDur(l.dur)} · ≈${logKcal(l)} kcal${pmax ? ` · <span style="color:${pmax > 4 ? 'var(--bad)' : 'var(--warn)'}">molestia ${pmax}/10</span>` : ''}</div></div>${IC.right.replace('<svg', '<svg width="18" height="18" stroke="var(--mut)" fill="none" stroke-width="2"')}</div>`; }).join('') || '<div class="empty">Aún no hay entrenamientos registrados.<br>Completa tu primera sesión desde "Hoy".</div>'}</div>`;
   } else if (UI.progSeg === 'ex') {
     const names = [...new Set(S.logs.flatMap(l => l.exercises.filter(e => e.sets.some(s => s.done)).map(e => e.name)))];
     if (!names.length) c = '<div class="card empty">Registra entrenamientos para ver tu progresión por ejercicio.</div>';
@@ -2052,7 +2132,7 @@ function chart(pts) {
 }
 function logModal(id) {
   const l = S.logs.find(x => x.id === id); if (!l) return;
-  modal(`<h2>${esc(l.dayName)}</h2><p class="mut small">${fmtDate(l.date)} · ${fmtDur(l.dur)}</p>
+  modal(`<h2>${esc(l.dayName)}</h2><p class="mut small">${fmtDate(l.date)} · ${fmtDur(l.dur)} · 🔥 ≈${logKcal(l)} kcal (estimado)</p>
    ${l.exercises.map(e => `<div style="margin-bottom:10px"><b>${esc(e.name)}</b><div class="small mut">${e.sets.map((s, i) => s.done ? `S${i + 1}: ${fmtSet(e, s)}${s.rir != null ? ` @RIR${s.rir}` : ''}` : `<s>S${i + 1}</s>`).join(' · ')}</div></div>`).join('')}
    <div class="small"><b>Molestias:</b> rodilla ${l.pain?.rodilla ?? 0}/10 · codo ${l.pain?.codo ?? 0}/10 · lumbar ${l.pain?.lumbar ?? 0}/10</div>
    ${l.notes ? `<div class="tip">${esc(l.notes)}</div>` : ''}
@@ -2134,7 +2214,7 @@ document.addEventListener('click', ev => {
     case 'mclose': closeModal(); break;
     case 'tech': techModal(el.dataset.anim, el.dataset.name); break;
     case 'setcycle': S.cycle = i; save(); render(); break;
-    case 'restdone': advanceCycle(); save(); render(); toast('Descanso completado ✓'); break;
+    case 'restdone': { const k = dKey(new Date()); S.restDays = [...new Set([...(S.restDays || []), k])].slice(-400); advanceCycle(); save(); render(); toast(`Descanso completado ✓ · 🔥 racha ${streakInfo().cur} días`); break; }
     case 'startwk': startWorkout(); window.scrollTo(0, 0); break;
     case 'openday': UI.editDay = el.dataset.id; render(); window.scrollTo(0, 0); break;
     case 'closeday': UI.editDay = null; render(); break;
@@ -2183,7 +2263,7 @@ document.addEventListener('click', ev => {
     case 'pmet': UI.progMetric = el.dataset.k; render(); break;
     case 'openlog': logModal(el.dataset.id); break;
     case 'dellog': confirmBox('Se eliminará este registro de entrenamiento.', () => { const l = S.logs.find(x => x.id === el.dataset.id); S.logs = S.logs.filter(x => x !== l); if (l) cloudLog(l, true); save(); render(); }); break;
-    case 'addbody': { const p = num($('#b_w').value), br = num($('#b_a').value); if (p == null && br == null) return toast('Escribe peso o brazo'); S.body.push({ id: uid(), date: $('#b_d').value || todayISO(), peso: p, brazo: br }); save(); render(); toast('Registro guardado'); break; }
+    case 'addbody': { const p = num($('#b_w').value), br = num($('#b_a').value); if (p == null && br == null) return toast('Escribe peso o brazo'); S.body.push({ id: uid(), date: $('#b_d').value || todayISO(), peso: p, brazo: br }); if (p != null) S.settings.peso = p; save(); render(); toast('Registro guardado'); break; }
     case 'delbody': S.body = S.body.filter(b => b.id !== el.dataset.id); save(); render(); break;
     // ajustes
     case 'settheme': S.settings.theme = el.dataset.k; save(); applyTheme(); render(); break;
