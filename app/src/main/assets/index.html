@@ -2184,17 +2184,69 @@ function alertCard() {
 }
 function exportData() {
   const txt = JSON.stringify(S);
+  if (window.AndroidBridge && AndroidBridge.shareFile) { AndroidBridge.shareFile(`rutina-gym-${todayISO()}.json`, txt); toast('Guarda el archivo .json (Drive, WhatsApp como documento, correo)'); return; }
   if (window.AndroidBridge && AndroidBridge.share) { AndroidBridge.share(txt); return; }
   try { const b = new Blob([txt], { type: 'application/json' }); const a = document.createElement('a'); a.href = URL.createObjectURL(b); a.download = `rutina-gym-${todayISO()}.json`; document.body.appendChild(a); a.click(); a.remove(); } catch (e) { }
   modal(`<h2>Exportar</h2><p class="small mut">Si no se descargó el archivo, copia este texto y guárdalo (WhatsApp a ti mismo, notas, etc.).</p><div class="field"><textarea rows="6" id="exptxt" readonly>${esc(txt)}</textarea></div><div class="grid2"><button class="btn" data-act="mclose">Cerrar</button><button class="btn pri" id="cpy">Copiar</button></div>`);
   $('#cpy').onclick = () => { const t = $('#exptxt'); t.select(); try { navigator.clipboard.writeText(t.value).then(() => toast('Copiado')); } catch (e) { document.execCommand('copy'); toast('Copiado'); } };
 }
+/* Lee un respaldo aunque venga copiado de WhatsApp (en varias partes, con fecha/nombre, comillas tipográficas…) */
+function cleanBackup(t, q) {
+  t = String(t || '').replace(/^﻿/, '')
+    .replace(/^\s*\[\d{1,2}[:.]\d{2}[^\]\n]{0,32}\]\s+[^:\n"{}\[\]]{1,60}:\s/gm, '')          // "[10:30, 24/11/2026] Nombre: "
+    .replace(/^\s*\d{1,2}\/\d{1,2}\/\d{2,4},?\s+\d{1,2}:\d{2}[^\n-]{0,14}\s-\s[^:\n"{}]{1,60}:\s/gm, '') // "24/11/26, 10:30 - Nombre: "
+    .replace(/[\u200B-\u200F\u2028\u2029\u2060]/g, '').replace(/\r?\n/g, '').trim();
+  return q ? t.replace(/[\u201C\u201D\u201E]/g, '"') : t;
+}
+// Repara un JSON cortado: conserva solo los elementos completos y cierra lo que quedó abierto
+function repairJSON(t) {
+  let st = [], inS = false, esc = false, cut = null;
+  for (let i = 0; i < t.length; i++) {
+    const c = t[i];
+    if (inS) { if (esc) esc = false; else if (c === '\\') esc = true; else if (c === '"') inS = false; continue; }
+    if (c === '"') inS = true; else if (c === '{' || c === '[') st.push(c === '{' ? '}' : ']');
+    else if (c === '}' || c === ']') st.pop();
+    else if (c === ',') cut = { i, st: st.slice() };
+  }
+  if (!cut) return null;
+  return t.slice(0, cut.i) + cut.st.reverse().join('');
+}
+function parseBackup(raw) {
+  let any = false;
+  for (const q of [false, true]) {
+    const t0 = cleanBackup(raw, q), a = t0.indexOf('{'); if (a < 0) continue; any = true;
+    const t = t0.slice(a);
+    try { const o = JSON.parse(t.slice(0, t.lastIndexOf('}') + 1)); if (o && Array.isArray(o.days)) return { o }; } catch (e) { }
+  }
+  for (const q of [false, true]) {
+    const t0 = cleanBackup(raw, q), a = t0.indexOf('{'); if (a < 0) continue;
+    try { const o = JSON.parse(repairJSON(t0.slice(a))); if (o && Array.isArray(o.days) && o.days.length) return { o, partial: true }; } catch (e) { }
+  }
+  return { err: any ? 'bad' : 'empty' };
+}
+function applyBackup(o, partial) {
+  const mine = S.logs || [], ids = new Set((o.logs || []).map(l => l.id));
+  // si el texto se cortó dentro de la rutina, se conserva la rutina actual (la importada vendría incompleta)
+  if (partial && !('logs' in o)) o = Object.assign({}, o, { days: S.days, cycle: S.cycle, settings: S.settings });
+  S = Object.assign(defaultState(), o);
+  S.logs = [...(o.logs || []).filter(l => l && l.date && Array.isArray(l.exercises)), ...mine.filter(l => !ids.has(l.id))].sort((x, y) => x.date.localeCompare(y.date));
+  if (o.active && !Array.isArray(o.active.exercises)) S.active = null;
+  save(); S.logs.forEach(l => cloudLog(l)); closeModal(); render();
+}
 function importData() {
-  modal(`<h2>Importar respaldo</h2><p class="small mut">Pega el texto exportado o elige el archivo .json. Reemplazará los datos actuales.</p>
-   <div class="field"><input type="file" accept=".json,application/json" id="impf"></div><div class="field"><textarea rows="6" id="imptxt" placeholder="Pega aquí…"></textarea></div>
+  modal(`<h2>Importar respaldo</h2><p class="small mut">Elige el archivo .json o pega el texto exportado. Si viene de WhatsApp en varias partes, pégalas todas seguidas y en orden. Tus entrenamientos actuales se conservan.</p>
+   <div class="field"><input type="file" id="impf"></div><div class="field"><textarea rows="6" id="imptxt" placeholder="Pega aquí…"></textarea></div><div id="impmsg"></div>
    <div class="grid2"><button class="btn" data-act="mclose">Cancelar</button><button class="btn pri" id="impok">Importar</button></div>`);
-  $('#impf').onchange = ev => { const f = ev.target.files[0]; if (!f) return; const r = new FileReader(); r.onload = () => $('#imptxt').value = r.result; r.readAsText(f); };
-  $('#impok').onclick = () => { try { const o = JSON.parse($('#imptxt').value); if (!o.days || !Array.isArray(o.days)) throw 0; S = Object.assign(defaultState(), o); save(); S.logs.forEach(l => cloudLog(l)); closeModal(); render(); toast('Datos importados'); } catch (e) { toast('Texto no válido'); } };
+  $('#impf').onchange = ev => { const f = ev.target.files[0]; if (!f) return; const r = new FileReader(); r.onload = () => { $('#imptxt').value = r.result; $('#impok').click(); }; r.readAsText(f); };
+  $('#impok').onclick = () => {
+    const r = parseBackup($('#imptxt').value), box = $('#impmsg');
+    if (r.err) { box.innerHTML = `<div class="tip warn">${r.err === 'empty' ? 'No hay texto de respaldo.' : 'No se reconoce el respaldo. Revisa que hayas copiado el texto completo, desde la primera <b>{</b>.'}</div>`; return; }
+    if (!r.partial) { applyBackup(r.o); toast(`Datos importados · ${S.logs.length} entrenamientos`); return; }
+    const nl = (r.o.logs || []).length, okDays = 'logs' in r.o;
+    box.innerHTML = `<div class="tip warn"><b>El respaldo está cortado.</b> WhatsApp divide los textos largos en varias partes y aquí solo hay una. Con este pedazo se recupera${okDays ? ` tu rutina completa (${r.o.days.length} días) y <b>${nl} entrenamientos</b>` : `n <b>0 entrenamientos</b> (el texto se corta antes de llegar al historial; tu rutina actual no se toca)`}.<br>Para recuperar todo, copia <b>todas las partes</b> del mensaje y pégalas seguidas, en orden.</div>
+      <button class="btn blk" id="imppart" style="margin-bottom:10px">Recuperar solo eso</button>`;
+    $('#imppart').onclick = () => { applyBackup(r.o, true); toast(`Recuperado parcialmente · ${S.logs.length} entrenamientos`); };
+  };
 }
 
 /* ---------- Modal ---------- */

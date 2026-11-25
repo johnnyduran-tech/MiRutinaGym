@@ -14,6 +14,11 @@ import android.os.PowerManager
 import android.provider.Settings
 import android.view.WindowManager
 import android.webkit.JavascriptInterface
+import android.webkit.ValueCallback
+import android.webkit.WebChromeClient
+import androidx.activity.result.contract.ActivityResultContracts
+import androidx.core.content.FileProvider
+import java.io.File
 import android.webkit.WebResourceRequest
 import android.webkit.WebView
 import android.webkit.WebViewClient
@@ -26,6 +31,10 @@ import androidx.webkit.WebViewAssetLoader
 
 class MainActivity : AppCompatActivity() {
     private lateinit var web: WebView
+    private var fileCb: ValueCallback<Array<Uri>>? = null
+    private val pickFile = registerForActivityResult(ActivityResultContracts.GetContent()) { uri ->
+        fileCb?.onReceiveValue(if (uri != null) arrayOf(uri) else null); fileCb = null
+    }
 
     @SuppressLint("SetJavaScriptEnabled")
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -59,6 +68,13 @@ class MainActivity : AppCompatActivity() {
         web.webViewClient = object : WebViewClient() {
             override fun shouldInterceptRequest(view: WebView, request: WebResourceRequest) =
                 loader.shouldInterceptRequest(request.url)
+        }
+        // Permite el botón "Seleccionar archivo" (importar respaldo .json)
+        web.webChromeClient = object : WebChromeClient() {
+            override fun onShowFileChooser(view: WebView, cb: ValueCallback<Array<Uri>>, params: FileChooserParams): Boolean {
+                fileCb?.onReceiveValue(null); fileCb = cb
+                return try { pickFile.launch("*/*"); true } catch (_: Exception) { fileCb = null; false }
+            }
         }
         if (savedInstanceState != null) web.restoreState(savedInstanceState)
         else web.loadUrl("https://appassets.androidplatform.net/assets/index.html")
@@ -110,6 +126,23 @@ class MainActivity : AppCompatActivity() {
                 putExtra(Intent.EXTRA_TEXT, text)
             }
             startActivity(Intent.createChooser(i, "Guardar respaldo"))
+        }
+
+        /** Comparte el respaldo como ARCHIVO .json (sin límite de tamaño, a diferencia del texto) */
+        @JavascriptInterface
+        fun shareFile(name: String, text: String) = runOnUiThread {
+            try {
+                val dir = File(cacheDir, "respaldos").apply { mkdirs(); listFiles()?.forEach { it.delete() } }
+                val f = File(dir, name).apply { writeText(text, Charsets.UTF_8) }
+                val uri = FileProvider.getUriForFile(this@MainActivity, "$packageName.files", f)
+                val i = Intent(Intent.ACTION_SEND).apply {
+                    type = "application/json"
+                    putExtra(Intent.EXTRA_STREAM, uri)
+                    putExtra(Intent.EXTRA_SUBJECT, "Respaldo Mi Rutina Gym")
+                    addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION)
+                }
+                startActivity(Intent.createChooser(i, "Guardar respaldo"))
+            } catch (_: Exception) { share(text) }
         }
 
         @JavascriptInterface
