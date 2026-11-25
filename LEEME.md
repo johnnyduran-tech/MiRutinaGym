@@ -67,7 +67,7 @@ Respaldo: Más → Exportar abre el menú Compartir para enviarte el respaldo (W
 - Calorías estimadas al finalizar (fórmula MET según tu peso, series y repeticiones marcadas); se guardan en el historial.
 - Aviso de fin de descanso más pequeño ("¡Vamos de nuevo!"): ocupa una franja chica, dura ~2 s y se quita al tocarlo.
 
-## v1.8.1
+## v1.8.1 (respaldo)
 - Exportar ahora comparte un ARCHIVO .json (sin límite de tamaño). Guárdalo en Drive, correo o envíalo por WhatsApp como documento.
 - "Seleccionar archivo" en Importar ya funciona dentro de la APK.
 - Importar acepta texto copiado de WhatsApp en varias partes (con fecha y nombre) y avisa si el respaldo está cortado. Los entrenamientos actuales se conservan (se combinan).
